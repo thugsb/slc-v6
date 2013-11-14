@@ -1,12 +1,14 @@
-body {margin-top:40px;margin-bottom:40px;}
+body {max-width:1280px; margin:40px auto 0; font-family: "futura-pt-1","futura-pt-2",sans-serif;}
 
 a {color:#4d4d4d;}
 a:visited {color:#444;}
 a:hover {color:#555;}
 
+span.highlight {background-color:#ffa;}
+
 /* HEADER */
-header {position:fixed; top:0; width:100%; height:40px; font-family: Futura, "Trebuchet MS", Arial, sans-serif; background:#363636; z-index:1000;}
-header a {display:inline-block; height:40px; line-height:40px; color:#fff;}
+header {position:fixed; top:0; width:100%; max-width:1280px;  height:40px; background:#363636; z-index:1000;}
+header a {display:inline-block; height:40px; line-height:40px; font-size:1.2em; color:#fff;}
 header a:hover, header a:visited {text-decoration:none; color:#eee;}
 header .persistent-nav {position:relative; height:40px; font-weight:bold; background:#252525;}
 header .persistent-nav .logo {position:relative;display:inline-block; vertical-align:top; position:relative; top:-40px; left:-10px; width:90px; height:90px; border:3px solid #333; padding-right:5px; line-height:110px; border-radius:50px; text-align:right; font-size:25px; background:#006c52; z-index:100;}
@@ -17,11 +19,11 @@ header nav a {padding:0 1.5%; font-weight:100; letter-spacing:.5px;}
 .showcase {position:relative; width:100%; height:400px; background-color:#0077b0;}
 .showcase .showcase-wrap {width:100%; height:400px;}
 .showcase h2 {padding:10px 0 0 60px; color:#fff;}
-.showcase-scroll {position:absolute; top:0; bottom:0; width:40px; text-align:center; line-height:400px; font-size:4em; color:#999; background:rgba(255,255,255,.7); cursor:pointer; z-index:10;}
-.showcase-scroll.showcase-left {left:0;}
-.showcase-scroll.showcase-right {right:0;}
+.showcase-scroll {position:absolute; top:0; bottom:-40px; width:40px; text-align:center; line-height:400px; font-size:4em; color:#999; background:rgba(255,255,255,.7); cursor:pointer; z-index:10;}
+.showcase-scroll.showcase-left {left:0; background:url(../../../img/prev.png) no-repeat center center rgba(255,255,255,.8);}
+.showcase-scroll.showcase-right {right:0; background:url(../../../img/next.png) no-repeat center center rgba(255,255,255,.8);}
 
-.showcase-content {position:absolute; top:50px; height:350px; width:100%; overflow:auto;overflow-x:auto;overflow-y:hidden; padding:0 50px;}
+.showcase-content {position:absolute; top:50px; height:370px; width:100%; overflow:auto;overflow-x:auto;overflow-y:hidden; padding:0 50px;}
 .showcase .tiles {width:4000px; height:350px; padding-right:50px; -webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}
 .showcase .tiles .tile {display:block; position:relative; float:left; width:140px; height:140px; margin:10px; border:8px solid #ededed; background:#0077b0;}
 .showcase .tiles .tile.tile-big {width:300px; height:300px;}
@@ -32,23 +34,30 @@ header nav a {padding:0 1.5%; font-weight:100; letter-spacing:.5px;}
 /* Navbar */
 .navigate {position:relative; padding:0 55px; background:#01364f;}
 .navigate .bar {height:40px; background:#01364f; z-index:200;}
-.navigate .bar .portal-links a {float:left; width:30%; height:45px; margin:-5px 1% 0; text-align:center; line-height:45px; font-weight:bold; color:#fff; background:#115078;}
+.navigate .bar .portal-links a {float:left; width:30%; height:45px; margin:-5px 1% 0; text-align:center; font-size:1.2em; letter-spacing:1px; line-height:45px; font-weight:bold; color:#fff; background:#115078;}
 .navigate .bar .social-links {text-align:center;}
-.navigate .bar .social-links a {margin:0 5px; line-height:40px; font-size:1.1em; color:#fff;}
+.navigate .bar .social-links a {margin:0 3.3%; line-height:40px; font-size:1.6em; color:#fff;}
 .navigate .bar .explore-links {padding-right:0;}
-.navigate .bar .explore-links a {float:right; width:50%; height:40px; text-align:center; line-height:40px; color:#fff; background:#5d5d5d;}
+.navigate .bar .explore-links a {float:right; width:50%; height:40px; text-align:center; font-size:1.2em; letter-spacing:1px; line-height:40px; color:#fff; background:#5d5d5d;}
+.navigate .bar .explore-links a img {position:relative; top:-2px;}
+@media(max-width:991px) {
+  .navigate .bar .explore-links .explore-link-text {display:none;}
+}
 
 /* Info */
 .info {position:relative; padding:0 40px; background:#f1f1f1;}
 .info-panel {background:#fff;}
-.info h4 {margin-left:40px; color:#00644c;}
+.info h4 {color:#00644c;}
 
-.info-panel ul {max-height:300px; overflow:auto;overflow-y:auto;overflow-x:hidden; margin:0; padding:10px 20px; list-style:none;}
+.info-panel {min-height:300px; overflow:auto;overflow-y:auto;overflow-x:hidden;}
+.info-panel ul {margin:0; padding:10px 20px; list-style:none;}
 .info-panel ul li a {display:block; padding:.5em 0;}
 
-.slc-sites .info-panel > ul {font-size:1.2em; max-height:244px;}
-.slc-sites ul ul {display:none;}
-.slc-sites form {padding:11px 15px;background:#bababa;}
+.slc-sites .info-panel > ul {font-size:1.2em; padding-bottom:70px;}
+.slc-sites ul ul {display:none; padding:0 20px;}
+.slc-sites ul ul a {padding:0;}
+.slc-sites .filtering ul ul {display:block;}
+.slc-sites form {position:absolute; bottom:0; left:15px; right:15px; height:60px; padding:13px 15px;background:#bababa;}
 .slc-sites form .input-group {float:left; width:85%;}
 .slc-sites form button {width:15%; padding-top:0;padding-bottom:0; font-size:1.5em; color:#eee;}
 
@@ -56,21 +65,21 @@ header nav a {padding:0 1.5%; font-weight:100; letter-spacing:.5px;}
 .slc-news ul li i {float:left; padding-top:2px;}
 .slc-news ul li a {margin-left:20px; padding-top:0;}
 
-.slc-spotlight .cycle-slideshow {height:300px; overflow:auto;}
+.slc-spotlight .cycle-slideshow {min-height:300px; overflow:hidden;}
 .slc-spotlight .cycle-slideshow .item {position:relative; height:300px; width:100%; padding:1em; text-align:center;}
 .slc-spotlight .cycle-slideshow .item .spotlight-top, .slc-spotlight .cycle-slideshow .item .spotlight-bottom {display:block; position:absolute; left:0; top:0; height:120px; width:100%; padding:10px 20px;}
 .slc-spotlight .cycle-slideshow .item .spotlight-bottom {top:auto; bottom:0;}
 .slc-spotlight .cycle-slideshow .item img {max-height:100px; margin:0 10px;}
-.slc-spotlight .cycle-slideshow .cycle-pager {position:absolute; top:40%; width:100%; text-align:center; z-index:200;}
-.slc-spotlight .cycle-slideshow .cycle-pager span {font-size:50px; color:#999; cursor:pointer;}
+.slc-spotlight .cycle-slideshow .cycle-pager {position:absolute; top:43%; width:100%; text-align:center; z-index:200;}
+.slc-spotlight .cycle-slideshow .cycle-pager span {font-size:30px; color:#999; cursor:pointer;}
 .slc-spotlight .cycle-slideshow .cycle-pager .cycle-pager-active {color:#000;}
-.slc-spotlight .cycle-slideshow .cycle-control {position:absolute; top:40%; font-size:3em; z-index:220; cursor:pointer;}
-.slc-spotlight .cycle-slideshow .cycle-prev {left:5px;}
-.slc-spotlight .cycle-slideshow .cycle-next {right:5px;}
+.slc-spotlight .cycle-slideshow .cycle-control {position:absolute; top:0; bottom:0; width:40px; font-size:3em; z-index:220; cursor:pointer;}
+.slc-spotlight .cycle-slideshow .cycle-prev {left:0;  background:url(../../../img/prev.png) no-repeat center center transparent;}
+.slc-spotlight .cycle-slideshow .cycle-next {right:0;  background:url(../../../img/next.png) no-repeat center center transparent;}
 .no-js .slc-spotlight .cycle-slideshow .cycle-control {display:none;}
 
 /* FOOTER */
-footer {position:relative; width:100%; padding:10px 20px; font-family: Futura, "Trebuchet MS", Arial, sans-serif; color:#fff; background:#363636; z-index:1000;}
+footer {position:relative; width:100%; padding:10px 20px; color:#fff; background:#363636; z-index:1000;}
 footer address {float:right; margin:0;}
 footer a {color:#fff;}
 
@@ -81,6 +90,19 @@ footer a {color:#fff;}
 .intro-home {display:none; position:fixed; top:0; left:0; bottom:0; right:0; background:url('../../../home/westlands.jpg') no-repeat center center fixed; background-size:cover;}
 .intro {display:none; position:absolute; top:60px; left:30px; right:30px; height:360px; border:8px solid #ebebeb; z-index:80;}
 .intro .intro-text {position:absolute; top:45%; width:100%; text-align:center; letter-spacing:5px; font:2em/1 Futura, "Trebuchet MS", Arial, sans-serif; color:#fff;}
+.intro .intro-word {height:30px;}
+.intro .intro-dot {margin:0 1em;}
+
+@media (max-width: 1080px) {
+  .intro .intro-text {top:25%;}
+  .intro .intro-text img {display:block; margin:10px auto;}
+}
+@media (max-width: 400px) {
+  .intro .intro-word {height:20px;}
+}
+@media (min-width: 1440px) {
+  .intro .intro-word {height:auto;}
+}
 
 .initialize header, .initialize footer, .initialize > section, .initialize .showcase-wrap {display:none;}
 .initialize .intro, .initialize .intro-home {display:block;}
@@ -101,14 +123,16 @@ footer a {color:#fff;}
   .off-right header nav {left:0;}
   .off-left header .persistent-nav {left:-100%; margin-left:90px;}
   .off-left header .info-panel {left:0;}
-  
+
+  /*
   .showcase {background-color:transparent !important;}
   .showcase-wrap {background:url('../../../img/showcase-bg-mobile.jpg') repeat 0 0;}
   .showcase-content {position:static; margin-top:30px; overflow:visible;}
   .showcase .tiles {width:300px; margin:0 auto; padding-right:0;}
   .showcase .tiles .tile {position:absolute; display:block; width:300px; height:300px; margin:0; box-shadow:0 0 2px #000;}
+  */
   .showcase-scroll {bottom:0;}
-  
+
   .navigate {padding:0; border-top:7px solid #ededed;}
   .navigate .bar {height:auto;}
   .navigate .bar .portal-links {padding:0;}
