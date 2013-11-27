@@ -156,9 +156,9 @@ body.initialize {background:#001546;}
   .off-right, .off-left {overflow:hidden;}
   .off-right .wrap {left:90%;}
   .off-left .wrap {left:-90%;}
-  .off-right header {bottom:0; left:89%;}
+  .off-right header {bottom:0; left:100%; margin-left:-70px;}
   .off-left header {bottom:0; left:-90%;}
-  header {transition:left .5s ease-out;}
+  header {transition:margin .5s ease-out, left .5s ease-out;}
   header > nav {display:none;}
   header .persistent-nav {width:100%;}
   header .persistent-nav .visible-xs {padding:0 20px;}
