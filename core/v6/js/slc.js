@@ -1,5 +1,9 @@
 jQuery(function($) {
   
+  /*
+  Make the portrait tablet play nice with the info-panels:
+  https://www.dropbox.com/s/0h2s1fzhx5v40p7/2013-11-22%2018.14.20.png
+  */
   
   window.$showcase = $('.showcase .tiles');
   $showcase.isotope({
@@ -8,6 +12,18 @@ jQuery(function($) {
       rowHeight : 160
     }
   });
+
+  function turnMobileOff() {
+    $('.logo').off('click');
+    $('.xs-menu').off('click');
+    $('body').removeClass('off-right').removeClass('off-left').addClass('center');
+    $('.showcase .scroll-le').off('click');
+    $('.showcase .scroll-ri').off('click');
+    $(window).off('swiperight');
+    $(window).off('swipeleft');
+    // $('header .slc-sites').appendTo('.slc-sites-wrap');
+    $('.menu-right .slc-sites').appendTo('.slc-sites-wrap');
+  }
   
   $(window).setBreakpoints({
     distinct: true,
@@ -15,47 +31,97 @@ jQuery(function($) {
   });
   
   $(window).bind('enterBreakpoint992',function() {
-  
+    console.log('enter desktop');
+    
+    turnMobileOff();
+    
     // Adjust panel heights
     $('.info-panel').height($(window).height() - 559)
     
+    $('.showcase .scroll-le').on('click', function() {
+      $('.showcase-content').animate({scrollLeft: '-=640px'})
+    });
+    $('.showcase .scroll-ri').on('click', function() {
+      $('.showcase-content').animate({scrollLeft: '+=640px'})
+    });
   });
   
   $(window).bind('enterBreakpoint768',function() {
-    console.log('enter desktop');
+    console.log('enter tablet');
+    
+    turnMobileOff();
     
     // Adjust panel heights
     $('.slc-news .info-panel, .slc-spotlight .info-panel').height('auto');
     $('.slc-sites .info-panel').height(10 + $('.slc-news .info-panel').height() + $('.slc-spotlight').height());
     
-    $('.showcase-left').off('click');
-    $('.showcase-right').off('click');
-    $('.showcase-left').on('click', function() {
+    $('.showcase .scroll-le').on('click', function() {
       $('.showcase-content').animate({scrollLeft: '-=480px'})
     });
-    $('.showcase-right').on('click', function() {
+    $('.showcase .scroll-ri').on('click', function() {
       $('.showcase-content').animate({scrollLeft: '+=480px'})
     });
-    
-    
-    $('header .info-panel').appendTo('.slc-sites');
   });
   
   $(window).bind('enterBreakpoint1',function() {
     console.log('enter mobile');
     
+    $('.showcase .scroll-le').off('click');
+    $('.showcase .scroll-ri').off('click');
     
-    $('.showcase-left').off('click');
-    $('.showcase-right').off('click');
-    $('.showcase-left').on('click', function() {
-      $('.showcase-content').animate({scrollLeft: '-=300px'})
+    $('.showcase .scroll-le').on('click', function() {
+      $('.showcase-content').animate({scrollLeft: '-=240px'})
     });
-    $('.showcase-right').on('click', function() {
-      $('.showcase-content').animate({scrollLeft: '+=300px'})
+    $('.showcase .scroll-ri').on('click', function() {
+      $('.showcase-content').animate({scrollLeft: '+=240px'})
     });
     
     
-    $('.slc-sites .info-panel').appendTo('.nav');
+    $(window).on('swipeleft', function() {
+      if ($('body').is('.center') ) {
+        $('.menu-right').css({'z-index':20});
+        $('.menu-left').css({'z-index':10});
+        $('body').addClass('off-left').removeClass('center');
+      } else if ($('body').is('.off-right') ) {
+        $('body').addClass('center').removeClass('off-right');
+      }
+    });
+    $(window).on('swiperight', function() {
+      if ($('body').is('.center') ) {
+        $('.menu-left').css({'z-index':20});
+        $('.menu-right').css({'z-index':10});
+        $('body').addClass('off-right').removeClass('center');
+      } else if ($('body').is('.off-left') ) {
+        $('body').addClass('center').removeClass('off-left');
+      }
+    });
+    
+    
+    // Mobile off-side menus
+    $('.logo, .menu-helpers .explore').click(function(e) {
+      e.preventDefault();
+      if ($('body').is('.center') ) {
+        $('.menu-left').css({'z-index':20});
+        $('.menu-right').css({'z-index':10});
+        $('body').addClass('off-right').removeClass('center');
+      } else if ($('body').is('.off-right') ) {
+        $('body').addClass('center').removeClass('off-right');
+      }
+    });
+
+    $('.xs-menu, .menu-helpers .sites').click(function(e) {
+      e.preventDefault();
+      if ($('body').is('.center') ) {
+        $('.menu-right').css({'z-index':20});
+        $('.menu-left').css({'z-index':10});
+        $('body').addClass('off-left').removeClass('center');
+      } else if ($('body').is('.off-left') ) {
+        $('body').addClass('center').removeClass('off-left');
+      }
+    });
+    
+    
+    $('.slc-sites').appendTo('.menu-right-content');
   });
   
   
@@ -92,29 +158,30 @@ jQuery(function($) {
   });
   
   
-  // Mobile off-side menus
-  $('.logo').click(function(e) {
+  // IAm menu height
+  $('.i-am, .info-for').click(function(e) {
     e.preventDefault();
-    if ($('body').is('.center') ) {
-      $('body').addClass('off-right').removeClass('center');
-    } else if ($('body').is('.off-right') ) {
-      $('body').addClass('center').removeClass('off-right');
-    }
+    $('#iAm').collapse('toggle');
+    if ($(window).height() < 780) {
+      $('header #iAm nav').height($(window).height() - 140)
+    } else {$('header #iAm nav').height('auto')}
   });
   
-  $('.xs-menu').click(function(e) {
-    e.preventDefault();
-    if ($('body').is('.center') ) {
-      $('body').addClass('off-left').removeClass('center');
-    } else if ($('body').is('.off-left') ) {
-      $('body').addClass('center').removeClass('off-left');
+  
+  $('body header').click(function(e) {
+    if (e.target.nodeName === 'HEADER') {
+      if ($('body').is('.off-left') ) {
+        $('body').addClass('center').removeClass('off-left');
+      } else if ($('body').is('.off-right') ) {
+        $('body').addClass('center').removeClass('off-right');
+      }
     }
   });
   
   // Home Intro
   if ($('body').hasClass('initialize') ) {
     $('header').delay(1000).fadeIn(1000, function() {
-      $('.initialize > section, footer').fadeIn(1000, function() {
+      $('.initialize .wrap > section, footer, .menu').fadeIn(1000, function() {
         $('.showcase').animate({backgroundColor:'#0077b0'}, function() {
           $('.intro-home').fadeOut(function() {
             $('.intro').fadeOut();
