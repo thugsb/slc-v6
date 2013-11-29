@@ -42,6 +42,8 @@
     <div id="iAm" class="collapse">
       <div class="ready-to"><a href="/apply/">Ready to Apply</a> | <a href="/visit/">Ready to Visit</a></div>
       <em>Information for:</em>
+      <div class="hidden overflow-scroll scroll-up" data-target="#iAm nav" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
+      <div class="hidden overflow-scroll scroll-dn" data-target="#iAm nav" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
       <nav>
         <a href="#"><h4>Future Undergraduate Students</h4> <p>Admission and aid; course catalogue, areas of study, faculty, student life, career services, study abroad, class profile, the campus and facilities, NYC, athletics, and more...</p></a>
         <a href="#"><h4>Future Graduate Students</h4> <p>Master’s programs; admission and aid; course catalogue, areas of study, faculty, student life, career services; class profile, the campus and facilities, NYC, and more...</p></a>
@@ -65,8 +67,8 @@
     <section class="showcase">
       <div class="showcase-wrap">
         <h2>Explore.</h2>
-        <div class="overflow-scroll scroll-le"></div>
-        <div class="overflow-scroll scroll-ri"></div>
+        <div class="overflow-scroll scroll-le"><img src="img/scroll-le.png" alt="Scroll Left"/></div>
+        <div class="overflow-scroll scroll-ri"><img src="img/scroll-ri.png" alt="Scroll Right"/></div>
         <div class="showcase-content">
           <div class="tiles clearfix" data-cycle-hide-non-active="false">
             <a data-cycle-timeout="8000" href="#" class="tile tile-big"><img src="home/1.jpg" class="img-responsive"/></a>
@@ -141,6 +143,8 @@
         <div class="col-md-4 col-sm-6 slc-sites-wrap">
           <section class="slc-sites">
             <h4>SLC <strong>Sites.</strong></h4>
+            <div class="overflow-scroll scroll-up" data-target=".slc-sites .info-panel" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
+            <div class="overflow-scroll scroll-dn" data-target=".slc-sites .info-panel" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
             <div class="info-panel">
               <ul>
                 <li>
@@ -295,20 +299,22 @@
                   </ul>
                 </li>
               </ul>
-              <form class="info-search form-inline clearfix">
-                <div class="input-group">
-                  <input type="text" class="form-control" id="q" placeholder="filter these categories or search"/>
-                  <a class="input-group-addon"><i class="fa fa-filter"></i></a>
-                </div>
-                <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></buttom>
-              </form>
-            </div>
+            </div>  
+            <form class="info-search form-inline clearfix">
+              <div class="input-group">
+                <input type="text" class="form-control" id="q" placeholder="filter these categories or search"/>
+                <a class="input-group-addon"><i class="fa fa-filter"></i></a>
+              </div>
+              <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></buttom>
+            </form>
           </section>
         </div>
       
         <div class="col-md-4 col-sm-6">
           <section class="slc-news">
             <h4>SLC <strong>News and Events.</strong></h4>
+            <div class="overflow-scroll scroll-up" data-target=".slc-news .info-panel" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
+            <div class="overflow-scroll scroll-dn" data-target=".slc-news .info-panel" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
             <div class="info-panel">
               <ul>
                 <li><i class="fa fa-rss"></i> <a href="#news/item">J.J. Abrams '88 publishes novel, is featured in The New York Times Sunday Book Review</a></li>
@@ -393,6 +399,8 @@
 
   <div class="menu menu-left">
     <div class="menu-nav"><h4 class="pull-right">Explore.</h4><a class="link-home" href="/"><i class="fa fa-home"></i> www.slc.edu</a></div>
+    <div class="overflow-scroll scroll-up" data-target=".menu-left-content" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
+    <div class="overflow-scroll scroll-dn" data-target=".menu-left-content" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
     <div class="menu-left-content clearfix">
       <a href="#"><img src="img/menu-icon-map.png" alt="XXX"/></a>
       <a href="#"><img src="img/menu-icon-360.png" alt="XXX"/></a>
