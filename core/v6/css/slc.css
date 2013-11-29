@@ -63,7 +63,7 @@ header #iAm nav a p {margin:0; font-size:0.8em; font-style:italic; color:#b4b4b4
 @media(max-width:991px) {
   .navigate .bar .explore-links .explore-link-text {display:none;}
 }
-.sites-quicknav {background:url('../../../home/gardens.jpg') no-repeat center center fixed; background-size:100% auto;}
+.sites-quicknav {position:relative; background:url('../../../home/gardens.jpg') no-repeat center center fixed; background-size:100% auto;}
 .sites-quicknav nav {padding:25px 15%; box-shadow:inset 0 0 40px 20px rgba(0,0,0,.5); font-size:1.5em; background:rgba(0,0,0,0.5);}
 .sites-quicknav a {display:block; padding:.2em 0; color:#fff;}
 .menu-helpers {padding:20px; text-align:center; background:#cececf;}
@@ -115,7 +115,7 @@ header #iAm nav a p {margin:0; font-size:0.8em; font-style:italic; color:#b4b4b4
 footer {position:relative; width:100%; padding:10px 20px; color:#fff; background:#363636; z-index:900;}
 footer .footer-name {margin-top:4px;}
 footer address {margin:0; text-align:right;}
-footer a {color:#fff;}
+footer a, footer a:hover {color:#fff;}
 
 
 /* CONTENT */
@@ -135,15 +135,20 @@ footer a {color:#fff;}
   .intro .intro-word {height:20px;}
 }
 @media (min-width: 1440px) {
-  .intro .intro-word {height:auto;}
+  .intro .intro-word {height:35px;}
 }
-body.initialize {background:#001546;}
-.initialize header, .initialize footer, .initialize .wrap > section, .initialize .showcase-wrap, .initialize .menu {display:none;}
+@media (max-height: 400px) {
+  .intro {height:240px;}
+}
+@media (max-height: 400px) and (max-width: 1080px) {
+  .intro .intro-text {top:10%;}
+}
+.initialize header, .initialize footer, .initialize .wrap > section, .initialize .showcase-wrap, .initialize .menu, .initialize .sites-quicknav {display:none;}
 .initialize .intro, .initialize .intro-home {display:block;}
 .initialize .showcase {background-color:transparent;}
 
 @media (min-width: 768px) {
-  .menu {display:none !important}
+  .menu, .sites-quicknav {display:none !important}
 }
 @media (max-width: 767px) {
   .wrap {left:0; transition:left .5s ease-out; background:#374347; z-index:25;}

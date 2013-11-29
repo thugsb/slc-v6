@@ -7,10 +7,10 @@
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+  <script>if (screen.width < 320) {mvp = document.getElementById('testViewport').setAttribute('content','width=320');}</script>
+  
+  
   <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
@@ -110,7 +110,7 @@
         </nav>
       </div>  
     </section>
-    <section class="visible-xs sites-quicknav">
+    <section class="sites-quicknav">
       <nav>
         <div class="row">
           <div class="col-xs-8">
