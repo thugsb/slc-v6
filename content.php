@@ -64,27 +64,27 @@
     <div class="intro-home"></div>
     <div class="intro"><div class="intro-text"><img src="img/sarah.png" alt="SARAH" class="intro-word"/><img src="img/dot.png" alt=" " class="intro-dot"/><img src="img/lawrence.png" alt="LAWRENCE" class="intro-word"/><img src="img/dot.png" alt=" " class="intro-dot"/><img src="img/college.png" alt="COLLEGE" class="intro-word"/></div></div>
   
-    <section class="showcase">
+    <section class="showcase showcase-short">
       <div class="showcase-wrap">
         <h2>Explore.</h2>
         <div class="overflow-scroll scroll-le"><img src="img/scroll-le.png" alt="Scroll Left"/></div>
         <div class="overflow-scroll scroll-ri"><img src="img/scroll-ri.png" alt="Scroll Right"/></div>
         <div class="showcase-content">
           <div class="tiles clearfix" data-cycle-hide-non-active="false">
-            <a data-cycle-timeout="8000" href="#" class="tile tile-big"><img src="home/1.jpg" class="img-responsive"/></a>
+            <a data-cycle-timeout="8000" href="#" class="tile"><img src="home/1.jpg" class="img-responsive"/></a>
             <div class="tile"><img src="home/2.jpg" class="img-responsive"/> <span class="caption"><i class="fa fa-play-circle-o"></i><span class="ellipsis">welcome</span></span></div>
             <a href="#" class="tile"><img src="home/3.jpg" class="img-responsive"/> <span class="caption"><i class="fa fa-picture-o"></i><span class="ellipsis">gallery</span></span></a>
             <div class="tile"><a href="#asd" data-toggle="modal"><img src="home/4.jpg" class="img-responsive"/> <span class="caption"><span class="ellipsis">our faculty</span></span></a></div>
-            <div class="tile tile-big"><img src="home/5.jpg" class="img-responsive"/> <span class="caption"><i class="fa fa-play-circle-o"></i><span class="ellipsis">film-making and new media</span></span></div>
+            <div class="tile"><img src="home/5.jpg" class="img-responsive"/> <span class="caption"><i class="fa fa-play-circle-o"></i><span class="ellipsis">film-making and new media</span></span></div>
             <a href="#" class="tile"><img src="home/6.jpg" class="img-responsive"/></a>
             <div class="tile"><img src="home/2.jpg" class="img-responsive"/></div>
             <div class="tile"><img src="home/3.jpg" class="img-responsive"/></div>
             <div class="tile"><img src="home/4.jpg" class="img-responsive"/></div>
             <div class="tile"><img src="home/5.jpg" class="img-responsive"/></div>
-            <div class="tile tile-big"><img src="home/1.jpg" class="img-responsive"/></div>
+            <div class="tile"><img src="home/1.jpg" class="img-responsive"/></div>
             <div class="tile"><img src="home/2.jpg" class="img-responsive"/></div>
             <div class="tile"><img src="home/3.jpg" class="img-responsive"/></div>
-            <div class="tile tile-big"><img src="home/4.jpg" class="img-responsive"/></div>
+            <div class="tile"><img src="home/4.jpg" class="img-responsive"/></div>
             <div class="tile"><img src="home/5.jpg" class="img-responsive"/></div>
           </div>
         </div>
@@ -114,7 +114,64 @@
     </section>
   
     <section id="content">
-    
+      <div class="container">
+        <h1>Sarah Lawrence College At A Glance</h1>
+        <h3>Character</h3>
+        <p>Founded in 1926, Sarah Lawrence is a coeducational liberal arts college with a distinctive academic philosophy emphasizing the individual student.</p>
+        <h3>Campus</h3>
+        <p>Sarah Lawrence College occupies 44 wooded acres in Yonkers, NY, near the village of Bronxville—just north of New York City. A 30-minute train ride from the Bronxville station takes students into Midtown Manhattan.</p>
+        <h3>Academic Program</h3>
+        <p>The academic structure combines small seminar classes with individual, biweekly student-faculty conferences—plus studios, labs, performances, and internships. Undergraduates have nearly 50 disciplines from which to select courses. Graduate Studies includes nine distinct programs in which Masters students combine academic study with work in the field. Students receive written evaluations; grades are recorded for transcript purposes only.</p>
+        <h3>Student Body</h3>
+        <p>Our students are men and women who share an enthusiasm for intellectual rigor, academic risk taking, creativity in all disciplines, and original and interdisciplinary work. We are particularly committed to having our faculty, administration, and student body reflect the social, racial, and economic diversity that characterizes our society. The College’s 1,300 undergraduate students and 340 graduate students come from nearly every state and from 35 countries. Eighty-five percent of undergraduate students live on campus.</p>
+        <h3>Faculty</h3>
+        <p>With a 10:1 student-faculty ratio, small seminars comprising more than 90 percent of all classes, and individual conferences a required part of every seminar, Sarah Lawrence faculty have twice the student contact as professors at other institutions.</p>
+        <h3>Facilities</h3>
+        <p>In addition to our round-tabled classrooms, Sarah Lawrence has outstanding theatres, art and performance studios, and music spaces; modern science labs; state-of-the-art graphic computing equipment; competitive sports facilities; a 60,000-square-foot visual arts center; and newly renovated dining facilities.</p>
+        <h3>Visiting Campus</h3>
+        <h3><img alt="Westlands" height="131" src="http://www.slc.edu/about/media/images/westlands.jpg" width="200"></h3>
+        <p>Prospective students and their families are welcome to visit Sarah Lawrence year-round. Open houses, campus tours, information sessions, personal interviews, class visits, and overnight stays with current students are all available. Find out more&nbsp;<a href="http://www.slc.edu/visit/index.html">information about visiting</a>.</p>
+        <h3>Contact</h3>
+        <p><em>For undergraduate students</em></p>
+        <p>Office of Admission<br>
+        Sarah Lawrence College<br>
+        1 Mead Way<br>
+        Bronxville, NY 10708<br>
+        (800) 888-2858 • (914) 395-2510<br>
+        <a href="mailto:slcadmit@sarahlawrence.edu">slcadmit@sarahlawrence.edu</a></p>
+        <p><em>For graduate students</em></p>
+        <p>Graduate Admissions<br>
+        Sarah Lawrence College<br>
+        1 Mead Way<br>
+        Bronxville, NY 10708<br>
+        (914) 395-2371<br>
+        <a href="mailto:grad@sarahlawrence.edu">grad@sarahlawrence.edu</a></p>
+        <hr>
+        <h3>College-Wide Statistics</h3>
+        <p><strong>Number of students</strong></p>
+        <p>Undergraduate: 1328<br>
+        Graduate: 342<br>
+        Total: 1670</p>
+        <p><strong>Undergraduate Student Body</strong></p>
+        <p>Female: 71%<br>
+        Male: 29%<br>
+        Students of Color: 25%<br>
+        International Students: 7%</p>
+        <p><strong>Graduate Student Body</strong></p>
+        <p>Female: 85%<br>
+        Male: 15%<br>
+        Students of Color: 19%<br>
+        15 countries represented<br>
+        62% between the ages of 22-29<br>
+        38% over age 30<br>
+        Of those over age 40, 50% are over 50</p>
+        <p>State representation:<br>
+        45 states plus Washington, DC, Puerto Rico, Virgin Islands</p>
+        <p>States sending most students:<br>
+        California and New York</p>
+        <p>Nations represented among our student body:<br>
+        Argentina, Australia, Brazil, Canada, China, Colombia, Dominican Republic, Egypt, Ethiopia, Finland, France, Haiti, Hong Kong, India, Indonesia, Italy, Japan, Korea, Lebanon, Macedonia, Malawi, Malaysia, Mexico, Mozambique, Myanmar, Nepal, Netherlands, Nicaragua, Norway, Pakistan, Peru, Philippines, Portugal, Russia, Saudi Arabia, Singapore, Sri Lanka, Sweden, Switzerland,Taiwan, Thailand, Trinidad and Tobago, Turkey, Ukraine, United Arab Emirates (UAE), United Kingdom</p>
+      </div>
     </section>
     
     <section class="sites-quicknav">
