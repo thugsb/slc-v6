@@ -113,7 +113,7 @@
       </div>  
     </section>
   
-    <section id="content">
+    <section id="content" class="hidden">
     
     </section>
     
