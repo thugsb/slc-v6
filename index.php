@@ -39,21 +39,23 @@
       <a href="/about">Life@SLC</a>
       <a href="/about">Giving</a>
     </nav>
-    <div id="iAm" class="collapse">
+    <div id="iAm" class="collapse scroll-parent">
       <div class="ready-to"><a href="/apply/">Ready to Apply</a> | <a href="/visit/">Ready to Visit</a></div>
       <em>Information for:</em>
-      <div class="hidden overflow-scroll scroll-up" data-target="#iAm nav" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
-      <div class="hidden overflow-scroll scroll-dn" data-target="#iAm nav" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
-      <nav>
-        <a href="#"><h4>Future Undergraduate Students</h4> <p>Admission and aid; course catalogue, areas of study, faculty, student life, career services, study abroad, class profile, the campus and facilities, NYC, athletics, and more...</p></a>
-        <a href="#"><h4>Future Graduate Students</h4> <p>Master’s programs; admission and aid; course catalogue, areas of study, faculty, student life, career services; class profile, the campus and facilities, NYC, and more...</p></a>
-        <a href="#"><h4>Future Guest Students</h4> <p>Sarah Lawrence College abroad programs; exchange programs; pre-college credit programs</p></a>
-        <a href="#"><h4>Current and Future SLC Parents</h4> <p>The portal for parents of current and future SLC undergraduate students as well as students in SLC’s high school, children’s, and ECC programs</p></a>
-        <a href="#"><h4>Returning Adult Students and Professionals</h4> <p>The Center for Continuing Education; the Writing Institute; certificate programs; annual conferences, and more....</p></a>
-        <a href="#"><h4>SLC Faculty, Students, and Staff</h4> <p>MySLC, webmail, GoGryphons, offices and services, Esther Raushenbush Library, Archives, and more....</p></a>
-        <a href="#"><h4>Donors and Friends of the College</h4> <p>Annual fund, planned giving, parent giving, Friends of the Library, Friends of Athletics, Center for the Urban River, and more...</p></a>
-        <a href="#"><h4>Neighbors and Surrounding Communities</h4> <p>InTouch newsletter; SLC news and events calendars; facilities;</p></a>
-        <a href="#"><h4>Media, Agencies, and Corporations</h4> <p>Information about and whom to contact for media inquiries, facilities use, and how to partner with Sarah Lawrence College</p></a>
+      <div class="hidden overflow-scroll scroll-up hidden" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
+      <div class="hidden overflow-scroll scroll-dn" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
+      <nav class="scroll-vert">
+        <div class="scroll-content">
+          <a href="#"><h4>Future Undergraduate Students</h4> <p>Admission and aid; course catalogue, areas of study, faculty, student life, career services, study abroad, class profile, the campus and facilities, NYC, athletics, and more...</p></a>
+          <a href="#"><h4>Future Graduate Students</h4> <p>Master’s programs; admission and aid; course catalogue, areas of study, faculty, student life, career services; class profile, the campus and facilities, NYC, and more...</p></a>
+          <a href="#"><h4>Future Guest Students</h4> <p>Sarah Lawrence College abroad programs; exchange programs; pre-college credit programs</p></a>
+          <a href="#"><h4>Current and Future SLC Parents</h4> <p>The portal for parents of current and future SLC undergraduate students as well as students in SLC’s high school, children’s, and ECC programs</p></a>
+          <a href="#"><h4>Returning Adult Students and Professionals</h4> <p>The Center for Continuing Education; the Writing Institute; certificate programs; annual conferences, and more....</p></a>
+          <a href="#"><h4>SLC Faculty, Students, and Staff</h4> <p>MySLC, webmail, GoGryphons, offices and services, Esther Raushenbush Library, Archives, and more....</p></a>
+          <a href="#"><h4>Donors and Friends of the College</h4> <p>Annual fund, planned giving, parent giving, Friends of the Library, Friends of Athletics, Center for the Urban River, and more...</p></a>
+          <a href="#"><h4>Neighbors and Surrounding Communities</h4> <p>InTouch newsletter; SLC news and events calendars; facilities;</p></a>
+          <a href="#"><h4>Media, Agencies, and Corporations</h4> <p>Information about and whom to contact for media inquiries, facilities use, and how to partner with Sarah Lawrence College</p></a>
+        </div>
       </nav>
     </div>
   </header>
@@ -65,12 +67,12 @@
     <div class="intro"><div class="intro-text"><img src="img/sarah.png" alt="SARAH" class="intro-word"/><img src="img/dot.png" alt=" " class="intro-dot"/><img src="img/lawrence.png" alt="LAWRENCE" class="intro-word"/><img src="img/dot.png" alt=" " class="intro-dot"/><img src="img/college.png" alt="COLLEGE" class="intro-word"/></div></div>
   
     <section class="showcase">
-      <div class="showcase-wrap">
+      <div class="showcase-wrap scroll-parent">
         <h2>Explore.</h2>
-        <div class="overflow-scroll scroll-le"><img src="img/scroll-le.png" alt="Scroll Left"/></div>
+        <div class="overflow-scroll scroll-le hidden"><img src="img/scroll-le.png" alt="Scroll Left"/></div>
         <div class="overflow-scroll scroll-ri"><img src="img/scroll-ri.png" alt="Scroll Right"/></div>
-        <div class="showcase-content">
-          <div class="tiles clearfix" data-cycle-hide-non-active="false">
+        <div class="showcase-content scroll-horz">
+          <div class="tiles clearfix scroll-content" data-cycle-hide-non-active="false">
             <a data-cycle-timeout="8000" href="#" class="tile tile-big"><img src="home/1.jpg" class="img-responsive"/></a>
             <div class="tile"><img src="home/2.jpg" class="img-responsive"/> <span class="caption"><i class="fa fa-play-circle-o"></i><span class="ellipsis">welcome</span></span></div>
             <a href="#" class="tile"><img src="home/3.jpg" class="img-responsive"/> <span class="caption"><i class="fa fa-picture-o"></i><span class="ellipsis">gallery</span></span></a>
@@ -142,12 +144,12 @@
     <section class="info">
       <div class="row">
         <div class="col-md-4 col-sm-6 slc-sites-wrap">
-          <section class="slc-sites">
+          <section class="slc-sites scroll-parent">
             <h4>SLC <strong>Sites.</strong></h4>
-            <div class="overflow-scroll scroll-up" data-target=".slc-sites .info-panel" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
-            <div class="overflow-scroll scroll-dn" data-target=".slc-sites .info-panel" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
-            <div class="info-panel">
-              <ul>
+            <div class="overflow-scroll scroll-up hidden" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
+            <div class="overflow-scroll scroll-dn" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
+            <div class="info-panel scroll-vert" data-parent=".slc-sites">
+              <ul class="scroll-content">
                 <li>
                   <a href="#">Undergraduate College</a>
                   <ul>
@@ -312,12 +314,12 @@
         </div>
       
         <div class="col-md-4 col-sm-6">
-          <section class="slc-news">
+          <section class="slc-news scroll-parent">
             <h4>SLC <strong>News and Events.</strong></h4>
-            <div class="overflow-scroll scroll-up" data-target=".slc-news .info-panel" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
+            <div class="overflow-scroll scroll-up hidden" data-target=".slc-news .info-panel" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
             <div class="overflow-scroll scroll-dn" data-target=".slc-news .info-panel" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
-            <div class="info-panel">
-              <ul>
+            <div class="info-panel scroll-vert">
+              <ul class="scroll-content">
                 <li><i class="fa fa-rss"></i> <a href="#news/item">J.J. Abrams '88 publishes novel, is featured in The New York Times Sunday Book Review</a></li>
                 <li><i class="fa fa-rss"></i> <a href="#news/item">Julianna Margulies '89 helps rebuild homes damaged by Hurricane Sandy</a></li>
                 <li><i class="fa fa-rss"></i> <a href="#news/item">Caroline Lieber MS '80, former director of Human Genetics graduate program, honored as Woman of the Year</a></li>
@@ -398,16 +400,18 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
-  <div class="menu menu-left">
+  <div class="menu menu-left scroll-parent">
     <div class="menu-nav"><h4 class="pull-right">Explore.</h4><a class="link-home" href="/"><i class="fa fa-home"></i> www.slc.edu</a></div>
-    <div class="overflow-scroll scroll-up" data-target=".menu-left-content" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
-    <div class="overflow-scroll scroll-dn" data-target=".menu-left-content" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
-    <div class="menu-left-content clearfix">
-      <a href="#"><img src="img/menu-icon-map.png" alt="XXX"/></a>
-      <a href="#"><img src="img/menu-icon-360.png" alt="XXX"/></a>
-      <a href="#"><img src="img/menu-icon-catalogues.png" alt="XXX"/></a>
-      <a href="#"><img src="img/menu-icon-phone.png" alt="XXX"/></a>
-      <a href="#"><img src="img/menu-icon-media.png" alt="XXX"/></a>
+    <div class="overflow-scroll scroll-up hidden" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
+    <div class="overflow-scroll scroll-dn" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
+    <div class="menu-left-content clearfix scroll-vert">
+      <div class="scroll-content">
+        <a href="#"><img src="img/menu-icon-map.png" alt="XXX"/></a>
+        <a href="#"><img src="img/menu-icon-360.png" alt="XXX"/></a>
+        <a href="#"><img src="img/menu-icon-catalogues.png" alt="XXX"/></a>
+        <a href="#"><img src="img/menu-icon-phone.png" alt="XXX"/></a>
+        <a href="#"><img src="img/menu-icon-media.png" alt="XXX"/></a>
+      </div>  
     </div>
   </div>
   <div class="menu menu-right">
@@ -424,6 +428,7 @@
   <script src="core/v6/js/breakpoints.js"></script>
   <script src="core/v6/js/jquerypp.swipe.js"></script>
   <script src="core/v6/js/jquery.color.js"></script>
+  <script src="core/v6/js/jquery.scrollstop.js"></script>
   <script src="core/v6/js/jquery.highlight.js"></script>
   <script src="core/v6/js/jquery.cycle2.js"></script>
   <script src="core/v6/js/jquery.cycle2.shuffle.js"></script>
