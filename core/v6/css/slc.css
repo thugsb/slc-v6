@@ -1,10 +1,10 @@
 html{height:100%;}
 body {position:relative; min-height:100%; min-width:320px; max-width:1280px; margin:0 auto; font-family: "futura-pt-1","futura-pt-2",sans-serif;}
 .wrap {position:absolute; top:0; bottom:0; width:100%; padding-top:40px; background:#363636;}
-
+h1,h2,h3,h4,h5,h6 {font-family: "futura-pt-1","futura-pt-2",sans-serif;}
 
 a {color:#4d4d4d;}
-a:visited {color:#444;}
+a:visited {color:#444; outline:0;}
 a:hover {color:#555;}
 
 span.highlight {background-color:#ffa;}
@@ -81,7 +81,7 @@ header #iAm nav a p {margin:0; font-size:0.8em; font-style:italic; color:#b4b4b4
 @media(max-width:991px) {
   .navigate .bar .explore-links .explore-link-text {display:none;}
 }
-.sites-quicknav {position:relative; background:url('../../../home/gardens.jpg') no-repeat center center fixed; background-size:100% auto;}
+.sites-quicknav {position:relative; background:url('../../../home/gardens.jpg') no-repeat center center; background-size:100% auto;}
 .sites-quicknav nav {padding:25px 15%; box-shadow:inset 0 0 40px 20px rgba(0,0,0,.5); font-size:1.5em; background:rgba(0,0,0,0.5);}
 .sites-quicknav a {display:block; padding:.2em 0; color:#fff;}
 .menu-helpers {padding:20px; text-align:center; background:#cececf;}
@@ -193,6 +193,8 @@ footer a, footer a:hover {color:#fff;}
   header .persistent-nav .visible-xs {padding:0 20px;}
   header #iAm {margin-top:40px;}
   
+  .showcase .tiles .tile.tile-big {width:200px; height:200px;}
+  
   .menu-nav {position:absolute; top:0; left:0; width:100%; height:40px; border-bottom:2px solid #464646; color:#fff; background:#252525;}
   .menu-nav .link-home {padding:0 20px; font-size:1.2em; line-height:40px; color:#757575;}
   .menu-nav .fa {font-size:1.4em; color:#fff;}
@@ -227,7 +229,7 @@ footer a, footer a:hover {color:#fff;}
   .info {display:none !important;}
   
   footer {border-top:1px solid #aaa; padding:10px 30px; background:#374347;}
-  footer .footer-name {text-align:center;}
+  footer .footer-name {margin:5px 0 10px; text-align:center;}
   footer .footer-name img {margin:0 auto;}
   footer address {float:none; text-align:center; letter-spacing:1.3px;}
 }

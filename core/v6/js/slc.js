@@ -3,6 +3,12 @@ jQuery(function($) {
   /*
   Make the portrait tablet play nice with the info-panels:
   https://www.dropbox.com/s/0h2s1fzhx5v40p7/2013-11-22%2018.14.20.png
+  
+  IAm needs more vertical space on desktop
+  
+  Nav links shouldn't have hover:underline, but most (content) links should
+  
+  isotope on mobile is 75%
   */
   
   window.$showcase = $('.showcase .tiles');
@@ -36,7 +42,8 @@ jQuery(function($) {
     turnMobileOff();
     
     // Adjust panel heights
-    $('.info-panel').height($(window).height() - 559).trigger('scrollstop');
+    $('.info-panel').height($(window).height() - 559)
+    $('.scroll-vert, .scroll-horz').trigger('scrollstop');
     
     $('.showcase .scroll-le').on('click', function() {
       $('.showcase-content').animate({scrollLeft: '-=640px'})
@@ -54,6 +61,7 @@ jQuery(function($) {
     // Adjust panel heights
     $('.slc-news .info-panel, .slc-spotlight .info-panel').height('auto');
     $('.slc-sites .info-panel').height(10 + $('.slc-news .info-panel').height() + $('.slc-spotlight').height());
+    $('.scroll-vert, .scroll-horz').trigger('scrollstop');
     setTimeout(function() {$('.slc-news .overflow-scroll').addClass('hidden')}, 300);
     
     $('.showcase .scroll-le').on('click', function() {
@@ -237,7 +245,11 @@ jQuery(function($) {
   $('.scroll-vert').on('scrollstop', function() {
     $parent = $(this).closest('.scroll-parent');
     bottom = $(this).children('.scroll-content').outerHeight() - $(this).height();
-    $parent.find('.scroll-up, .scroll-dn').removeClass('hidden');
+    if (bottom > 0) {
+      $parent.find('.scroll-up, .scroll-dn').removeClass('hidden');
+    } else {
+      $parent.find('.scroll-up, .scroll-dn').addClass('hidden');
+    }
     if ($(this).scrollTop() <= 0) {
       $parent.find('.scroll-up').addClass('hidden')
     } else if ($(this).scrollTop() >= bottom) {
