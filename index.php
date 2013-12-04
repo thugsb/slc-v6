@@ -122,12 +122,12 @@
     <section class="sites-quicknav">
       <nav>
         <div class="row">
-          <div class="col-xs-8">
+          <div class="col-xs-4">
             <a href="/about">At a Glance</a>
             <a href="/about">Admission</a>
             <a href="/about">Academics</a>
           </div>
-          <div class="col-xs-4">
+          <div class="col-xs-4 col-xs-offset-4">
             <a href="/about">Faculty</a>
             <a href="/about">Life@SLC</a>
             <a href="/about">Giving</a>

@@ -4,20 +4,9 @@ jQuery(function($) {
   Make the portrait tablet play nice with the info-panels:
   https://www.dropbox.com/s/0h2s1fzhx5v40p7/2013-11-22%2018.14.20.png
   
-  IAm needs more vertical space on desktop
-  
-  Nav links shouldn't have hover:underline, but most (content) links should
-  
-  isotope on mobile is 75%
   */
   
   window.$showcase = $('.showcase .tiles');
-  $showcase.isotope({
-    layoutMode: 'masonryHorizontal',
-    masonryHorizontal : {
-      rowHeight : 160
-    }
-  }).width($showcase.outerWidth()); // (isotope is built assuming box-sizing:content-box)
 
   function turnMobileOff() {
     $('.logo').off('click');
@@ -41,6 +30,15 @@ jQuery(function($) {
     
     turnMobileOff();
     
+    if ($showcase.is('.isotope') ) {$showcase.isotope('destroy')}
+    $showcase.isotope({
+      layoutMode: 'masonryHorizontal',
+      masonryHorizontal : {
+        rowHeight : 160
+      }
+    }).width($showcase.outerWidth()); // (isotope is built assuming box-sizing:content-box)
+    
+    
     // Adjust panel heights
     $('.info-panel').height($(window).height() - 559)
     $('.scroll-vert, .scroll-horz').trigger('scrollstop');
@@ -58,6 +56,15 @@ jQuery(function($) {
     
     turnMobileOff();
     
+    if ($showcase.is('.isotope') ) {$showcase.isotope('destroy')}
+    $showcase.isotope({
+      layoutMode: 'masonryHorizontal',
+      masonryHorizontal : {
+        rowHeight : 160
+      }
+    }).width($showcase.outerWidth()); // (isotope is built assuming box-sizing:content-box)
+    
+    
     // Adjust panel heights
     $('.slc-news .info-panel, .slc-spotlight .info-panel').height('auto');
     $('.slc-sites .info-panel').height(10 + $('.slc-news .info-panel').height() + $('.slc-spotlight').height());
@@ -74,6 +81,15 @@ jQuery(function($) {
   
   $(window).bind('enterBreakpoint1',function() {
     console.log('enter mobile');
+    
+    if ($showcase.is('.isotope') ) {$showcase.isotope('destroy')}
+    $showcase.isotope({
+      layoutMode: 'masonryHorizontal',
+      masonryHorizontal : {
+        rowHeight : 120
+      }
+    }).width($showcase.outerWidth()); // (isotope is built assuming box-sizing:content-box)
+    
     
     $('.showcase .scroll-le').off('click');
     $('.showcase .scroll-ri').off('click');
@@ -181,14 +197,19 @@ jQuery(function($) {
   // IAm menu height
   $('.i-am, .info-for').click(function(e) {
     e.preventDefault();
-    if ($(window).height() < 780) {
-      $('header #iAm nav').css({padding:'40px 20px', height: ($(window).height() - 140)});
-      $('#iAm .overflow-scroll').removeClass('hidden');
+    if ($('#iAm').is('.in') ) {
+      $('#iAm').collapse('hide');
     } else {
-      $('header #iAm nav').css({padding:'0 20px 20px'}).css({height: 'auto'});
-      $('#iAm .overflow-scroll').addClass('hidden');
+      if ($(window).height() < 900) {
+        $('header #iAm nav').css({height: ($(window).height() - 140)});
+        $('#iAm .overflow-scroll').removeClass('hidden');
+        $('#iAm .scroll-vert').trigger('scrollstop');
+      } else {
+        $('header #iAm nav').css({height: 'auto'});
+        $('#iAm .overflow-scroll').addClass('hidden');
+      }
+      $('#iAm').collapse('show');
     }
-    $('#iAm').collapse('toggle');
   });
   
   
