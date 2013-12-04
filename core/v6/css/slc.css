@@ -3,6 +3,9 @@ body {position:relative; min-height:100%; min-width:320px; max-width:1280px; mar
 .wrap {position:absolute; top:0; bottom:0; width:100%; padding-top:40px; background:#363636;}
 h1,h2,h3,h4,h5,h6 {font-family: "futura-pt-1","futura-pt-2",sans-serif;}
 
+.skip-to-content {position:absolute; top:-50em; left:10px; padding:5px 10px; background:#000; z-index:1;}
+.skip-to-content:focus {top:50px; color:#fff;}
+
 a {color:#4d4d4d;}
 a:visited {color:#444; outline:0;}
 a:hover {color:#555;}
@@ -20,7 +23,7 @@ header .persistent-nav .xs-menu .fa {margin-left:10px;}
 header > nav {border-bottom:2px solid #464646; background:#363636;}
 header > nav a {padding:0 1.5%; font-weight:100; letter-spacing:.5px;}
 
-header #iAm {position:relative; width:480px; max-width:100%; font-size:1.2em; box-shadow:20px 20px 20px 10px rgba(0,0,0,.5); background:#454545;}
+header #iAm {position:absolute; top:40px; left:0; width:480px; max-width:100%; font-size:1.2em; box-shadow:20px 20px 20px 10px rgba(0,0,0,.5); background:#454545;}
 header #iAm .scroll-up {top:78px;}
 header #iAm .ready-to {text-align:center; color:#fff; background:#252525;}
 header #iAm .ready-to a {display:inline-block; margin:5px 10px; padding:5px 20px; color:#fff;}
@@ -31,7 +34,7 @@ header #iAm nav a {display:block; height:auto; border-top:1px solid #656565; bor
 header #iAm nav a:first-child {border-top:0;}
 header #iAm nav a:last-child {border-bottom:0;}
 header #iAm nav a:hover {background:#252525;}
-header #iAm nav a h4 {margin:0 0 5px; font-weight:normal;}
+header #iAm nav a strong {display:block; margin:0 0 5px; font-size:18px; font-weight:normal;}
 header #iAm nav a p {margin:0; font-size:0.8em; font-style:italic; color:#b4b4b4;}
 @media (min-height:800px) {
   header #iAm .scroll-up {top:118px;}
@@ -58,7 +61,7 @@ header #iAm nav a p {margin:0; font-size:0.8em; font-style:italic; color:#b4b4b4
 /* SHOWCASE */
 .showcase {position:relative; width:100%; height:400px; background-color:#0077b0;}
 .showcase .showcase-wrap {width:100%; height:400px;}
-.showcase h2 {margin-top:0; padding:10px 0 0 60px; color:#fff;}
+.showcase h1 {margin-top:0; padding:10px 0 0 60px; font-size:30px; color:#fff;}
 
 .showcase-content {position:absolute; top:50px; height:370px; width:100%; overflow:auto;overflow-x:auto;overflow-y:hidden; padding:0 0 0 50px;}
 .showcase .tiles {width:4000px; height:350px; padding-right:50px;}
@@ -153,6 +156,8 @@ footer a, footer a:hover {color:#fff;}
 /* CONTENT */
 #content {background:#eeeaf3; border-bottom:.5em solid #01364f; padding:0 0 2em; font-size:1.5em;}
 
+
+
 /* Homepage Intro */
 .intro-home {display:none; position:fixed; top:0; left:0; bottom:0; right:0; background:url('../../../home/westlands.jpg') no-repeat center center fixed; background-size:cover;}
 .intro {display:none; position:absolute; top:60px; left:30px; right:30px; height:360px; border:8px solid #ebebeb; z-index:80;}
@@ -170,6 +175,10 @@ footer a, footer a:hover {color:#fff;}
 @media (min-width: 1440px) {
   .intro .intro-word {height:35px;}
 }
+@media (max-width: 767px) {
+  .intro {height:280px;}
+  .intro .intro-text {top:15%;}
+}
 @media (max-height: 400px) {
   .intro {height:240px;}
 }
@@ -180,9 +189,17 @@ footer a, footer a:hover {color:#fff;}
 .initialize .intro, .initialize .intro-home {display:block;}
 .initialize .showcase {background-color:transparent;}
 
+
+
+
 @media (min-width: 768px) {
   .menu, .sites-quicknav {display:none !important}
 }
+
+@media (max-width: 991px) {
+  .slc-news .info-panel, .slc-spotlight .info-panel {height:auto !important;}
+}
+
 @media (max-width: 767px) {
   .wrap {left:0; transition:left .5s ease-out; background:#374347; z-index:25; -webkit-transition:left .5s ease-out; -moz-transition:left .5s ease-out;}
   .menu {display:block; position:fixed; top:0; bottom:0; overflow:hidden; padding-top:40px; background:#fff;}
@@ -209,7 +226,7 @@ footer a, footer a:hover {color:#fff;}
   .showcase .tiles .tile.tile-big {width:230px; height:230px;}
   
   .menu-nav {position:absolute; top:0; left:0; width:100%; height:40px; border-bottom:2px solid #464646; color:#fff; background:#252525;}
-  .menu-nav .link-home {padding:0 20px; font-size:1.2em; line-height:40px; color:#757575;}
+  .menu-nav .link-home {padding:0 20px; font-size:1.2em; line-height:40px; color:#999;}
   .menu-nav .fa {font-size:1.4em; color:#fff;}
   .menu-nav h4 {margin:0 50px 0 20px; line-height:40px;}
   .menu-nav h4 span {font-weight:normal;}

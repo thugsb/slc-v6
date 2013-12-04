@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Sarah Lawrence College</title>
   <meta name="description" content="">
   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
   <script>if (screen.width < 320) {mvp = document.getElementById('testViewport').setAttribute('content','width=320');}</script>
@@ -24,20 +24,21 @@
   <!--[if lt IE 7]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+  <a class="skip-to-content" href="#content">Skip to Content</a>
 
   <header class="nav">
     <div class="persistent-nav pull-left">
-      <a href="#" class="xs-menu visible-xs pull-right">Sites <i class="fa fa-align-justify"></i></a>
+      <a href="/sites" class="xs-menu visible-xs pull-right">Sites <i class="fa fa-align-justify"></i></a>
       <a href="/" class="logo">SLC.</a>
-      <a href="#iAm" class="i-am">I am... <i class="fa fa-chevron-down"></i></a>
+      <a href="/i-am" class="i-am">I am... <i class="fa fa-chevron-down"></i></a>
     </div>
     <nav>
       <a href="/about">At a Glance</a>
-      <a href="/about">Admission</a>
-      <a href="/about">Academics</a>
-      <a href="/about">Faculty</a>
-      <a href="/about">Life@SLC</a>
-      <a href="/about">Giving</a>
+      <a href="/admission">Admission</a>
+      <a href="/academics">Academics</a>
+      <a href="/faculty">Faculty</a>
+      <a href="/studentlife">Life@SLC</a>
+      <a href="/giving">Giving</a>
     </nav>
     <div id="iAm" class="collapse scroll-parent">
       <div class="ready-to"><a href="/apply/">Ready to Apply</a> | <a href="/visit/">Ready to Visit</a></div>
@@ -46,15 +47,15 @@
       <div class="hidden overflow-scroll scroll-dn" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
       <nav class="scroll-vert">
         <div class="scroll-content">
-          <a href="#"><h4>Future Undergraduate Students</h4> <p>Admission and aid; course catalogue, areas of study, faculty, student life, career services, study abroad, class profile, the campus and facilities, NYC, athletics, and more...</p></a>
-          <a href="#"><h4>Future Graduate Students</h4> <p>Master’s programs; admission and aid; course catalogue, areas of study, faculty, student life, career services; class profile, the campus and facilities, NYC, and more...</p></a>
-          <a href="#"><h4>Future Guest Students</h4> <p>Sarah Lawrence College abroad programs; exchange programs; pre-college credit programs</p></a>
-          <a href="#"><h4>Current and Future SLC Parents</h4> <p>The portal for parents of current and future SLC undergraduate students as well as students in SLC’s high school, children’s, and ECC programs</p></a>
-          <a href="#"><h4>Returning Adult Students and Professionals</h4> <p>The Center for Continuing Education; the Writing Institute; certificate programs; annual conferences, and more....</p></a>
-          <a href="#"><h4>SLC Faculty, Students, and Staff</h4> <p>MySLC, webmail, GoGryphons, offices and services, Esther Raushenbush Library, Archives, and more....</p></a>
-          <a href="#"><h4>Donors and Friends of the College</h4> <p>Annual fund, planned giving, parent giving, Friends of the Library, Friends of Athletics, Center for the Urban River, and more...</p></a>
-          <a href="#"><h4>Neighbors and Surrounding Communities</h4> <p>InTouch newsletter; SLC news and events calendars; facilities;</p></a>
-          <a href="#"><h4>Media, Agencies, and Corporations</h4> <p>Information about and whom to contact for media inquiries, facilities use, and how to partner with Sarah Lawrence College</p></a>
+          <a href="#"><strong>Future Undergraduate Students</strong> <p>Admission and aid; course catalogue, areas of study, faculty, student life, career services, study abroad, class profile, the campus and facilities, NYC, athletics, and more...</p></a>
+          <a href="#"><strong>Future Graduate Students</strong> <p>Master’s programs; admission and aid; course catalogue, areas of study, faculty, student life, career services; class profile, the campus and facilities, NYC, and more...</p></a>
+          <a href="#"><strong>Future Guest Students</strong> <p>Sarah Lawrence College abroad programs; exchange programs; pre-college credit programs</p></a>
+          <a href="#"><strong>Current and Future SLC Parents</strong> <p>The portal for parents of current and future SLC undergraduate students as well as students in SLC’s high school, children’s, and ECC programs</p></a>
+          <a href="#"><strong>Returning Adult Students and Professionals</strong> <p>The Center for Continuing Education; the Writing Institute; certificate programs; annual conferences, and more....</p></a>
+          <a href="#"><strong>SLC Faculty, Students, and Staff</strong> <p>MySLC, webmail, GoGryphons, offices and services, Esther Raushenbush Library, Archives, and more....</p></a>
+          <a href="#"><strong>Donors and Friends of the College</strong> <p>Annual fund, planned giving, parent giving, Friends of the Library, Friends of Athletics, Center for the Urban River, and more...</p></a>
+          <a href="#"><strong>Neighbors and Surrounding Communities</strong> <p>InTouch newsletter; SLC news and events calendars; facilities;</p></a>
+          <a href="#"><strong>Media, Agencies, and Corporations</strong> <p>Information about and whom to contact for media inquiries, facilities use, and how to partner with Sarah Lawrence College</p></a>
         </div>
       </nav>
     </div>
@@ -64,30 +65,30 @@
   <div class="wrap">
   
     <div class="intro-home"></div>
-    <div class="intro"><div class="intro-text"><img src="img/sarah.png" alt="SARAH" class="intro-word"/><img src="img/dot.png" alt=" " class="intro-dot"/><img src="img/lawrence.png" alt="LAWRENCE" class="intro-word"/><img src="img/dot.png" alt=" " class="intro-dot"/><img src="img/college.png" alt="COLLEGE" class="intro-word"/></div></div>
+    <div class="intro"><div class="intro-text"><img src="img/sarah.png" alt="SARAH" class="intro-word"/><img src="img/dot.png" alt="·" class="intro-dot"/><img src="img/lawrence.png" alt="LAWRENCE" class="intro-word"/><img src="img/dot.png" alt="·" class="intro-dot"/><img src="img/college.png" alt="COLLEGE" class="intro-word"/></div></div>
   
     <section class="showcase">
       <div class="showcase-wrap scroll-parent">
-        <h2>Explore.</h2>
+        <h1>Explore.</h1>
         <div class="overflow-scroll scroll-le hidden"><img src="img/scroll-le.png" alt="Scroll Left"/></div>
         <div class="overflow-scroll scroll-ri"><img src="img/scroll-ri.png" alt="Scroll Right"/></div>
         <div class="showcase-content scroll-horz">
           <div class="tiles clearfix scroll-content" data-cycle-hide-non-active="false">
-            <a data-cycle-timeout="8000" href="#" class="tile tile-big"><img src="home/1.jpg" class="img-responsive"/></a>
-            <div class="tile"><img src="home/2.jpg" class="img-responsive"/> <span class="caption"><i class="fa fa-play-circle-o"></i><span class="ellipsis">welcome</span></span></div>
-            <a href="#" class="tile"><img src="home/3.jpg" class="img-responsive"/> <span class="caption"><i class="fa fa-picture-o"></i><span class="ellipsis">gallery</span></span></a>
-            <div class="tile"><a href="#asd" data-toggle="modal"><img src="home/4.jpg" class="img-responsive"/> <span class="caption"><span class="ellipsis">our faculty</span></span></a></div>
-            <div class="tile tile-big"><img src="home/5.jpg" class="img-responsive"/> <span class="caption"><i class="fa fa-play-circle-o"></i><span class="ellipsis">film-making and new media</span></span></div>
-            <a href="#" class="tile"><img src="home/6.jpg" class="img-responsive"/></a>
-            <div class="tile"><img src="home/2.jpg" class="img-responsive"/></div>
-            <div class="tile"><img src="home/3.jpg" class="img-responsive"/></div>
-            <div class="tile"><img src="home/4.jpg" class="img-responsive"/></div>
-            <div class="tile"><img src="home/5.jpg" class="img-responsive"/></div>
-            <div class="tile tile-big"><img src="home/1.jpg" class="img-responsive"/></div>
-            <div class="tile"><img src="home/2.jpg" class="img-responsive"/></div>
-            <div class="tile"><img src="home/3.jpg" class="img-responsive"/></div>
-            <div class="tile tile-big"><img src="home/4.jpg" class="img-responsive"/></div>
-            <div class="tile"><img src="home/5.jpg" class="img-responsive"/></div>
+            <a data-cycle-timeout="8000" href="#" class="tile tile-big"><img src="home/1.jpg" class="img-responsive" alt="b"/></a>
+            <div class="tile"><img src="home/2.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-play-circle-o"></i><span class="ellipsis">welcome</span></span></div>
+            <a href="#" class="tile"><img src="home/3.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-picture-o"></i><span class="ellipsis">gallery</span></span></a>
+            <div class="tile"><a href="#asd" data-toggle="modal"><img src="home/4.jpg" class="img-responsive" alt="b"/> <span class="caption"><span class="ellipsis">our faculty</span></span></a></div>
+            <div class="tile tile-big"><img src="home/5.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-play-circle-o"></i><span class="ellipsis">film-making and new media</span></span></div>
+            <a href="#" class="tile"><img src="home/6.jpg" class="img-responsive" alt="b"/></a>
+            <div class="tile"><img src="home/2.jpg" class="img-responsive" alt="b"/></div>
+            <div class="tile"><img src="home/3.jpg" class="img-responsive" alt="b"/></div>
+            <div class="tile"><img src="home/4.jpg" class="img-responsive" alt="b"/></div>
+            <div class="tile"><img src="home/5.jpg" class="img-responsive" alt="b"/></div>
+            <div class="tile tile-big"><img src="home/1.jpg" class="img-responsive" alt="b"/></div>
+            <div class="tile"><img src="home/2.jpg" class="img-responsive" alt="b"/></div>
+            <div class="tile"><img src="home/3.jpg" class="img-responsive" alt="b"/></div>
+            <div class="tile tile-big"><img src="home/4.jpg" class="img-responsive" alt="b"/></div>
+            <div class="tile"><img src="home/5.jpg" class="img-responsive" alt="b"/></div>
           </div>
         </div>
       </div>
@@ -110,7 +111,7 @@
         </nav>
         <nav class="explore-links col-md-4 col-sm-3 hidden-xs clearfix">
           <a href="/explore/map/"><i class="fa fa-map-marker"></i> <span class="explore-link-text">Campus Map</span></a>
-          <a href="/explore/360/"><img src="img/360-icon.png" alt=" "/> <span class="explore-link-text">Virtual Tour</span></a>
+          <a href="/explore/360/"><img src="img/360-icon.png" alt="View the 3D Virtual Tour"/> <span class="explore-link-text">Virtual Tour</span></a>
         </nav>
       </div>  
     </section>
@@ -122,12 +123,12 @@
     <section class="sites-quicknav">
       <nav>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-xs-8">
             <a href="/about">At a Glance</a>
             <a href="/about">Admission</a>
             <a href="/about">Academics</a>
           </div>
-          <div class="col-xs-4 col-xs-offset-4">
+          <div class="col-xs-4">
             <a href="/about">Faculty</a>
             <a href="/about">Life@SLC</a>
             <a href="/about">Giving</a>
@@ -135,9 +136,9 @@
         </div>
       </nav>
       <div class="menu-helpers">
-        <a href="#explore" class="explore">Explore SLC</a>
-        <a href="#i-am" class="info-for">Info For...</a>
-        <a href="#sites" class="sites">Sites + Search</a>
+        <a href="/explore" class="explore">Explore SLC</a>
+        <a href="/i-am" class="info-for">Info For...</a>
+        <a href="/sites" class="sites">Sites + Search</a>
       </div>
     </section>
   
@@ -153,11 +154,11 @@
                 <li>
                   <a href="#">Undergraduate College</a>
                   <ul>
-                    <li><a href="#">Admission</a></li>
-                    <li><a href="#">Academics</a></li>
-                    <li><a href="#">Study Abroad Programs</a></li>
-                    <li><a href="#">Student Life</a></li>
-                    <li><a href="#">Athletics</a></li>
+                    <li><a href="/admission">Admission</a></li>
+                    <li><a href="/academics">Academics</a></li>
+                    <li><a href="/international">Study Abroad Programs</a></li>
+                    <li><a href="/studentlife">Student Life</a></li>
+                    <li><a href="/athletics">Athletics</a></li>
                   </ul>
                 </li>
                 <li>
@@ -305,69 +306,70 @@
             </div>  
             <form class="info-search form-inline clearfix">
               <div class="input-group">
-                <input type="text" class="form-control" id="q" placeholder="filter these categories or search"/>
+                <input type="text" class="form-control" id="q" placeholder="filter these categories or search" title="Type to filter the site links or press enter to search the entire site."/>
                 <a class="input-group-addon"><i class="fa fa-filter"></i></a>
               </div>
               <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></buttom>
             </form>
           </section>
         </div>
+        <div class="col-sm-6 col-md-8">
+          <div class="col-md-6">
+            <section class="slc-news scroll-parent">
+              <h4>SLC <strong>News and Events.</strong></h4>
+              <div class="overflow-scroll scroll-up hidden" data-target=".slc-news .info-panel" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
+              <div class="overflow-scroll scroll-dn" data-target=".slc-news .info-panel" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
+              <div class="info-panel scroll-vert">
+                <ul class="scroll-content">
+                  <li><i class="fa fa-rss"></i> <a href="/news/item1">J.J. Abrams '88 publishes novel, is featured in The New York Times Sunday Book Review</a></li>
+                  <li><i class="fa fa-rss"></i> <a href="/news/item2">Julianna Margulies '89 helps rebuild homes damaged by Hurricane Sandy</a></li>
+                  <li><i class="fa fa-rss"></i> <a href="/news/item3">Caroline Lieber MS '80, former director of Human Genetics graduate program, honored as Woman of the Year</a></li>
+                  <li><i class="fa fa-rss"></i> <a href="/news/item4">Lama Fakih '04 of Human Rights Watch featured in <em>New York Times</em> article on Syria</a></li>
+                  <li><i class="fa fa-calendar"></i> <a href="/events/item1">Writer's Block Tutoring<br/>Tue Oct 29, 2013</a></li>
+                  <li><i class="fa fa-calendar"></i> <a href="/events/item2">Manhattan String Quartet <br/>Tue Oct 29, 2013</a></li>
+                  <li><i class="fa fa-calendar"></i> <a href="/events/item3">Men's and Women's Crew Fall Metropolitan Championship Regatta <br/>Sat Nov 2, 2013</a></li>
+                  <li><i class="fa fa-calendar"></i> <a href="/events/item4">Men's and Women's Swimming SLC Sprint Carnival <br/>Sat Nov 2, 2013</a></li>
+                </ul>
+              </div>
+            </section>
+          </div>
       
-        <div class="col-md-4 col-sm-6">
-          <section class="slc-news scroll-parent">
-            <h4>SLC <strong>News and Events.</strong></h4>
-            <div class="overflow-scroll scroll-up hidden" data-target=".slc-news .info-panel" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
-            <div class="overflow-scroll scroll-dn" data-target=".slc-news .info-panel" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
-            <div class="info-panel scroll-vert">
-              <ul class="scroll-content">
-                <li><i class="fa fa-rss"></i> <a href="#news/item">J.J. Abrams '88 publishes novel, is featured in The New York Times Sunday Book Review</a></li>
-                <li><i class="fa fa-rss"></i> <a href="#news/item">Julianna Margulies '89 helps rebuild homes damaged by Hurricane Sandy</a></li>
-                <li><i class="fa fa-rss"></i> <a href="#news/item">Caroline Lieber MS '80, former director of Human Genetics graduate program, honored as Woman of the Year</a></li>
-                <li><i class="fa fa-rss"></i> <a href="#news/item">Lama Fakih '04 of Human Rights Watch featured in <em>New York Times</em> article on Syria</a></li>
-                <li><i class="fa fa-calendar"></i> <a href="#events/item">Writer's Block Tutoring<br/>Tue Oct 29, 2013</a></li>
-                <li><i class="fa fa-calendar"></i> <a href="#events/item">Manhattan String Quartet <br/>Tue Oct 29, 2013</a></li>
-                <li><i class="fa fa-calendar"></i> <a href="#events/item">Men's and Women's Crew Fall Metropolitan Championship Regatta <br/>Sat Nov 2, 2013</a></li>
-                <li><i class="fa fa-calendar"></i> <a href="#events/item">Men's and Women's Swimming SLC Sprint Carnival <br/>Sat Nov 2, 2013</a></li>
-              </ul>
-            </div>
-          </section>
-        </div>
-      
-        <div class="col-md-4 col-sm-6">
-          <section class="slc-spotlight">
-            <h4>SLC <strong>Spotlight.</strong></h4>
-            <div class="info-panel">
-              <div class="cycle-slideshow" data-cycle-slides="> .item" data-cycle-prev=".slc-spotlight .cycle-prev" data-cycle-next=".slc-spotlight .cycle-next">
-                <div class="cycle-pager"></div>
-                <div class="cycle-control cycle-prev"></div>
-                <div class="cycle-control cycle-next"></div>
-                <div class="item">
-                  <div class="spotlight-top"><img src="img/spotlight/urban.jpg"/></div>
-                  <a class="spotlight-bottom">
-                    <img src="img/spotlight/mag.jpg" class="pull-right"/>
-                    <h5>Starting from Scratch</h5>
-                    <p>Read the current issue of Sarah Lawrence Magazine</p>
-                  </a>
-                </div>
-                <div class="item">
-                  <a class="spotlight-top">
-                    <img src="img/spotlight/mag.jpg" class="pull-right"/>
-                    <h5>Starting from Scratch</h5>
-                    <p>Read the current issue of Sarah Lawrence Magazine</p>
-                  </a>
-                  <div class="spotlight-bottom"><img src="img/spotlight/urban.jpg"/></div>
-                </div>
-                <div class="item">
-                  <div class="spotlight-top"><img src="home/4.jpg"/></div>
-                  <div class="spotlight-bottom"><h5>SLC has #1 faculty</h5></div>
-                </div>
-                <div class="item">
-                  <div class="spotlight-top"><h5>Our film students win awards!</h5></div>
-                  <div class="spotlight-bottom"><img src="home/5.jpg"/></div>
+          <div class="col-md-6">
+            <section class="slc-spotlight">
+              <h4>SLC <strong>Spotlight.</strong></h4>
+              <div class="info-panel">
+                <div class="cycle-slideshow" data-cycle-slides="> .item" data-cycle-prev=".slc-spotlight .cycle-prev" data-cycle-next=".slc-spotlight .cycle-next">
+                  <div class="cycle-pager"></div>
+                  <div class="cycle-control cycle-prev"></div>
+                  <div class="cycle-control cycle-next"></div>
+                  <div class="item">
+                    <div class="spotlight-top"><img src="img/spotlight/urban.jpg" alt="a"/></div>
+                    <a class="spotlight-bottom">
+                      <img src="img/spotlight/mag.jpg" class="pull-right" alt="a"/>
+                      <h5>Starting from Scratch</h5>
+                      <p>Read the current issue of Sarah Lawrence Magazine</p>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a class="spotlight-top">
+                      <img src="img/spotlight/mag.jpg" class="pull-right" alt="a"/>
+                      <h5>Starting from Scratch</h5>
+                      <p>Read the current issue of Sarah Lawrence Magazine</p>
+                    </a>
+                    <div class="spotlight-bottom"><img src="img/spotlight/urban.jpg" alt="a"/></div>
+                  </div>
+                  <div class="item">
+                    <div class="spotlight-top"><img src="home/4.jpg" alt="a"/></div>
+                    <div class="spotlight-bottom"><h5>SLC has #1 faculty</h5></div>
+                  </div>
+                  <div class="item">
+                    <div class="spotlight-top"><h5>Our film students win awards!</h5></div>
+                    <div class="spotlight-bottom"><img src="home/5.jpg" alt="a"/></div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </div>
     
