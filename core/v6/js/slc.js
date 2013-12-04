@@ -1,9 +1,11 @@
 jQuery(function($) {
-  
   /*
-  Make the portrait tablet play nice with the info-panels:
-  https://www.dropbox.com/s/0h2s1fzhx5v40p7/2013-11-22%2018.14.20.png
+  Sprite the SLC logo images
   
+  Make the <>v^ fade and to the side
+  
+  http://accessibility.siteimprove.com/MGMIPMBAAIAKGDOAIBKP/9057/9019405502#
+  And SEO
   */
   
   window.$showcase = $('.showcase .tiles');
@@ -20,10 +22,9 @@ jQuery(function($) {
     $('.menu-right .slc-sites').appendTo('.slc-sites-wrap');
   }
   
-  $(window).setBreakpoints({
-    distinct: true,
-    breakpoints: [1, 768, 992]
-  });
+  if (!$('body').hasClass('initialize') ) {
+    $(window).setBreakpoints({breakpoints: [1, 768, 992]});
+  }
   
   $(window).bind('enterBreakpoint992',function() {
     console.log('enter desktop');
@@ -66,7 +67,6 @@ jQuery(function($) {
     
     
     // Adjust panel heights
-    $('.slc-news .info-panel, .slc-spotlight .info-panel').height('auto');
     $('.slc-sites .info-panel').height(10 + $('.slc-news .info-panel').height() + $('.slc-spotlight').height());
     $('.scroll-vert, .scroll-horz').trigger('scrollstop');
     setTimeout(function() {$('.slc-news .overflow-scroll').addClass('hidden')}, 300);
@@ -226,7 +226,9 @@ jQuery(function($) {
   // Home Intro
   if ($('body').hasClass('initialize') ) {
     $('header').delay(1000).fadeIn(1000, function() {
-      $('.initialize .wrap > section, footer, .menu').fadeIn(1000, function() {
+      $('.initialize .wrap > section, .menu').fadeIn(1000);
+      $('footer').fadeIn(1000, function() {
+        $(window).setBreakpoints({breakpoints: [1, 768, 992]});
         $('.showcase').animate({backgroundColor:'#0077b0'}, function() {
           $('.intro-home').fadeOut(function() {
             $('.intro').fadeOut();
