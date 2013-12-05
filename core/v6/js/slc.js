@@ -1,9 +1,5 @@
 jQuery(function($) {
   /*
-  Sprite the SLC logo images
-  
-  Make the <>v^ fade and to the side
-  
   http://accessibility.siteimprove.com/MGMIPMBAAIAKGDOAIBKP/9057/9019405502#
   And SEO
   */
@@ -239,27 +235,27 @@ jQuery(function($) {
     });
   }
   
-  $(document).on('click', '.scroll-up', function() {
-    if ($(this).data('step')) {
-      step = $(this).data('step') || 100;
+  $(document).on('click', '.scroll-up .fa', function() {
+    if ($(this).parent().data('step')) {
+      step = $(this).parent().data('step') || 100;
       $(this).closest('.scroll-parent').find('.scroll-vert').animate({scrollTop: '-='+step+'px'});
     }
   });
-  $(document).on('click', '.scroll-dn', function() {
-    if ($(this).data('step')) {
-      step = $(this).data('step') || 100;
+  $(document).on('click', '.scroll-dn .fa', function() {
+    if ($(this).parent().data('step')) {
+      step = $(this).parent().data('step') || 100;
       $(this).closest('.scroll-parent').find('.scroll-vert').animate({scrollTop: '+='+step+'px'});
     }
   });
-  $(document).on('click', '.scroll-le', function() {
-    if ($(this).data('step')) {
-      step = $(this).data('step') || 100;
+  $(document).on('click', '.scroll-le .fa', function() {
+    if ($(this).parent().data('step')) {
+      step = $(this).parent().data('step') || 100;
       $(this).closest('.scroll-parent').find('.scroll-horz').animate({scrollLeft: '-='+step+'px'});
     }
   });
-  $(document).on('click', '.scroll-ri', function() {
-    if ($(this).data('step')) {
-      step = $(this).data('step') || 100;
+  $(document).on('click', '.scroll-ri .fa', function() {
+    if ($(this).parent().data('step')) {
+      step = $(this).parent().data('step') || 100;
       $(this).closest('.scroll-parent').find('.scroll-horz').animate({scrollLeft: '+='+step+'px'});
     }
   });

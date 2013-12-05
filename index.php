@@ -43,8 +43,8 @@
     <div id="iAm" class="collapse scroll-parent">
       <div class="ready-to"><a href="/apply/">Ready to Apply</a> | <a href="/visit/">Ready to Visit</a></div>
       <em>Information for:</em>
-      <div class="hidden overflow-scroll scroll-up hidden" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
-      <div class="hidden overflow-scroll scroll-dn" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
+      <div class="hidden overflow-scroll scroll-up hidden" data-step="200"><i class="fa fa-chevron-up"></i></div>
+      <div class="hidden overflow-scroll scroll-dn" data-step="200"><i class="fa fa-chevron-down"></i></div>
       <nav class="scroll-vert">
         <div class="scroll-content">
           <a href="#"><strong>Future Undergraduate Students</strong> <p>Admission and aid; course catalogue, areas of study, faculty, student life, career services, study abroad, class profile, the campus and facilities, NYC, athletics, and more...</p></a>
@@ -65,20 +65,20 @@
   <div class="wrap">
   
     <div class="intro-home"></div>
-    <div class="intro"><div class="intro-text"><img src="img/sarah.png" alt="SARAH" class="intro-word"/><img src="img/dot.png" alt="·" class="intro-dot"/><img src="img/lawrence.png" alt="LAWRENCE" class="intro-word"/><img src="img/dot.png" alt="·" class="intro-dot"/><img src="img/college.png" alt="COLLEGE" class="intro-word"/></div></div>
+    <div class="intro"><div class="intro-text"><div class="i-sarah"></div><div class="i-dot i-dot1"></div><div class="i-lawrence"></div><div class="i-dot i-dot2"></div><div class="i-college"></div></div></div>
   
     <section class="showcase">
       <div class="showcase-wrap scroll-parent">
         <h1>Explore.</h1>
-        <div class="overflow-scroll scroll-le hidden"><img src="img/scroll-le.png" alt="Scroll Left"/></div>
-        <div class="overflow-scroll scroll-ri"><img src="img/scroll-ri.png" alt="Scroll Right"/></div>
+        <div class="overflow-scroll scroll-le hidden"><i class="fa fa-chevron-left"></i></div>
+        <div class="overflow-scroll scroll-ri"><i class="fa fa-chevron-right"></i></div>
         <div class="showcase-content scroll-horz">
           <div class="tiles clearfix scroll-content" data-cycle-hide-non-active="false">
             <a data-cycle-timeout="8000" href="#" class="tile tile-big"><img src="home/1.jpg" class="img-responsive" alt="b"/></a>
-            <div class="tile"><img src="home/2.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-play-circle-o"></i><span class="ellipsis">welcome</span></span></div>
+            <div class="tile"><img src="home/2.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-youtube-play"></i><span class="ellipsis">welcome</span></span></div>
             <a href="#" class="tile"><img src="home/3.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-picture-o"></i><span class="ellipsis">gallery</span></span></a>
             <div class="tile"><a href="#asd" data-toggle="modal"><img src="home/4.jpg" class="img-responsive" alt="b"/> <span class="caption"><span class="ellipsis">our faculty</span></span></a></div>
-            <div class="tile tile-big"><img src="home/5.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-play-circle-o"></i><span class="ellipsis">film-making and new media</span></span></div>
+            <div class="tile tile-big"><img src="home/5.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-youtube-play"></i><span class="ellipsis">film-making and new media</span></span></div>
             <a href="#" class="tile"><img src="home/6.jpg" class="img-responsive" alt="b"/></a>
             <div class="tile"><img src="home/2.jpg" class="img-responsive" alt="b"/></div>
             <div class="tile"><img src="home/3.jpg" class="img-responsive" alt="b"/></div>
@@ -147,8 +147,8 @@
         <div class="col-md-4 col-sm-6 slc-sites-wrap">
           <section class="slc-sites scroll-parent">
             <h4>SLC <strong>Sites.</strong></h4>
-            <div class="overflow-scroll scroll-up hidden" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
-            <div class="overflow-scroll scroll-dn" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
+            <div class="overflow-scroll scroll-up hidden" data-step="200"><i class="fa fa-chevron-up"></i></div>
+            <div class="overflow-scroll scroll-dn" data-step="200"><i class="fa fa-chevron-down"></i></div>
             <div class="info-panel scroll-vert" data-parent=".slc-sites">
               <ul class="scroll-content">
                 <li>
@@ -317,8 +317,8 @@
           <div class="col-md-6">
             <section class="slc-news scroll-parent">
               <h4>SLC <strong>News and Events.</strong></h4>
-              <div class="overflow-scroll scroll-up hidden" data-target=".slc-news .info-panel" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
-              <div class="overflow-scroll scroll-dn" data-target=".slc-news .info-panel" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
+              <div class="overflow-scroll scroll-up hidden" data-step="200"><i class="fa fa-chevron-up"></i></div>
+              <div class="overflow-scroll scroll-dn" data-step="200"><i class="fa fa-chevron-down"></i></div>
               <div class="info-panel scroll-vert">
                 <ul class="scroll-content">
                   <li><i class="fa fa-rss"></i> <a href="/news/item1">J.J. Abrams '88 publishes novel, is featured in The New York Times Sunday Book Review</a></li>
@@ -338,10 +338,10 @@
             <section class="slc-spotlight">
               <h4>SLC <strong>Spotlight.</strong></h4>
               <div class="info-panel">
-                <div class="cycle-slideshow" data-cycle-slides="> .item" data-cycle-prev=".slc-spotlight .cycle-prev" data-cycle-next=".slc-spotlight .cycle-next">
+                <div class="cycle-slideshow" data-cycle-slides="> .item" data-cycle-prev=".slc-spotlight .cycle-prev" data-cycle-next=".slc-spotlight .cycle-next" data-fx="scrollHorz">
                   <div class="cycle-pager"></div>
-                  <div class="cycle-control cycle-prev"></div>
-                  <div class="cycle-control cycle-next"></div>
+                  <div class="cycle-control cycle-prev"><i class="fa fa-chevron-left"></i></div>
+                  <div class="cycle-control cycle-next"><i class="fa fa-chevron-right"></i></div>
                   <div class="item">
                     <div class="spotlight-top"><img src="img/spotlight/urban.jpg" alt="a"/></div>
                     <a class="spotlight-bottom">
@@ -411,15 +411,15 @@
 
   <div class="menu menu-left scroll-parent">
     <div class="menu-nav"><h4 class="pull-right">Explore.</h4><a class="link-home" href="/"><i class="fa fa-home"></i> www.slc.edu</a></div>
-    <div class="overflow-scroll scroll-up hidden" data-step="200"><img src="img/scroll-up.png" alt="Scroll Up"/></div>
-    <div class="overflow-scroll scroll-dn" data-step="200"><img src="img/scroll-dn.png" alt="Scroll Down"/></div>
+    <div class="overflow-scroll scroll-up hidden" data-step="200"><i class="fa fa-chevron-up"></i></div>
+    <div class="overflow-scroll scroll-dn" data-step="200"><i class="fa fa-chevron-down"></i></div>
     <div class="menu-left-content clearfix scroll-vert">
       <div class="scroll-content">
-        <a href="#"><img src="img/menu-icon-map.png" alt="XXX"/></a>
-        <a href="#"><img src="img/menu-icon-360.png" alt="XXX"/></a>
-        <a href="#"><img src="img/menu-icon-catalogues.png" alt="XXX"/></a>
-        <a href="#"><img src="img/menu-icon-phone.png" alt="XXX"/></a>
-        <a href="#"><img src="img/menu-icon-media.png" alt="XXX"/></a>
+        <a href="/explore/map/"><img src="img/menu-icon-map.png" alt="Map Icon"/></a>
+        <a href="/explore/360/"><img src="img/menu-icon-360.png" alt="Virtual Tour Icon"/></a>
+        <a href="/catalogue/"><img src="img/menu-icon-catalogues.png" alt="Catalogue Icon"/></a>
+        <a href="/contact/"><img src="img/menu-icon-phone.png" alt="Phone Icon"/></a>
+        <a href="/media/"><img src="img/menu-icon-media.png" alt="Media Icon"/></a>
       </div>  
     </div>
   </div>
