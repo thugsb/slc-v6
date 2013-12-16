@@ -149,168 +149,170 @@
             <h4>SLC <strong>Sites.</strong></h4>
             <div class="overflow-scroll scroll-up hidden" data-step="200"><i class="fa fa-chevron-up"></i></div>
             <div class="overflow-scroll scroll-dn" data-step="200"><i class="fa fa-chevron-down"></i></div>
-            <div class="info-panel scroll-vert" data-parent=".slc-sites">
-              <ul class="scroll-content">
-                <li>
-                  <a href="#">Undergraduate College</a>
-                  <ul>
-                    <li><a href="/admission">Admission</a></li>
-                    <li><a href="/academics">Academics</a></li>
-                    <li><a href="/international">Study Abroad Programs</a></li>
-                    <li><a href="/studentlife">Student Life</a></li>
-                    <li><a href="/athletics">Athletics</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Graduate Programs</a>
-                  <ul>
-                    <li><a href="#">MS Ed in the Art of Teaching</a></li>
-                    <li><a href="#">MS in Child Development</a></li>
-                    <li><a href="#">MSW/MA in Social Work and Child Development</a></li>
-                    <li><a href="#">MFA in Dance</a></li>
-                    <li><a href="#">MS in Dance/Movement Therapy</a></li>
-                    <li><a href="#">MA in Health Advocacy</a></li>
-                    <li><a href="#">MS in Human Genetics</a></li>
-                    <li><a href="#">MFA in Theatre</a></li>
-                    <li><a href="#">MA in Women’s History</a></li>
-                    <li><a href="#">MA/Juris Doctorate in Women’s History and Law</a></li>
-                    <li><a href="#">MFA in Writing</a></li>
-                    <li><a href="#">Graduate Admission and Aid</a></li>
-                    <li><a href="#">Student Life</a></li>
+            <div class="info-panel-wrap">
+              <div class="info-panel scroll-vert" data-parent=".slc-sites">
+                <ul class="scroll-content">
+                  <li>
+                    <a href="#">Undergraduate College</a>
+                    <ul>
+                      <li><a href="/admission">Admission</a></li>
+                      <li><a href="/academics">Academics</a></li>
+                      <li><a href="/international">Study Abroad Programs</a></li>
+                      <li><a href="/studentlife">Student Life</a></li>
+                      <li><a href="/athletics">Athletics</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Graduate Programs</a>
+                    <ul>
+                      <li><a href="#">MS Ed in the Art of Teaching</a></li>
+                      <li><a href="#">MS in Child Development</a></li>
+                      <li><a href="#">MSW/MA in Social Work and Child Development</a></li>
+                      <li><a href="#">MFA in Dance</a></li>
+                      <li><a href="#">MS in Dance/Movement Therapy</a></li>
+                      <li><a href="#">MA in Health Advocacy</a></li>
+                      <li><a href="#">MS in Human Genetics</a></li>
+                      <li><a href="#">MFA in Theatre</a></li>
+                      <li><a href="#">MA in Women’s History</a></li>
+                      <li><a href="#">MA/Juris Doctorate in Women’s History and Law</a></li>
+                      <li><a href="#">MFA in Writing</a></li>
+                      <li><a href="#">Graduate Admission and Aid</a></li>
+                      <li><a href="#">Student Life</a></li>
                   
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Continuing Education</a>
-                  <ul>
-                    <li><a href="#">Adult Programs</a></li>
-                    <li><a href="#">Children's Programs</a></li>
-                    <li><a href="#">The Writing Institute</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">High School and Pre-College Programs</a>
-                </li>
-                <li>
-                  <a href="#">Adult Non-Credit Programs</a>
-                  <ul>
-                    <li><a href="#">The Writing Institute</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Guest Programs</a>
-                  <ul>
-                    <li><a href="#">Study Abroad Programs</a></li>
-                    <li><a href="#">Exchange Programs</a></li>
-                    <li><a href="#">Spring Writing in NYC</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Children's Programs</a>
-                  <ul>
-                    <li><a href="#">Early Childhood Center</a></li>
-                    <li><a href="#">Swimming</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Athletics</a>
-                  <ul>
-                    <li><a href="#">Go Gryphons!</a></li>
-                    <li><a href="#">Men’s Basketball</a></li>
-                    <li><a href="#">Men’s Crew</a></li>
-                    <li><a href="#">Women’s Crew</a></li>
-                    <li><a href="#">Men’s Cross Country</a></li>
-                    <li><a href="#">Women’s Cross Country</a></li>
-                    <li><a href="#">Men’s Equestrian</a></li>
-                    <li><a href="#">Women’s Equestrian</a></li>
-                    <li><a href="#">Men’s Soccer</a></li>
-                    <li><a href="#">Women’s Soccer</a></li>
-                    <li><a href="#">Women’s Swimming</a></li>
-                    <li><a href="#">Men’s Tennis</a></li>
-                    <li><a href="#">Women’s Tennis</a></li>
-                    <li><a href="#">Men’s Volleyball</a></li>
-                    <li><a href="#">Women’s Volleyball</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Visiting Campus</a>
-                  <ul>
-                    <li><a href="#">Schedule a visit with Undergraduate Admission</a></li>
-                    <li><a href="#">Schedule a visit with Graduate Admission</a></li>
-                    <li><a href="#">Directions to Campus</a></li>
-                    <li><a href="#">Campus Map</a></li>
-                    <li><a href="#">Virtual Tour</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">SLC Community</a>
-                  <ul>
-                    <li><a href="#">Academic Calendar</a></li>
-                    <li><a href="#">Alumni Community</a></li>
-                    <li><a href="#">Campus Map</a></li>
-                    <li><a href="#">Campus Safety and Security</a></li>
-                    <li><a href="#">Career Counseling</a></li>
-                    <li><a href="#">Financial Aid</a></li>
-                    <li><a href="#">Giving to SLC</a></li>
-                    <li><a href="#">Human Resources</a></li>
-                    <li><a href="#">Main Library</a></li>
-                    <li><a href="#">MySLC (Students, Faculty, Staff)</a></li>
-                    <li><a href="#">Parents</a></li>
-                    <li><a href="#">Student Accounts</a></li>
-                    <li><a href="#">Webmail</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Local Community</a>
-                  <ul>
-                    <li><a href="#">Facilities</a></li>
-                    <li><a href="#">InTouch newsletter</a></li>
-                    <li><a href="#">Events Calendar</a></li>
-                    <li><a href="#">CE and Non-Credit Programs</a></li>
-                    <li><a href="#">Early Childhood Center</a></li>
-                    <li><a href="#">Campus Map</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Centers and Institutes</a>
-                  <ul>
-                    <li><a href="#">Center for Continuing Education</a></li>
-                    <li><a href="#">The Writing Institute</a></li>
-                    <li><a href="#">The Child Development Institute</a></li>
-                    <li><a href="#">The Early Childhood Center</a></li>
-                    <li><a href="#">NYU Silver School of Social Work?</a></li>
-                    <li><a href="#">IFI?</a></li>
-                    <li><a href="#">White Mountain?</a></li>
-                    <li><a href="#">Beczak Environmental Education Center?</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Directories</a>
-                  <ul>
-                    <li><a href="#">Faculty</a></li>
-                    <li><a href="#">Staff</a></li>
-                    <li><a href="#">Offices and Services</a></li>
-                    <li><a href="#">SLC Sites Directory</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Social Media</a>
-                  <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">YouTube</a></li>
-                    <li><a href="#">More…</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>  
-            <form class="info-search form-inline clearfix">
-              <div class="input-group">
-                <input type="text" class="form-control" id="q" placeholder="filter these categories or search" title="Type to filter the site links or press enter to search the entire site."/>
-                <a class="input-group-addon"><i class="fa fa-filter"></i></a>
-              </div>
-              <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></buttom>
-            </form>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Continuing Education</a>
+                    <ul>
+                      <li><a href="#">Adult Programs</a></li>
+                      <li><a href="#">Children's Programs</a></li>
+                      <li><a href="#">The Writing Institute</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">High School and Pre-College Programs</a>
+                  </li>
+                  <li>
+                    <a href="#">Adult Non-Credit Programs</a>
+                    <ul>
+                      <li><a href="#">The Writing Institute</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Guest Programs</a>
+                    <ul>
+                      <li><a href="#">Study Abroad Programs</a></li>
+                      <li><a href="#">Exchange Programs</a></li>
+                      <li><a href="#">Spring Writing in NYC</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Children's Programs</a>
+                    <ul>
+                      <li><a href="#">Early Childhood Center</a></li>
+                      <li><a href="#">Swimming</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Athletics</a>
+                    <ul>
+                      <li><a href="#">Go Gryphons!</a></li>
+                      <li><a href="#">Men’s Basketball</a></li>
+                      <li><a href="#">Men’s Crew</a></li>
+                      <li><a href="#">Women’s Crew</a></li>
+                      <li><a href="#">Men’s Cross Country</a></li>
+                      <li><a href="#">Women’s Cross Country</a></li>
+                      <li><a href="#">Men’s Equestrian</a></li>
+                      <li><a href="#">Women’s Equestrian</a></li>
+                      <li><a href="#">Men’s Soccer</a></li>
+                      <li><a href="#">Women’s Soccer</a></li>
+                      <li><a href="#">Women’s Swimming</a></li>
+                      <li><a href="#">Men’s Tennis</a></li>
+                      <li><a href="#">Women’s Tennis</a></li>
+                      <li><a href="#">Men’s Volleyball</a></li>
+                      <li><a href="#">Women’s Volleyball</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Visiting Campus</a>
+                    <ul>
+                      <li><a href="#">Schedule a visit with Undergraduate Admission</a></li>
+                      <li><a href="#">Schedule a visit with Graduate Admission</a></li>
+                      <li><a href="#">Directions to Campus</a></li>
+                      <li><a href="#">Campus Map</a></li>
+                      <li><a href="#">Virtual Tour</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">SLC Community</a>
+                    <ul>
+                      <li><a href="#">Academic Calendar</a></li>
+                      <li><a href="#">Alumni Community</a></li>
+                      <li><a href="#">Campus Map</a></li>
+                      <li><a href="#">Campus Safety and Security</a></li>
+                      <li><a href="#">Career Counseling</a></li>
+                      <li><a href="#">Financial Aid</a></li>
+                      <li><a href="#">Giving to SLC</a></li>
+                      <li><a href="#">Human Resources</a></li>
+                      <li><a href="#">Main Library</a></li>
+                      <li><a href="#">MySLC (Students, Faculty, Staff)</a></li>
+                      <li><a href="#">Parents</a></li>
+                      <li><a href="#">Student Accounts</a></li>
+                      <li><a href="#">Webmail</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Local Community</a>
+                    <ul>
+                      <li><a href="#">Facilities</a></li>
+                      <li><a href="#">InTouch newsletter</a></li>
+                      <li><a href="#">Events Calendar</a></li>
+                      <li><a href="#">CE and Non-Credit Programs</a></li>
+                      <li><a href="#">Early Childhood Center</a></li>
+                      <li><a href="#">Campus Map</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Centers and Institutes</a>
+                    <ul>
+                      <li><a href="#">Center for Continuing Education</a></li>
+                      <li><a href="#">The Writing Institute</a></li>
+                      <li><a href="#">The Child Development Institute</a></li>
+                      <li><a href="#">The Early Childhood Center</a></li>
+                      <li><a href="#">NYU Silver School of Social Work?</a></li>
+                      <li><a href="#">IFI?</a></li>
+                      <li><a href="#">White Mountain?</a></li>
+                      <li><a href="#">Beczak Environmental Education Center?</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Directories</a>
+                    <ul>
+                      <li><a href="#">Faculty</a></li>
+                      <li><a href="#">Staff</a></li>
+                      <li><a href="#">Offices and Services</a></li>
+                      <li><a href="#">SLC Sites Directory</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Social Media</a>
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Twitter</a></li>
+                      <li><a href="#">YouTube</a></li>
+                      <li><a href="#">More…</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>  
+              <form class="info-search form-inline clearfix">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="q" placeholder="filter these categories or search" title="Type to filter the site links or press enter to search the entire site."/>
+                  <a class="input-group-addon"><i class="fa fa-filter"></i></a>
+                </div>
+                <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></buttom>
+              </form>
+            </div>
           </section>
         </div>
         <div class="col-sm-6 col-md-8">
@@ -338,7 +340,7 @@
             <section class="slc-spotlight">
               <h4>SLC <strong>Spotlight.</strong></h4>
               <div class="info-panel">
-                <div class="cycle-slideshow" data-cycle-slides="> .item" data-cycle-prev=".slc-spotlight .cycle-prev" data-cycle-next=".slc-spotlight .cycle-next" data-fx="scrollHorz">
+                <div class="cycle-slideshow" data-cycle-slides="> .item" data-cycle-prev=".slc-spotlight .cycle-prev" data-cycle-next=".slc-spotlight .cycle-next" data-fx="scrollHorz" data-timeout="8000">
                   <div class="cycle-pager"></div>
                   <div class="cycle-control cycle-prev"><i class="fa fa-chevron-left"></i></div>
                   <div class="cycle-control cycle-next"><i class="fa fa-chevron-right"></i></div>

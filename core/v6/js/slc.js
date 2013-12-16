@@ -2,6 +2,12 @@ jQuery(function($) {
   /*
   http://accessibility.siteimprove.com/MGMIPMBAAIAKGDOAIBKP/9057/9019405502#
   And SEO
+  
+  Sites menu needs to expand sub nav on click
+  
+  IAm scrollers not appearing in IE?
+  
+  Weird shine-thru: https://www.dropbox.com/sc/7z41prbkyby97rk/nHVppkmPjI
   */
   
   window.$showcase = $('.showcase .tiles');
@@ -38,6 +44,7 @@ jQuery(function($) {
     
     // Adjust panel heights
     $('.info-panel').height($(window).height() - 559)
+    $('.slc-sites .info-panel').height($(window).height() - 559 - 60)
     $('.scroll-vert, .scroll-horz').trigger('scrollstop');
     
     $('.showcase .scroll-le').on('click', function() {
@@ -63,7 +70,7 @@ jQuery(function($) {
     
     
     // Adjust panel heights
-    $('.slc-sites .info-panel').height(10 + $('.slc-news .info-panel').height() + $('.slc-spotlight').height());
+    $('.slc-sites .info-panel').height(10 - 60 + $('.slc-news .info-panel').height() + $('.slc-spotlight').height());
     $('.scroll-vert, .scroll-horz').trigger('scrollstop');
     setTimeout(function() {$('.slc-news .overflow-scroll').addClass('hidden')}, 300);
     
@@ -198,13 +205,15 @@ jQuery(function($) {
     } else {
       if ($(window).height() < 900) {
         $('header #iAm nav').css({height: ($(window).height() - 140)});
-        $('#iAm .overflow-scroll').removeClass('hidden');
-        $('#iAm .scroll-vert').trigger('scrollstop');
+        $('#iAm').collapse('show').on('shown.bs.collapse', function () {
+          $('#iAm .overflow-scroll').removeClass('hidden');
+          $('#iAm .scroll-vert').trigger('scrollstop');
+        })
       } else {
         $('header #iAm nav').css({height: 'auto'});
         $('#iAm .overflow-scroll').addClass('hidden');
+        $('#iAm').collapse('show');
       }
-      $('#iAm').collapse('show');
     }
   });
   
