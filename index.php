@@ -14,6 +14,7 @@
   <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="core/v6/css/nanoscroller.css">
   <link rel="stylesheet" href="core/v6/css/slc.css">
   <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
   <script type="text/javascript" src="//use.typekit.net/lqz8wak.js"></script>
@@ -44,9 +45,8 @@
       <div class="ready-to"><a href="/apply/">Ready to Apply</a> | <a href="/visit/">Ready to Visit</a></div>
       <em>Information for:</em>
       <nav class="scroll-vert">
-        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-        <div class="viewport">
-          <div class="overview">
+        <div class="nano">
+          <div class="content">
             <a href="#"><strong>Future Undergraduate Students</strong> <p>Admission and aid; course catalogue, areas of study, faculty, student life, career services, study abroad, class profile, the campus and facilities, NYC, athletics, and more...</p></a>
             <a href="#"><strong>Future Graduate Students</strong> <p>Master’s programs; admission and aid; course catalogue, areas of study, faculty, student life, career services; class profile, the campus and facilities, NYC, and more...</p></a>
             <a href="#"><strong>Future Guest Students</strong> <p>Sarah Lawrence College abroad programs; exchange programs; pre-college credit programs</p></a>
@@ -149,9 +149,8 @@
           <section class="slc-sites">
             <h4>SLC <strong>Sites.</strong></h4>
             <div class="info-panel-wrap">
-              <div class="info-panel scroll-vert" data-parent=".slc-sites">
-                <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-                <div class="viewport">
+              <div class="info-panel scroll-vert nano" data-parent=".slc-sites">
+                <div class="content">
                   <ul class="overview">
                     <li>
                       <a href="#">Undergraduate College</a>
@@ -324,9 +323,8 @@
           <div class="col-md-6">
             <section class="slc-news">
               <h4>SLC <strong>News and Events.</strong></h4>
-              <div class="info-panel scroll-vert">
-                <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-                <div class="viewport">
+              <div class="info-panel scroll-vert nano">
+                <div class="content">
                   <ul class="overview">
                     <li><i class="fa fa-rss"></i> <a href="/news/item1">J.J. Abrams '88 publishes novel, is featured in The New York Times Sunday Book Review</a></li>
                     <li><i class="fa fa-rss"></i> <a href="/news/item2">Julianna Margulies '89 helps rebuild homes damaged by Hurricane Sandy</a></li>
@@ -420,9 +418,8 @@
   <div class="menu menu-left">
     <div class="menu-nav"><h4 class="pull-right">Explore.</h4><a class="link-home" href="/"><i class="fa fa-home"></i> www.slc.edu</a></div>
     <div class="menu-left-content clearfix scroll-vert">
-      <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-      <div class="viewport">
-        <div class="overview">
+      <div class="nano">
+        <div class="content">
           <a href="/explore/map/"><img src="img/menu-icon-map.png" alt="Map Icon"/></a>
           <a href="/explore/360/"><img src="img/menu-icon-360.png" alt="Virtual Tour Icon"/></a>
           <a href="/catalogue/"><img src="img/menu-icon-catalogues.png" alt="Catalogue Icon"/></a>
@@ -451,7 +448,7 @@
   <script src="core/v6/js/jquery.cycle2.js"></script>
   <script src="core/v6/js/jquery.cycle2.shuffle.js"></script>
   <script src="core/v6/js/jquery.cycle2.swipe.js"></script>
-  <script src="core/v6/js/jquery.tinyscrollbar.js"></script>
+  <script src="core/v6/js/jquery.nanoscroller.js"></script>
   <script src="core/v6/js/slc.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -13,8 +13,7 @@ a:hover, a:focus {color:#555;}
 span.highlight {background-color:#ffa;}
 
 /* OVERFLOW SCROLL */
-.no-js .scroll-vert {overflow-y:auto;}
-.no-js .scroll-horz {overflow-x:auto;}
+.no-js .nano {overflow-y:auto;}
 
 .overflow-scroll {position:absolute; text-align:center; color:#999; z-index:10;}
 .overflow-scroll.scroll-le {top:0; bottom:0; left:0; width:40px;   background:-webkit-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0) ); background:-moz-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0) ); background:linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) ); }
@@ -24,20 +23,6 @@ span.highlight {background-color:#ffa;}
 /*.overflow-scroll.scroll-up .fa, .overflow-scroll.scroll-dn .fa {right:5px; top:5px;}
 .overflow-scroll.scroll-up {top:0; left:0; right:0; height:40px;   background:-webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0) );  background:-moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0) );  background:linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0) );  }
 .overflow-scroll.scroll-dn {bottom:0; left:0; right:0; height:40px;background:-webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1) );  background:-moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1) );  background:linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1) );  }*/
-
-/* Tinyscroll Styling */
-.scroll-vert { width: 100%; clear: both; }
-.scroll-vert .viewport { overflow: hidden; position: relative; }
-.scroll-vert .overview { list-style: none; position: absolute; left: 0; top: 0; }
-.scroll-vert .thumb .end, .scroll-vert .thumb { background-color: #bababa; }
-.scroll-vert .scrollbar { position: relative; float: right; width: 15px; padding:0; }
-.scroll-vert .track { height: 100%; width:15px; position: relative; margin:2px 0; padding:0 2px; border-radius:1em; }
-.scroll-vert .thumb { position: absolute; top: 0;  height: 20px; width: 11px; border-radius:1em; cursor: pointer; overflow: hidden; }
-.scroll-vert .thumb .end { overflow: hidden; height: 5px; width: 11px; }
-.scroll-vert .disable{ display: none; }
-.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
-.no-js .scroll-vert .overview {position:static;}
-.no-js .scroll-vert .scrollbar {display:none;}
 
 
 /* HEADER */
@@ -257,9 +242,8 @@ footer a, footer a:hover {color:#fff;}
   .menu-nav h4 span {font-weight:normal;}
   
   .menu .overflow-scroll {color:#252525;}
-  .menu-left-content {position:absolute; top:40px; left:0; bottom:0; right:0; overflow:hidden; padding:20px;}
+  .menu-left-content {position:absolute; top:40px; left:0; bottom:0; right:0; overflow:hidden; padding:20px 0 20px 20px;}
   .menu-left-content a {display:block; margin:0 20px 20px 0;}
-  .menu-left-content .overview {padding-bottom:20px;}
   .menu-right-content {position:absolute; top:40px; left:0; bottom:0; right:0; overflow:hidden; background:#363636;}
   
   .slc-sites {height:100%;}

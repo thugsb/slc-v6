@@ -13,14 +13,14 @@ jQuery(function($) {
   window.$showcase = $('.showcase .tiles');
   
   // Initialize scrollable areas
-  window.$sitesScroll = $('.slc-sites .scroll-vert');
-  window.$newsScroll = $('.slc-news .scroll-vert');
-  window.$iamScroll = $('#iAm .scroll-vert');
-  window.$menuleftScroll = $('.menu-left .scroll-vert');
-  $sitesScroll.tinyscrollbar({lockscroll: true, invertscroll: function() {if ('ontouchstart' in document.documentElement) {return true} else {return false}}});
-  $newsScroll.tinyscrollbar({lockscroll: true, invertscroll: function() {if ('ontouchstart' in document.documentElement) {return true} else {return false}}});
-  $iamScroll.tinyscrollbar({lockscroll: true, invertscroll: function() {if ('ontouchstart' in document.documentElement) {return true} else {return false}}});
-  $menuleftScroll.tinyscrollbar({lockscroll: true, invertscroll: function() {if ('ontouchstart' in document.documentElement) {return true} else {return false}}});
+  window.$sitesScroll = $('.slc-sites .nano');
+  window.$newsScroll = $('.slc-news .nano');
+  window.$iamScroll = $('#iAm .nano');
+  window.$menuleftScroll = $('.menu-left .nano');
+  $sitesScroll.nanoScroller();
+  $newsScroll.nanoScroller();
+  $iamScroll.nanoScroller();
+  $menuleftScroll.nanoScroller();
   
   function turnMobileOff() {
     $('.logo').off('click');
@@ -55,9 +55,9 @@ jQuery(function($) {
     // Adjust panel heights
     $('.info-panel').height($(window).height() - 559);
     $('.slc-sites .info-panel').height($(window).height() - 559 - 60);
-    $sitesScroll.find('.viewport').height($sitesScroll.outerHeight()).end().tinyscrollbar_update();
-    $newsScroll.find('.viewport').height($newsScroll.outerHeight()).end().tinyscrollbar_update();
-    
+    $sitesScroll.nanoScroller();
+    $newsScroll.nanoScroller();
+
     $('.showcase .scroll-le').on('click', function() {
       $('.showcase-content').animate({scrollLeft: '-=640px'})
     });
@@ -81,9 +81,9 @@ jQuery(function($) {
     
     
     // Adjust panel heights
+    $newsScroll.height($newsScroll.find('.overview').outerHeight()).nanoScroller();
     $('.slc-sites .info-panel').height(10 - 60 + $('.slc-news .info-panel').height() + $('.slc-spotlight').height());
-    $sitesScroll.find('.viewport').height($sitesScroll.outerHeight()).end().tinyscrollbar_update();
-    $newsScroll.height($newsScroll.find('.overview').outerHeight()).find('.viewport').height($newsScroll.outerHeight()).end().tinyscrollbar_update();
+    $sitesScroll.nanoScroller();
 
     $('.showcase .scroll-le').on('click', function() {
       $('.showcase-content').animate({scrollLeft: '-=480px'})
@@ -105,6 +105,10 @@ jQuery(function($) {
     }).width($showcase.outerWidth()); // (isotope is built assuming box-sizing:content-box)
     
     
+    // Adjust panel heights
+    $('.slc-sites .info-panel').height('auto');
+    
+    
     $('.showcase .scroll-le').off('click');
     $('.showcase .scroll-ri').off('click');
     
@@ -115,15 +119,12 @@ jQuery(function($) {
       $('.showcase-content').animate({scrollLeft: '+=240px'})
     });
     
-    // Adjust panel heights
-    $('.slc-sites .info-panel').height('auto');
-    
     $(window).on('swipeleft', function() {
       if ($('body').is('.center') ) {
         $('.menu-right').css({'z-index':20});
         $('.menu-left').css({'z-index':10});
         $('body').addClass('off-left').removeClass('center');
-        $sitesScroll.find('.viewport').height($sitesScroll.outerHeight()).end().tinyscrollbar_update();
+        $sitesScroll.nanoScroller();
       } else if ($('body').is('.off-right') ) {
         $('body').addClass('center').removeClass('off-right');
       }
@@ -133,7 +134,6 @@ jQuery(function($) {
         $('.menu-left').css({'z-index':20});
         $('.menu-right').css({'z-index':10});
         $('body').addClass('off-right').removeClass('center');
-        $menuleftScroll.find('.viewport').height($menuleftScroll.outerHeight()).end().tinyscrollbar_update();
       } else if ($('body').is('.off-left') ) {
         $('body').addClass('center').removeClass('off-left');
       }
@@ -147,7 +147,6 @@ jQuery(function($) {
         $('.menu-left').css({'z-index':20});
         $('.menu-right').css({'z-index':10});
         $('body').addClass('off-right').removeClass('center');
-        $menuleftScroll.find('.viewport').height($menuleftScroll.outerHeight()).end().tinyscrollbar_update();
       } else if ($('body').is('.off-right') ) {
         $('body').addClass('center').removeClass('off-right');
       }
@@ -159,7 +158,7 @@ jQuery(function($) {
         $('.menu-right').css({'z-index':20});
         $('.menu-left').css({'z-index':10});
         $('body').addClass('off-left').removeClass('center');
-        $sitesScroll.find('.viewport').height($sitesScroll.outerHeight()).end().tinyscrollbar_update();
+        $sitesScroll.nanoScroller();
       } else if ($('body').is('.off-left') ) {
         $('body').addClass('center').removeClass('off-left');
       }
@@ -211,16 +210,16 @@ jQuery(function($) {
     } else {
       $('.slc-sites .info-panel').removeClass('filtering');
     }
-    $sitesScroll.tinyscrollbar_update();
+    $sitesScroll.nanoScroller();
   });
   
   // Expand nav
-  $('.slc-sites .info-panel >div>ul>li>a').click(function(e) {
+  $(document).on('click','.slc-sites .content>ul>li>a', function(e) {
     e.preventDefault();
     if ($(this).next().is(':hidden')) {
-      $(this).next().show('slow', function() {$sitesScroll.tinyscrollbar_update('relative')})
+      $(this).next().show('slow', function() {$sitesScroll.nanoScroller()})
     } else {
-      $(this).next().hide('slow', function() {$sitesScroll.tinyscrollbar_update('relative')})
+      $(this).next().hide('slow', function() {$sitesScroll.nanoScroller()})
     }
   });
   
@@ -233,7 +232,7 @@ jQuery(function($) {
     } else {
       $('header #iAm nav').css({height: ($(window).height() - 170)});
       $('#iAm').collapse('show').on('shown.bs.collapse', function () {
-        $iamScroll.find('.viewport').height($iamScroll.outerHeight()).end().tinyscrollbar_update('relative');
+        $iamScroll.nanoScroller();
       })
     }
   });
