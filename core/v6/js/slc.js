@@ -3,11 +3,11 @@ jQuery(function($) {
   http://accessibility.siteimprove.com/MGMIPMBAAIAKGDOAIBKP/9057/9019405502#
   And SEO
   
-  Sites menu needs to expand sub nav on click
+  mobile init not working
   
-  IAm scrollers not appearing in IE?
+  IAm height calculations
   
-  Weird shine-thru: https://www.dropbox.com/sc/7z41prbkyby97rk/nHVppkmPjI
+  scrollbar
   */
   
   window.$showcase = $('.showcase .tiles');
@@ -154,6 +154,8 @@ jQuery(function($) {
     $('.slc-sites').appendTo('.menu-right-content');
   });
   
+  // End enterBreakpoint1
+  
   
   
   
@@ -193,6 +195,16 @@ jQuery(function($) {
       $('.slc-sites .info-panel').highlight(q);
     } else {
       $('.slc-sites .info-panel').removeClass('filtering');
+    }
+  });
+  
+  // Expand nav
+  $('.slc-sites .info-panel >ul>li>a').click(function(e) {
+    e.preventDefault();
+    if ($(this).next().is(':hidden')) {
+      $(this).next().show('slow')
+    } else {
+      $(this).next().hide('slow')
     }
   });
   
@@ -295,6 +307,5 @@ jQuery(function($) {
       $parent.find('.scroll-ri').addClass('hidden')
     }
   });
-  
   
 });

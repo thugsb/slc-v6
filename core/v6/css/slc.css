@@ -18,10 +18,10 @@ span.highlight {background-color:#ffa;}
 .scroll-horz {overflow-x:auto;}
 
 .overflow-scroll {position:absolute; text-align:center; color:#999; z-index:10;}
-.overflow-scroll.scroll-le {top:0; bottom:0; left:0; width:40px;   background:-webkit-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0) ); background:-moz-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0) ); background:linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0) ); }
-.overflow-scroll.scroll-ri {top:0; bottom:0; right:0; width:40px;  background:-webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) ); background:-moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) ); background:linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) ); }
-.overflow-scroll.scroll-up {top:0; left:0; right:0; height:40px;   background:-webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0) );  background:-moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0) );  background:linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0) );  }
-.overflow-scroll.scroll-dn {bottom:0; left:0; right:0; height:40px;background:-webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1) );  background:-moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1) );  background:linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1) );  }
+.overflow-scroll.scroll-le {top:0; bottom:0; left:0; width:40px;   background:-webkit-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0) ); background:-moz-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0) ); background:linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) ); }
+.overflow-scroll.scroll-ri {top:0; bottom:0; right:0; width:40px;  background:-webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) ); background:-moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) ); background:linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) ); }
+.overflow-scroll.scroll-up {top:0; left:0; right:0; height:40px;   background:-webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0) );  background:-moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0) );  background:linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0) );  }
+.overflow-scroll.scroll-dn {bottom:0; left:0; right:0; height:40px;background:-webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1) );  background:-moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1) );  background:linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1) );  }
 .overflow-scroll .fa {position:absolute; font-size:2.2em; cursor:pointer;}
 .overflow-scroll.scroll-le .fa, .overflow-scroll.scroll-ri .fa {top:50%; margin-top:-29px; left:7px;}
 .overflow-scroll.scroll-up .fa, .overflow-scroll.scroll-dn .fa {right:5px; top:5px;}
@@ -40,8 +40,8 @@ header > nav {border-bottom:2px solid #464646; background:#363636;}
 header > nav a {padding:0 1.5%; font-weight:100; letter-spacing:.5px;}
 
 header #iAm {position:absolute; top:40px; left:0; width:480px; max-width:100%; font-size:1.2em; box-shadow:20px 20px 20px 10px rgba(0,0,0,.5); background:#454545;}
-header #iAm .scroll-up, .menu-right .scroll-up {top:88px; background:-webkit-linear-gradient(top, rgba(69,69,69,1), rgba(69,69,69,0) );  background:-moz-linear-gradient(top, rgba(69,69,69,1), rgba(69,69,69,0) );  background:linear-gradient(top, rgba(69,69,69,1), rgba(69,69,69,0) );  }
-header #iAm .scroll-dn, .menu-right .scroll-dn {background:-webkit-linear-gradient(top, rgba(69,69,69,0), rgba(69,69,69,1) );  background:-moz-linear-gradient(top, rgba(69,69,69,0), rgba(69,69,69,1) );  background:linear-gradient(top, rgba(69,69,69,0), rgba(69,69,69,1) );  }
+header #iAm .scroll-up, .menu-right .scroll-up {top:88px; background:-webkit-linear-gradient(top, rgba(69,69,69,1), rgba(69,69,69,0) );  background:-moz-linear-gradient(top, rgba(69,69,69,1), rgba(69,69,69,0) );  background:linear-gradient(to bottom, rgba(69,69,69,1), rgba(69,69,69,0) );  }
+header #iAm .scroll-dn, .menu-right .scroll-dn {background:-webkit-linear-gradient(top, rgba(69,69,69,0), rgba(69,69,69,1) );  background:-moz-linear-gradient(top, rgba(69,69,69,0), rgba(69,69,69,1) );  background:linear-gradient(to bottom, rgba(69,69,69,0), rgba(69,69,69,1) );  }
 header #iAm .ready-to {text-align:center; white-space:nowrap; color:#fff; background:#252525;}
 header #iAm .ready-to a {display:inline-block; margin:5px 10px; padding:5px 20px; color:#fff;}
 header #iAm .ready-to a:hover {background:#363636;}
@@ -82,9 +82,9 @@ header #iAm nav a p {margin:0; font-size:0.8em; font-style:italic; color:#b4b4b4
 .showcase.showcase-short .tiles {height:160px;}
 
 /* Navbar */
-.navigate {padding:0 55px; background:#01364f;}
+.navigate {position:relative; padding:0 55px; background:#01364f; z-index:200;}
 .navigate a:hover {text-decoration:none;}
-.navigate .bar {position:relative; height:40px; background:#01364f; z-index:200;}
+.navigate .bar {position:relative; height:40px; background:#01364f; z-index:202;}
 .navigate .bar .portal-links a {position:relative; float:left; width:30%; height:45px; margin:-5px 1.5% 0; text-align:center; font-size:1.2em; letter-spacing:1px; line-height:45px; font-weight:bold; color:#fff; background:#115078; z-index:11;}
 .navigate .bar .portal-links a:hover {background:#216098;}
 .navigate .bar .social-links {text-align:center;}
@@ -133,6 +133,7 @@ header #iAm nav a p {margin:0; font-size:0.8em; font-style:italic; color:#b4b4b4
 .slc-sites .filtering ul ul {display:block;}
 .slc-sites form {position:absolute; bottom:0; left:0; right:0; height:60px; padding:13px 15px;background:#bababa;}
 .slc-sites form .input-group {float:left; width:85%;}
+.slc-sites form input::-ms-clear {width:0;height:0;}
 .slc-sites form button {width:15%; padding-top:0;padding-bottom:0; font-size:1.5em; color:#eee;}
 
 .slc-news {position:relative;}
@@ -251,8 +252,8 @@ footer a, footer a:hover {color:#fff;}
   .menu-nav h4 span {font-weight:normal;}
   
   .menu .overflow-scroll {color:#252525;}
-  .menu-left .scroll-up {background:-webkit-linear-gradient(top, rgba(0,108,82,1), rgba(0,108,82,0) );  background:-moz-linear-gradient(top, rgba(0,108,82,1), rgba(0,108,82,0) );  background:linear-gradient(top, rgba(0,108,82,1), rgba(0,108,82,0) );top:40px;}
-  .menu-left .scroll-dn {background:-webkit-linear-gradient(top, rgba(0,108,82,0), rgba(0,108,82,1) );  background:-moz-linear-gradient(top, rgba(0,108,82,0), rgba(0,108,82,1) );  background:linear-gradient(top, rgba(0,108,82,0), rgba(0,108,82,1) );}
+  .menu-left .scroll-up {background:-webkit-linear-gradient(top, rgba(0,108,82,1), rgba(0,108,82,0) );  background:-moz-linear-gradient(top, rgba(0,108,82,1), rgba(0,108,82,0) );  background:linear-gradient(to bottom, rgba(0,108,82,1), rgba(0,108,82,0) );top:40px;}
+  .menu-left .scroll-dn {background:-webkit-linear-gradient(top, rgba(0,108,82,0), rgba(0,108,82,1) );  background:-moz-linear-gradient(top, rgba(0,108,82,0), rgba(0,108,82,1) );  background:linear-gradient(to bottom, rgba(0,108,82,0), rgba(0,108,82,1) );}
   .menu-left-content {position:absolute; top:40px; left:0; bottom:0; right:0; overflow:hidden; padding:20px 35px 20px 20px;}
   .menu-left-content a {display:block; margin:0 1em 1em 0;}
 
