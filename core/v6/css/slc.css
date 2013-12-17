@@ -13,8 +13,6 @@ a:hover, a:focus {color:#555;}
 span.highlight {background-color:#ffa;}
 
 /* OVERFLOW SCROLL */
-.no-js .nano {overflow-y:auto;}
-
 .overflow-scroll {position:absolute; text-align:center; color:#999; z-index:10;}
 .overflow-scroll.scroll-le {top:0; bottom:0; left:0; width:40px;   background:-webkit-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0) ); background:-moz-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0) ); background:linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) ); }
 .overflow-scroll.scroll-ri {top:0; bottom:0; right:0; width:40px;  background:-webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) ); background:-moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1) ); background:linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) ); }
@@ -112,7 +110,7 @@ header #iAm nav a p {margin:0; font-size:0.8em; font-style:italic; color:#b4b4b4
 .info-panel {background:#fff;}
 .info h4 {color:#00644c;}
 
-.info-panel {min-height:300px; overflow:auto;overflow-y:auto;overflow-x:hidden;}
+.info-panel {min-height:300px;}
 .info-panel ul {margin:0; padding:10px 20px; list-style:none;}
 .info-panel ul li a {display:block; padding:.5em 0;}
 
@@ -241,7 +239,6 @@ footer a, footer a:hover {color:#fff;}
   .menu-nav h4 {margin:0 50px 0 20px; line-height:40px;}
   .menu-nav h4 span {font-weight:normal;}
   
-  .menu .overflow-scroll {color:#252525;}
   .menu-left-content {position:absolute; top:40px; left:0; bottom:0; right:0; overflow:hidden; padding:20px 0 20px 20px;}
   .menu-left-content a {display:block; margin:0 20px 20px 0;}
   .menu-right-content {position:absolute; top:40px; left:0; bottom:0; right:0; overflow:hidden; background:#363636;}
