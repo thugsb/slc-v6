@@ -14,6 +14,7 @@
   <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="core/v6/css/nanoscroller.css">
   <link rel="stylesheet" href="core/v6/css/slc.css">
   <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
   <script type="text/javascript" src="//use.typekit.net/lqz8wak.js"></script>
@@ -40,22 +41,22 @@
       <a href="/studentlife">Life@SLC</a>
       <a href="/giving">Giving</a>
     </nav>
-    <div id="iAm" class="collapse scroll-parent">
+    <div id="iAm" class="collapse">
       <div class="ready-to"><a href="/apply/">Ready to Apply</a> | <a href="/visit/">Ready to Visit</a></div>
       <em>Information for:</em>
-      <div class="hidden overflow-scroll scroll-up hidden" data-step="200"><i class="fa fa-chevron-up"></i></div>
-      <div class="hidden overflow-scroll scroll-dn" data-step="200"><i class="fa fa-chevron-down"></i></div>
       <nav class="scroll-vert">
-        <div class="scroll-content">
-          <a href="#"><strong>Future Undergraduate Students</strong> <p>Admission and aid; course catalogue, areas of study, faculty, student life, career services, study abroad, class profile, the campus and facilities, NYC, athletics, and more...</p></a>
-          <a href="#"><strong>Future Graduate Students</strong> <p>Master’s programs; admission and aid; course catalogue, areas of study, faculty, student life, career services; class profile, the campus and facilities, NYC, and more...</p></a>
-          <a href="#"><strong>Future Guest Students</strong> <p>Sarah Lawrence College abroad programs; exchange programs; pre-college credit programs</p></a>
-          <a href="#"><strong>Current and Future SLC Parents</strong> <p>The portal for parents of current and future SLC undergraduate students as well as students in SLC’s high school, children’s, and ECC programs</p></a>
-          <a href="#"><strong>Returning Adult Students and Professionals</strong> <p>The Center for Continuing Education; the Writing Institute; certificate programs; annual conferences, and more....</p></a>
-          <a href="#"><strong>SLC Faculty, Students, and Staff</strong> <p>MySLC, webmail, GoGryphons, offices and services, Esther Raushenbush Library, Archives, and more....</p></a>
-          <a href="#"><strong>Donors and Friends of the College</strong> <p>Annual fund, planned giving, parent giving, Friends of the Library, Friends of Athletics, Center for the Urban River, and more...</p></a>
-          <a href="#"><strong>Neighbors and Surrounding Communities</strong> <p>InTouch newsletter; SLC news and events calendars; facilities;</p></a>
-          <a href="#"><strong>Media, Agencies, and Corporations</strong> <p>Information about and whom to contact for media inquiries, facilities use, and how to partner with Sarah Lawrence College</p></a>
+        <div class="nano">
+          <div class="content">
+            <a href="#"><strong>Future Undergraduate Students</strong> <p>Admission and aid; course catalogue, areas of study, faculty, student life, career services, study abroad, class profile, the campus and facilities, NYC, athletics, and more...</p></a>
+            <a href="#"><strong>Future Graduate Students</strong> <p>Master’s programs; admission and aid; course catalogue, areas of study, faculty, student life, career services; class profile, the campus and facilities, NYC, and more...</p></a>
+            <a href="#"><strong>Future Guest Students</strong> <p>Sarah Lawrence College abroad programs; exchange programs; pre-college credit programs</p></a>
+            <a href="#"><strong>Current and Future SLC Parents</strong> <p>The portal for parents of current and future SLC undergraduate students as well as students in SLC’s high school, children’s, and ECC programs</p></a>
+            <a href="#"><strong>Returning Adult Students and Professionals</strong> <p>The Center for Continuing Education; the Writing Institute; certificate programs; annual conferences, and more....</p></a>
+            <a href="#"><strong>SLC Faculty, Students, and Staff</strong> <p>MySLC, webmail, GoGryphons, offices and services, Esther Raushenbush Library, Archives, and more....</p></a>
+            <a href="#"><strong>Donors and Friends of the College</strong> <p>Annual fund, planned giving, parent giving, Friends of the Library, Friends of Athletics, Center for the Urban River, and more...</p></a>
+            <a href="#"><strong>Neighbors and Surrounding Communities</strong> <p>InTouch newsletter; SLC news and events calendars; facilities;</p></a>
+            <a href="#"><strong>Media, Agencies, and Corporations</strong> <p>Information about and whom to contact for media inquiries, facilities use, and how to partner with Sarah Lawrence College</p></a>
+          </div>
         </div>
       </nav>
     </div>
@@ -68,12 +69,12 @@
     <div class="intro"><div class="intro-text"><div class="i-sarah"></div><div class="i-dot i-dot1"></div><div class="i-lawrence"></div><div class="i-dot i-dot2"></div><div class="i-college"></div></div></div>
   
     <section class="showcase">
-      <div class="showcase-wrap scroll-parent">
+      <div class="showcase-wrap">
         <h1>Explore.</h1>
-        <div class="overflow-scroll scroll-le hidden"><i class="fa fa-chevron-left"></i></div>
+        <div class="overflow-scroll scroll-le"><i class="fa fa-chevron-left"></i></div>
         <div class="overflow-scroll scroll-ri"><i class="fa fa-chevron-right"></i></div>
         <div class="showcase-content scroll-horz">
-          <div class="tiles clearfix scroll-content" data-cycle-hide-non-active="false">
+          <div class="tiles clearfix" data-cycle-hide-non-active="false">
             <a data-cycle-timeout="8000" href="#" class="tile tile-big"><img src="home/1.jpg" class="img-responsive" alt="b"/></a>
             <div class="tile"><img src="home/2.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-youtube-play"></i><span class="ellipsis">welcome</span></span></div>
             <a href="#" class="tile"><img src="home/3.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-picture-o"></i><span class="ellipsis">gallery</span></span></a>
@@ -145,165 +146,168 @@
     <section class="info">
       <div class="row">
         <div class="col-md-4 col-sm-6 slc-sites-wrap">
-          <section class="slc-sites scroll-parent">
+          <section class="slc-sites">
             <h4>SLC <strong>Sites.</strong></h4>
-            <div class="overflow-scroll scroll-up hidden" data-step="200"><i class="fa fa-chevron-up"></i></div>
-            <div class="overflow-scroll scroll-dn" data-step="200"><i class="fa fa-chevron-down"></i></div>
             <div class="info-panel-wrap">
-              <div class="info-panel scroll-vert" data-parent=".slc-sites">
-                <ul class="scroll-content">
-                  <li>
-                    <a href="#">Undergraduate College</a>
-                    <ul>
-                      <li><a href="/admission">Admission</a></li>
-                      <li><a href="/academics">Academics</a></li>
-                      <li><a href="/international">Study Abroad Programs</a></li>
-                      <li><a href="/studentlife">Student Life</a></li>
-                      <li><a href="/athletics">Athletics</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Graduate Programs</a>
-                    <ul>
-                      <li><a href="#">MS Ed in the Art of Teaching</a></li>
-                      <li><a href="#">MS in Child Development</a></li>
-                      <li><a href="#">MSW/MA in Social Work and Child Development</a></li>
-                      <li><a href="#">MFA in Dance</a></li>
-                      <li><a href="#">MS in Dance/Movement Therapy</a></li>
-                      <li><a href="#">MA in Health Advocacy</a></li>
-                      <li><a href="#">MS in Human Genetics</a></li>
-                      <li><a href="#">MFA in Theatre</a></li>
-                      <li><a href="#">MA in Women’s History</a></li>
-                      <li><a href="#">MA/Juris Doctorate in Women’s History and Law</a></li>
-                      <li><a href="#">MFA in Writing</a></li>
-                      <li><a href="#">Graduate Admission and Aid</a></li>
-                      <li><a href="#">Student Life</a></li>
+              <div class="info-panel scroll-vert nano" data-parent=".slc-sites">
+                <div class="content">
+                  <ul class="overview">
+                    <li>
+                      <a href="#">Undergraduate College</a>
+                      <ul>
+                        <li><a href="/admission">Admission</a></li>
+                        <li><a href="/academics">Academics</a></li>
+                        <li><a href="/international">Study Abroad Programs</a></li>
+                        <li><a href="/studentlife">Student Life</a></li>
+                        <li><a href="/athletics">Athletics</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Graduate Programs</a>
+                      <ul>
+                        <li><a href="#">MS Ed in the Art of Teaching</a></li>
+                        <li><a href="#">MS in Child Development</a></li>
+                        <li><a href="#">MSW/MA in Social Work and Child Development</a></li>
+                        <li><a href="#">MFA in Dance</a></li>
+                        <li><a href="#">MS in Dance/Movement Therapy</a></li>
+                        <li><a href="#">MA in Health Advocacy</a></li>
+                        <li><a href="#">MS in Human Genetics</a></li>
+                        <li><a href="#">MFA in Theatre</a></li>
+                        <li><a href="#">MA in Women’s History</a></li>
+                        <li><a href="#">MA/Juris Doctorate in Women’s History and Law</a></li>
+                        <li><a href="#">MFA in Writing</a></li>
+                        <li><a href="#">Graduate Admission and Aid</a></li>
+                        <li><a href="#">Student Life</a></li>
                   
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Continuing Education</a>
-                    <ul>
-                      <li><a href="#">Adult Programs</a></li>
-                      <li><a href="#">Children's Programs</a></li>
-                      <li><a href="#">The Writing Institute</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">High School and Pre-College Programs</a>
-                  </li>
-                  <li>
-                    <a href="#">Adult Non-Credit Programs</a>
-                    <ul>
-                      <li><a href="#">The Writing Institute</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Guest Programs</a>
-                    <ul>
-                      <li><a href="#">Study Abroad Programs</a></li>
-                      <li><a href="#">Exchange Programs</a></li>
-                      <li><a href="#">Spring Writing in NYC</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Children's Programs</a>
-                    <ul>
-                      <li><a href="#">Early Childhood Center</a></li>
-                      <li><a href="#">Swimming</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Athletics</a>
-                    <ul>
-                      <li><a href="#">Go Gryphons!</a></li>
-                      <li><a href="#">Men’s Basketball</a></li>
-                      <li><a href="#">Men’s Crew</a></li>
-                      <li><a href="#">Women’s Crew</a></li>
-                      <li><a href="#">Men’s Cross Country</a></li>
-                      <li><a href="#">Women’s Cross Country</a></li>
-                      <li><a href="#">Men’s Equestrian</a></li>
-                      <li><a href="#">Women’s Equestrian</a></li>
-                      <li><a href="#">Men’s Soccer</a></li>
-                      <li><a href="#">Women’s Soccer</a></li>
-                      <li><a href="#">Women’s Swimming</a></li>
-                      <li><a href="#">Men’s Tennis</a></li>
-                      <li><a href="#">Women’s Tennis</a></li>
-                      <li><a href="#">Men’s Volleyball</a></li>
-                      <li><a href="#">Women’s Volleyball</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Visiting Campus</a>
-                    <ul>
-                      <li><a href="#">Schedule a visit with Undergraduate Admission</a></li>
-                      <li><a href="#">Schedule a visit with Graduate Admission</a></li>
-                      <li><a href="#">Directions to Campus</a></li>
-                      <li><a href="#">Campus Map</a></li>
-                      <li><a href="#">Virtual Tour</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">SLC Community</a>
-                    <ul>
-                      <li><a href="#">Academic Calendar</a></li>
-                      <li><a href="#">Alumni Community</a></li>
-                      <li><a href="#">Campus Map</a></li>
-                      <li><a href="#">Campus Safety and Security</a></li>
-                      <li><a href="#">Career Counseling</a></li>
-                      <li><a href="#">Financial Aid</a></li>
-                      <li><a href="#">Giving to SLC</a></li>
-                      <li><a href="#">Human Resources</a></li>
-                      <li><a href="#">Main Library</a></li>
-                      <li><a href="#">MySLC (Students, Faculty, Staff)</a></li>
-                      <li><a href="#">Parents</a></li>
-                      <li><a href="#">Student Accounts</a></li>
-                      <li><a href="#">Webmail</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Local Community</a>
-                    <ul>
-                      <li><a href="#">Facilities</a></li>
-                      <li><a href="#">InTouch newsletter</a></li>
-                      <li><a href="#">Events Calendar</a></li>
-                      <li><a href="#">CE and Non-Credit Programs</a></li>
-                      <li><a href="#">Early Childhood Center</a></li>
-                      <li><a href="#">Campus Map</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Centers and Institutes</a>
-                    <ul>
-                      <li><a href="#">Center for Continuing Education</a></li>
-                      <li><a href="#">The Writing Institute</a></li>
-                      <li><a href="#">The Child Development Institute</a></li>
-                      <li><a href="#">The Early Childhood Center</a></li>
-                      <li><a href="#">NYU Silver School of Social Work?</a></li>
-                      <li><a href="#">IFI?</a></li>
-                      <li><a href="#">White Mountain?</a></li>
-                      <li><a href="#">Beczak Environmental Education Center?</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Directories</a>
-                    <ul>
-                      <li><a href="#">Faculty</a></li>
-                      <li><a href="#">Staff</a></li>
-                      <li><a href="#">Offices and Services</a></li>
-                      <li><a href="#">SLC Sites Directory</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Social Media</a>
-                    <ul>
-                      <li><a href="#">Facebook</a></li>
-                      <li><a href="#">Twitter</a></li>
-                      <li><a href="#">YouTube</a></li>
-                      <li><a href="#">More…</a></li>
-                    </ul>
-                  </li>
-                </ul>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Continuing Education</a>
+                      <ul>
+                        <li><a href="#">Adult Programs</a></li>
+                        <li><a href="#">Children's Programs</a></li>
+                        <li><a href="#">The Writing Institute</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">High School and Pre-College Programs</a>
+                      <ul>
+                        <li><a href="#">Residential Programs</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Adult Non-Credit Programs</a>
+                      <ul>
+                        <li><a href="#">The Writing Institute</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Guest Programs</a>
+                      <ul>
+                        <li><a href="#">Study Abroad Programs</a></li>
+                        <li><a href="#">Exchange Programs</a></li>
+                        <li><a href="#">Spring Writing in NYC</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Children's Programs</a>
+                      <ul>
+                        <li><a href="#">Early Childhood Center</a></li>
+                        <li><a href="#">Swimming</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Athletics</a>
+                      <ul>
+                        <li><a href="#">Go Gryphons!</a></li>
+                        <li><a href="#">Men’s Basketball</a></li>
+                        <li><a href="#">Men’s Crew</a></li>
+                        <li><a href="#">Women’s Crew</a></li>
+                        <li><a href="#">Men’s Cross Country</a></li>
+                        <li><a href="#">Women’s Cross Country</a></li>
+                        <li><a href="#">Men’s Equestrian</a></li>
+                        <li><a href="#">Women’s Equestrian</a></li>
+                        <li><a href="#">Men’s Soccer</a></li>
+                        <li><a href="#">Women’s Soccer</a></li>
+                        <li><a href="#">Women’s Swimming</a></li>
+                        <li><a href="#">Men’s Tennis</a></li>
+                        <li><a href="#">Women’s Tennis</a></li>
+                        <li><a href="#">Men’s Volleyball</a></li>
+                        <li><a href="#">Women’s Volleyball</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Visiting Campus</a>
+                      <ul>
+                        <li><a href="#">Schedule a visit with Undergraduate Admission</a></li>
+                        <li><a href="#">Schedule a visit with Graduate Admission</a></li>
+                        <li><a href="#">Directions to Campus</a></li>
+                        <li><a href="#">Campus Map</a></li>
+                        <li><a href="#">Virtual Tour</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">SLC Community</a>
+                      <ul>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">Alumni Community</a></li>
+                        <li><a href="#">Campus Map</a></li>
+                        <li><a href="#">Campus Safety and Security</a></li>
+                        <li><a href="#">Career Counseling</a></li>
+                        <li><a href="#">Financial Aid</a></li>
+                        <li><a href="#">Giving to SLC</a></li>
+                        <li><a href="#">Human Resources</a></li>
+                        <li><a href="#">Main Library</a></li>
+                        <li><a href="#">MySLC (Students, Faculty, Staff)</a></li>
+                        <li><a href="#">Parents</a></li>
+                        <li><a href="#">Student Accounts</a></li>
+                        <li><a href="#">Webmail</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Local Community</a>
+                      <ul>
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="#">InTouch newsletter</a></li>
+                        <li><a href="#">Events Calendar</a></li>
+                        <li><a href="#">CE and Non-Credit Programs</a></li>
+                        <li><a href="#">Early Childhood Center</a></li>
+                        <li><a href="#">Campus Map</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Centers and Institutes</a>
+                      <ul>
+                        <li><a href="#">Center for Continuing Education</a></li>
+                        <li><a href="#">The Writing Institute</a></li>
+                        <li><a href="#">The Child Development Institute</a></li>
+                        <li><a href="#">The Early Childhood Center</a></li>
+                        <li><a href="#">NYU Silver School of Social Work?</a></li>
+                        <li><a href="#">IFI?</a></li>
+                        <li><a href="#">White Mountain?</a></li>
+                        <li><a href="#">Beczak Environmental Education Center?</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Directories</a>
+                      <ul>
+                        <li><a href="#">Faculty</a></li>
+                        <li><a href="#">Staff</a></li>
+                        <li><a href="#">Offices and Services</a></li>
+                        <li><a href="#">SLC Sites Directory</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Social Media</a>
+                      <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">More…</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>  
               <form class="info-search form-inline clearfix">
                 <div class="input-group">
@@ -317,21 +321,21 @@
         </div>
         <div class="col-sm-6 col-md-8">
           <div class="col-md-6">
-            <section class="slc-news scroll-parent">
+            <section class="slc-news">
               <h4>SLC <strong>News and Events.</strong></h4>
-              <div class="overflow-scroll scroll-up hidden" data-step="200"><i class="fa fa-chevron-up"></i></div>
-              <div class="overflow-scroll scroll-dn" data-step="200"><i class="fa fa-chevron-down"></i></div>
-              <div class="info-panel scroll-vert">
-                <ul class="scroll-content">
-                  <li><i class="fa fa-rss"></i> <a href="/news/item1">J.J. Abrams '88 publishes novel, is featured in The New York Times Sunday Book Review</a></li>
-                  <li><i class="fa fa-rss"></i> <a href="/news/item2">Julianna Margulies '89 helps rebuild homes damaged by Hurricane Sandy</a></li>
-                  <li><i class="fa fa-rss"></i> <a href="/news/item3">Caroline Lieber MS '80, former director of Human Genetics graduate program, honored as Woman of the Year</a></li>
-                  <li><i class="fa fa-rss"></i> <a href="/news/item4">Lama Fakih '04 of Human Rights Watch featured in <em>New York Times</em> article on Syria</a></li>
-                  <li><i class="fa fa-calendar"></i> <a href="/events/item1">Writer's Block Tutoring<br/>Tue Oct 29, 2013</a></li>
-                  <li><i class="fa fa-calendar"></i> <a href="/events/item2">Manhattan String Quartet <br/>Tue Oct 29, 2013</a></li>
-                  <li><i class="fa fa-calendar"></i> <a href="/events/item3">Men's and Women's Crew Fall Metropolitan Championship Regatta <br/>Sat Nov 2, 2013</a></li>
-                  <li><i class="fa fa-calendar"></i> <a href="/events/item4">Men's and Women's Swimming SLC Sprint Carnival <br/>Sat Nov 2, 2013</a></li>
-                </ul>
+              <div class="info-panel scroll-vert nano">
+                <div class="content">
+                  <ul class="overview">
+                    <li><i class="fa fa-rss"></i> <a href="/news/item1">J.J. Abrams '88 publishes novel, is featured in The New York Times Sunday Book Review</a></li>
+                    <li><i class="fa fa-rss"></i> <a href="/news/item2">Julianna Margulies '89 helps rebuild homes damaged by Hurricane Sandy</a></li>
+                    <li><i class="fa fa-rss"></i> <a href="/news/item3">Caroline Lieber MS '80, former director of Human Genetics graduate program, honored as Woman of the Year</a></li>
+                    <li><i class="fa fa-rss"></i> <a href="/news/item4">Lama Fakih '04 of Human Rights Watch featured in <em>New York Times</em> article on Syria</a></li>
+                    <li><i class="fa fa-calendar"></i> <a href="/events/item1">Writer's Block Tutoring<br/>Tue Oct 29, 2013</a></li>
+                    <li><i class="fa fa-calendar"></i> <a href="/events/item2">Manhattan String Quartet <br/>Tue Oct 29, 2013</a></li>
+                    <li><i class="fa fa-calendar"></i> <a href="/events/item3">Men's and Women's Crew Fall Metropolitan Championship Regatta <br/>Sat Nov 2, 2013</a></li>
+                    <li><i class="fa fa-calendar"></i> <a href="/events/item4">Men's and Women's Swimming SLC Sprint Carnival <br/>Sat Nov 2, 2013</a></li>
+                  </ul>
+                </div>
               </div>
             </section>
           </div>
@@ -411,18 +415,18 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
-  <div class="menu menu-left scroll-parent">
+  <div class="menu menu-left">
     <div class="menu-nav"><h4 class="pull-right">Explore.</h4><a class="link-home" href="/"><i class="fa fa-home"></i> www.slc.edu</a></div>
-    <div class="overflow-scroll scroll-up hidden" data-step="200"><i class="fa fa-chevron-up"></i></div>
-    <div class="overflow-scroll scroll-dn" data-step="200"><i class="fa fa-chevron-down"></i></div>
     <div class="menu-left-content clearfix scroll-vert">
-      <div class="scroll-content">
-        <a href="/explore/map/"><img src="img/menu-icon-map.png" alt="Map Icon"/></a>
-        <a href="/explore/360/"><img src="img/menu-icon-360.png" alt="Virtual Tour Icon"/></a>
-        <a href="/catalogue/"><img src="img/menu-icon-catalogues.png" alt="Catalogue Icon"/></a>
-        <a href="/contact/"><img src="img/menu-icon-phone.png" alt="Phone Icon"/></a>
-        <a href="/media/"><img src="img/menu-icon-media.png" alt="Media Icon"/></a>
-      </div>  
+      <div class="nano">
+        <div class="content">
+          <a href="/explore/map/"><img src="img/menu-icon-map.png" alt="Map Icon"/></a>
+          <a href="/explore/360/"><img src="img/menu-icon-360.png" alt="Virtual Tour Icon"/></a>
+          <a href="/catalogue/"><img src="img/menu-icon-catalogues.png" alt="Catalogue Icon"/></a>
+          <a href="/contact/"><img src="img/menu-icon-phone.png" alt="Phone Icon"/></a>
+          <a href="/media/"><img src="img/menu-icon-media.png" alt="Media Icon"/></a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="menu menu-right">
@@ -444,6 +448,7 @@
   <script src="core/v6/js/jquery.cycle2.js"></script>
   <script src="core/v6/js/jquery.cycle2.shuffle.js"></script>
   <script src="core/v6/js/jquery.cycle2.swipe.js"></script>
+  <script src="core/v6/js/jquery.nanoscroller.js"></script>
   <script src="core/v6/js/slc.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

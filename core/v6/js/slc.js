@@ -11,7 +11,17 @@ jQuery(function($) {
   */
   
   window.$showcase = $('.showcase .tiles');
-
+  
+  // Initialize scrollable areas
+  window.$sitesScroll = $('.slc-sites .nano');
+  window.$newsScroll = $('.slc-news .nano');
+  window.$iamScroll = $('#iAm .nano');
+  window.$menuleftScroll = $('.menu-left .nano');
+  $sitesScroll.nanoScroller();
+  $newsScroll.nanoScroller();
+  $iamScroll.nanoScroller();
+  $menuleftScroll.nanoScroller();
+  
   function turnMobileOff() {
     $('.logo').off('click');
     $('.xs-menu').off('click');
@@ -43,10 +53,11 @@ jQuery(function($) {
     
     
     // Adjust panel heights
-    $('.info-panel').height($(window).height() - 559)
-    $('.slc-sites .info-panel').height($(window).height() - 559 - 60)
-    $('.scroll-vert, .scroll-horz').trigger('scrollstop');
-    
+    $('.info-panel').height($(window).height() - 559);
+    $('.slc-sites .info-panel').height($(window).height() - 559 - 60);
+    $sitesScroll.nanoScroller();
+    $newsScroll.nanoScroller();
+
     $('.showcase .scroll-le').on('click', function() {
       $('.showcase-content').animate({scrollLeft: '-=640px'})
     });
@@ -70,10 +81,10 @@ jQuery(function($) {
     
     
     // Adjust panel heights
+    $newsScroll.height($newsScroll.find('.overview').outerHeight()).nanoScroller();
     $('.slc-sites .info-panel').height(10 - 60 + $('.slc-news .info-panel').height() + $('.slc-spotlight').height());
-    $('.scroll-vert, .scroll-horz').trigger('scrollstop');
-    setTimeout(function() {$('.slc-news .overflow-scroll').addClass('hidden')}, 300);
-    
+    $sitesScroll.nanoScroller();
+
     $('.showcase .scroll-le').on('click', function() {
       $('.showcase-content').animate({scrollLeft: '-=480px'})
     });
@@ -94,6 +105,10 @@ jQuery(function($) {
     }).width($showcase.outerWidth()); // (isotope is built assuming box-sizing:content-box)
     
     
+    // Adjust panel heights
+    $('.slc-sites .info-panel').height('auto');
+    
+    
     $('.showcase .scroll-le').off('click');
     $('.showcase .scroll-ri').off('click');
     
@@ -104,14 +119,12 @@ jQuery(function($) {
       $('.showcase-content').animate({scrollLeft: '+=240px'})
     });
     
-    // Adjust panel heights
-    $('.info-panel').height('auto')
-    
     $(window).on('swipeleft', function() {
       if ($('body').is('.center') ) {
         $('.menu-right').css({'z-index':20});
         $('.menu-left').css({'z-index':10});
         $('body').addClass('off-left').removeClass('center');
+        $sitesScroll.nanoScroller();
       } else if ($('body').is('.off-right') ) {
         $('body').addClass('center').removeClass('off-right');
       }
@@ -145,6 +158,7 @@ jQuery(function($) {
         $('.menu-right').css({'z-index':20});
         $('.menu-left').css({'z-index':10});
         $('body').addClass('off-left').removeClass('center');
+        $sitesScroll.nanoScroller();
       } else if ($('body').is('.off-left') ) {
         $('body').addClass('center').removeClass('off-left');
       }
@@ -196,15 +210,16 @@ jQuery(function($) {
     } else {
       $('.slc-sites .info-panel').removeClass('filtering');
     }
+    $sitesScroll.nanoScroller();
   });
   
   // Expand nav
-  $('.slc-sites .info-panel >ul>li>a').click(function(e) {
+  $(document).on('click','.slc-sites .content>ul>li>a', function(e) {
     e.preventDefault();
     if ($(this).next().is(':hidden')) {
-      $(this).next().show('slow')
+      $(this).next().show('slow', function() {$sitesScroll.nanoScroller()})
     } else {
-      $(this).next().hide('slow')
+      $(this).next().hide('slow', function() {$sitesScroll.nanoScroller()})
     }
   });
   
@@ -215,17 +230,10 @@ jQuery(function($) {
     if ($('#iAm').is('.in') ) {
       $('#iAm').collapse('hide');
     } else {
-      if ($(window).height() < 900) {
-        $('header #iAm nav').css({height: ($(window).height() - 140)});
-        $('#iAm').collapse('show').on('shown.bs.collapse', function () {
-          $('#iAm .overflow-scroll').removeClass('hidden');
-          $('#iAm .scroll-vert').trigger('scrollstop');
-        })
-      } else {
-        $('header #iAm nav').css({height: 'auto'});
-        $('#iAm .overflow-scroll').addClass('hidden');
-        $('#iAm').collapse('show');
-      }
+      $('header #iAm nav').css({height: ($(window).height() - 170)});
+      $('#iAm').collapse('show').on('shown.bs.collapse', function () {
+        $iamScroll.nanoScroller();
+      })
     }
   });
   
@@ -255,57 +263,6 @@ jQuery(function($) {
       });
     });
   }
-  
-  $(document).on('click', '.scroll-up .fa', function() {
-    if ($(this).parent().data('step')) {
-      step = $(this).parent().data('step') || 100;
-      $(this).closest('.scroll-parent').find('.scroll-vert').animate({scrollTop: '-='+step+'px'});
-    }
-  });
-  $(document).on('click', '.scroll-dn .fa', function() {
-    if ($(this).parent().data('step')) {
-      step = $(this).parent().data('step') || 100;
-      $(this).closest('.scroll-parent').find('.scroll-vert').animate({scrollTop: '+='+step+'px'});
-    }
-  });
-  $(document).on('click', '.scroll-le .fa', function() {
-    if ($(this).parent().data('step')) {
-      step = $(this).parent().data('step') || 100;
-      $(this).closest('.scroll-parent').find('.scroll-horz').animate({scrollLeft: '-='+step+'px'});
-    }
-  });
-  $(document).on('click', '.scroll-ri .fa', function() {
-    if ($(this).parent().data('step')) {
-      step = $(this).parent().data('step') || 100;
-      $(this).closest('.scroll-parent').find('.scroll-horz').animate({scrollLeft: '+='+step+'px'});
-    }
-  });
-  
-  
-  $('.scroll-vert').on('scrollstop', function() {
-    $parent = $(this).closest('.scroll-parent');
-    bottom = $(this).children('.scroll-content').outerHeight() - $(this).height();
-    if (bottom > 0) {
-      $parent.find('.scroll-up, .scroll-dn').removeClass('hidden');
-    } else {
-      $parent.find('.scroll-up, .scroll-dn').addClass('hidden');
-    }
-    if ($(this).scrollTop() <= 0) {
-      $parent.find('.scroll-up').addClass('hidden')
-    } else if ($(this).scrollTop() >= bottom) {
-      $parent.find('.scroll-dn').addClass('hidden')
-    }
-  });
-  
-  $('.scroll-horz').on('scrollstop', function() {
-    $parent = $(this).closest('.scroll-parent');
-    right = $(this).children('.scroll-content').outerWidth() - $(this).width();
-    $parent.find('.scroll-le, .scroll-ri').removeClass('hidden');
-    if ($(this).scrollLeft() <= 0) {
-      $parent.find('.scroll-le').addClass('hidden')
-    } else if ($(this).scrollLeft() >= right) {
-      $parent.find('.scroll-ri').addClass('hidden')
-    }
-  });
-  
+
+
 });
