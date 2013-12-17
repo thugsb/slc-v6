@@ -11,7 +11,17 @@ jQuery(function($) {
   */
   
   window.$showcase = $('.showcase .tiles');
-
+  
+  // Initialize scrollable areas
+  window.$sitesScroll = $('.slc-sites .scroll-vert');
+  window.$newsScroll = $('.slc-news .scroll-vert');
+  window.$iamScroll = $('#iAm .scroll-vert');
+  window.$menuleftScroll = $('.menu-left .scroll-vert');
+  $sitesScroll.tinyscrollbar({lockscroll: true, invertscroll: function() {if ('ontouchstart' in document.documentElement) {return true} else {return false}}});
+  $newsScroll.tinyscrollbar({lockscroll: true, invertscroll: function() {if ('ontouchstart' in document.documentElement) {return true} else {return false}}});
+  $iamScroll.tinyscrollbar({lockscroll: true, invertscroll: function() {if ('ontouchstart' in document.documentElement) {return true} else {return false}}});
+  $menuleftScroll.tinyscrollbar({lockscroll: true, invertscroll: function() {if ('ontouchstart' in document.documentElement) {return true} else {return false}}});
+  
   function turnMobileOff() {
     $('.logo').off('click');
     $('.xs-menu').off('click');
@@ -43,9 +53,10 @@ jQuery(function($) {
     
     
     // Adjust panel heights
-    $('.info-panel').height($(window).height() - 559)
-    $('.slc-sites .info-panel').height($(window).height() - 559 - 60)
-    $('.scroll-vert, .scroll-horz').trigger('scrollstop');
+    $('.info-panel').height($(window).height() - 559);
+    $('.slc-sites .info-panel').height($(window).height() - 559 - 60);
+    $sitesScroll.find('.viewport').height($sitesScroll.outerHeight()).end().tinyscrollbar_update();
+    $newsScroll.find('.viewport').height($newsScroll.outerHeight()).end().tinyscrollbar_update();
     
     $('.showcase .scroll-le').on('click', function() {
       $('.showcase-content').animate({scrollLeft: '-=640px'})
@@ -71,9 +82,9 @@ jQuery(function($) {
     
     // Adjust panel heights
     $('.slc-sites .info-panel').height(10 - 60 + $('.slc-news .info-panel').height() + $('.slc-spotlight').height());
-    $('.scroll-vert, .scroll-horz').trigger('scrollstop');
-    setTimeout(function() {$('.slc-news .overflow-scroll').addClass('hidden')}, 300);
-    
+    $sitesScroll.find('.viewport').height($sitesScroll.outerHeight()).end().tinyscrollbar_update();
+    $newsScroll.height($newsScroll.find('.overview').outerHeight()).find('.viewport').height($newsScroll.outerHeight()).end().tinyscrollbar_update();
+
     $('.showcase .scroll-le').on('click', function() {
       $('.showcase-content').animate({scrollLeft: '-=480px'})
     });
@@ -105,13 +116,14 @@ jQuery(function($) {
     });
     
     // Adjust panel heights
-    $('.info-panel').height('auto')
+    $('.slc-sites .info-panel').height('auto');
     
     $(window).on('swipeleft', function() {
       if ($('body').is('.center') ) {
         $('.menu-right').css({'z-index':20});
         $('.menu-left').css({'z-index':10});
         $('body').addClass('off-left').removeClass('center');
+        $sitesScroll.find('.viewport').height($sitesScroll.outerHeight()).end().tinyscrollbar_update();
       } else if ($('body').is('.off-right') ) {
         $('body').addClass('center').removeClass('off-right');
       }
@@ -121,6 +133,7 @@ jQuery(function($) {
         $('.menu-left').css({'z-index':20});
         $('.menu-right').css({'z-index':10});
         $('body').addClass('off-right').removeClass('center');
+        $menuleftScroll.find('.viewport').height($menuleftScroll.outerHeight()).end().tinyscrollbar_update();
       } else if ($('body').is('.off-left') ) {
         $('body').addClass('center').removeClass('off-left');
       }
@@ -134,6 +147,7 @@ jQuery(function($) {
         $('.menu-left').css({'z-index':20});
         $('.menu-right').css({'z-index':10});
         $('body').addClass('off-right').removeClass('center');
+        $menuleftScroll.find('.viewport').height($menuleftScroll.outerHeight()).end().tinyscrollbar_update();
       } else if ($('body').is('.off-right') ) {
         $('body').addClass('center').removeClass('off-right');
       }
@@ -145,6 +159,7 @@ jQuery(function($) {
         $('.menu-right').css({'z-index':20});
         $('.menu-left').css({'z-index':10});
         $('body').addClass('off-left').removeClass('center');
+        $sitesScroll.find('.viewport').height($sitesScroll.outerHeight()).end().tinyscrollbar_update();
       } else if ($('body').is('.off-left') ) {
         $('body').addClass('center').removeClass('off-left');
       }
@@ -196,15 +211,16 @@ jQuery(function($) {
     } else {
       $('.slc-sites .info-panel').removeClass('filtering');
     }
+    $sitesScroll.tinyscrollbar_update();
   });
   
   // Expand nav
-  $('.slc-sites .info-panel >ul>li>a').click(function(e) {
+  $('.slc-sites .info-panel >div>ul>li>a').click(function(e) {
     e.preventDefault();
     if ($(this).next().is(':hidden')) {
-      $(this).next().show('slow')
+      $(this).next().show('slow', function() {$sitesScroll.tinyscrollbar_update('relative')})
     } else {
-      $(this).next().hide('slow')
+      $(this).next().hide('slow', function() {$sitesScroll.tinyscrollbar_update('relative')})
     }
   });
   
@@ -215,17 +231,10 @@ jQuery(function($) {
     if ($('#iAm').is('.in') ) {
       $('#iAm').collapse('hide');
     } else {
-      if ($(window).height() < 900) {
-        $('header #iAm nav').css({height: ($(window).height() - 140)});
-        $('#iAm').collapse('show').on('shown.bs.collapse', function () {
-          $('#iAm .overflow-scroll').removeClass('hidden');
-          $('#iAm .scroll-vert').trigger('scrollstop');
-        })
-      } else {
-        $('header #iAm nav').css({height: 'auto'});
-        $('#iAm .overflow-scroll').addClass('hidden');
-        $('#iAm').collapse('show');
-      }
+      $('header #iAm nav').css({height: ($(window).height() - 170)});
+      $('#iAm').collapse('show').on('shown.bs.collapse', function () {
+        $iamScroll.find('.viewport').height($iamScroll.outerHeight()).end().tinyscrollbar_update('relative');
+      })
     }
   });
   
@@ -255,57 +264,6 @@ jQuery(function($) {
       });
     });
   }
-  
-  $(document).on('click', '.scroll-up .fa', function() {
-    if ($(this).parent().data('step')) {
-      step = $(this).parent().data('step') || 100;
-      $(this).closest('.scroll-parent').find('.scroll-vert').animate({scrollTop: '-='+step+'px'});
-    }
-  });
-  $(document).on('click', '.scroll-dn .fa', function() {
-    if ($(this).parent().data('step')) {
-      step = $(this).parent().data('step') || 100;
-      $(this).closest('.scroll-parent').find('.scroll-vert').animate({scrollTop: '+='+step+'px'});
-    }
-  });
-  $(document).on('click', '.scroll-le .fa', function() {
-    if ($(this).parent().data('step')) {
-      step = $(this).parent().data('step') || 100;
-      $(this).closest('.scroll-parent').find('.scroll-horz').animate({scrollLeft: '-='+step+'px'});
-    }
-  });
-  $(document).on('click', '.scroll-ri .fa', function() {
-    if ($(this).parent().data('step')) {
-      step = $(this).parent().data('step') || 100;
-      $(this).closest('.scroll-parent').find('.scroll-horz').animate({scrollLeft: '+='+step+'px'});
-    }
-  });
-  
-  
-  $('.scroll-vert').on('scrollstop', function() {
-    $parent = $(this).closest('.scroll-parent');
-    bottom = $(this).children('.scroll-content').outerHeight() - $(this).height();
-    if (bottom > 0) {
-      $parent.find('.scroll-up, .scroll-dn').removeClass('hidden');
-    } else {
-      $parent.find('.scroll-up, .scroll-dn').addClass('hidden');
-    }
-    if ($(this).scrollTop() <= 0) {
-      $parent.find('.scroll-up').addClass('hidden')
-    } else if ($(this).scrollTop() >= bottom) {
-      $parent.find('.scroll-dn').addClass('hidden')
-    }
-  });
-  
-  $('.scroll-horz').on('scrollstop', function() {
-    $parent = $(this).closest('.scroll-parent');
-    right = $(this).children('.scroll-content').outerWidth() - $(this).width();
-    $parent.find('.scroll-le, .scroll-ri').removeClass('hidden');
-    if ($(this).scrollLeft() <= 0) {
-      $parent.find('.scroll-le').addClass('hidden')
-    } else if ($(this).scrollLeft() >= right) {
-      $parent.find('.scroll-ri').addClass('hidden')
-    }
-  });
-  
+
+
 });
