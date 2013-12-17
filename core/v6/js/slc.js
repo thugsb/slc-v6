@@ -5,9 +5,9 @@ jQuery(function($) {
   
   mobile init not working
   
-  IAm height calculations
+  weather alert bar (shrinks after scroll, shrinks to tappable (!) on mobile)
   
-  scrollbar
+  nokia windows phone isn't scrolling nicely
   */
   
   window.$showcase = $('.showcase .tiles');
@@ -53,8 +53,8 @@ jQuery(function($) {
     
     
     // Adjust panel heights
-    $('.info-panel').height($(window).height() - 559);
-    $('.slc-sites .info-panel').height($(window).height() - 559 - 60);
+    $('.info-panel').height($(window).height() - 639);
+    $('.slc-sites .info-panel').height($(window).height() - 639 - 60 + 80);
     $sitesScroll.nanoScroller();
     $newsScroll.nanoScroller();
 
@@ -82,7 +82,7 @@ jQuery(function($) {
     
     // Adjust panel heights
     $newsScroll.height($newsScroll.find('.overview').outerHeight()).nanoScroller();
-    $('.slc-sites .info-panel').height(10 - 60 + $('.slc-news .info-panel').height() + $('.slc-spotlight').height());
+    $('.slc-sites .info-panel').height(10 - 60 + 160 + $('.slc-news .info-panel').height() + $('.slc-spotlight').height());
     $sitesScroll.nanoScroller();
 
     $('.showcase .scroll-le').on('click', function() {

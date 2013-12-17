@@ -79,7 +79,7 @@
             <div class="tile"><img src="home/2.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-youtube-play"></i><span class="ellipsis">welcome</span></span></div>
             <a href="#" class="tile"><img src="home/3.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-picture-o"></i><span class="ellipsis">gallery</span></span></a>
             <div class="tile"><a href="#asd" data-toggle="modal"><img src="home/4.jpg" class="img-responsive" alt="b"/> <span class="caption"><span class="ellipsis">our faculty</span></span></a></div>
-            <div class="tile tile-big"><img src="home/5.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-youtube-play"></i><span class="ellipsis">film-making and new media</span></span></div>
+            <div class="tile tile-big"><a href="#videoModal" data-toggle="modal"><img src="home/5.jpg" class="img-responsive" alt="b"/> <span class="caption"><i class="fa fa-youtube-play"></i><span class="ellipsis">film-making and new media</span></span></a></div>
             <a href="#" class="tile"><img src="home/6.jpg" class="img-responsive" alt="b"/></a>
             <div class="tile"><img src="home/2.jpg" class="img-responsive" alt="b"/></div>
             <div class="tile"><img src="home/3.jpg" class="img-responsive" alt="b"/></div>
@@ -320,61 +320,77 @@
           </section>
         </div>
         <div class="col-sm-6 col-md-8">
-          <div class="col-md-6">
-            <section class="slc-news">
-              <h4>SLC <strong>News and Events.</strong></h4>
-              <div class="info-panel scroll-vert nano">
-                <div class="content">
-                  <ul class="overview">
-                    <li><i class="fa fa-rss"></i> <a href="/news/item1">J.J. Abrams '88 publishes novel, is featured in The New York Times Sunday Book Review</a></li>
-                    <li><i class="fa fa-rss"></i> <a href="/news/item2">Julianna Margulies '89 helps rebuild homes damaged by Hurricane Sandy</a></li>
-                    <li><i class="fa fa-rss"></i> <a href="/news/item3">Caroline Lieber MS '80, former director of Human Genetics graduate program, honored as Woman of the Year</a></li>
-                    <li><i class="fa fa-rss"></i> <a href="/news/item4">Lama Fakih '04 of Human Rights Watch featured in <em>New York Times</em> article on Syria</a></li>
-                    <li><i class="fa fa-calendar"></i> <a href="/events/item1">Writer's Block Tutoring<br/>Tue Oct 29, 2013</a></li>
-                    <li><i class="fa fa-calendar"></i> <a href="/events/item2">Manhattan String Quartet <br/>Tue Oct 29, 2013</a></li>
-                    <li><i class="fa fa-calendar"></i> <a href="/events/item3">Men's and Women's Crew Fall Metropolitan Championship Regatta <br/>Sat Nov 2, 2013</a></li>
-                    <li><i class="fa fa-calendar"></i> <a href="/events/item4">Men's and Women's Swimming SLC Sprint Carnival <br/>Sat Nov 2, 2013</a></li>
-                  </ul>
+          <div class="row">
+            <div class="col-md-6">
+              <section class="slc-news">
+                <h4>SLC <strong>News and Events.</strong></h4>
+                <div class="info-panel scroll-vert nano">
+                  <div class="content">
+                    <ul class="overview">
+                      <li><i class="fa fa-rss"></i> <a href="/news/item1">J.J. Abrams '88 publishes novel, is featured in The New York Times Sunday Book Review</a></li>
+                      <li><i class="fa fa-rss"></i> <a href="/news/item2">Julianna Margulies '89 helps rebuild homes damaged by Hurricane Sandy</a></li>
+                      <li><i class="fa fa-rss"></i> <a href="/news/item3">Caroline Lieber MS '80, former director of Human Genetics graduate program, honored as Woman of the Year</a></li>
+                      <li><i class="fa fa-rss"></i> <a href="/news/item4">Lama Fakih '04 of Human Rights Watch featured in <em>New York Times</em> article on Syria</a></li>
+                      <li><i class="fa fa-calendar"></i> <a href="/events/item1">Writer's Block Tutoring<br/>Tue Oct 29, 2013</a></li>
+                      <li><i class="fa fa-calendar"></i> <a href="/events/item2">Manhattan String Quartet <br/>Tue Oct 29, 2013</a></li>
+                      <li><i class="fa fa-calendar"></i> <a href="/events/item3">Men's and Women's Crew Fall Metropolitan Championship Regatta <br/>Sat Nov 2, 2013</a></li>
+                      <li><i class="fa fa-calendar"></i> <a href="/events/item4">Men's and Women's Swimming SLC Sprint Carnival <br/>Sat Nov 2, 2013</a></li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </section>
-          </div>
+              </section>
+            </div>
       
-          <div class="col-md-6">
-            <section class="slc-spotlight">
-              <h4>SLC <strong>Spotlight.</strong></h4>
-              <div class="info-panel">
-                <div class="cycle-slideshow" data-cycle-slides="> .item" data-cycle-prev=".slc-spotlight .cycle-prev" data-cycle-next=".slc-spotlight .cycle-next" data-fx="scrollHorz" data-timeout="8000">
-                  <div class="cycle-pager"></div>
-                  <div class="cycle-control cycle-prev"><i class="fa fa-chevron-left"></i></div>
-                  <div class="cycle-control cycle-next"><i class="fa fa-chevron-right"></i></div>
-                  <div class="item">
-                    <div class="spotlight-top"><img src="img/spotlight/urban.jpg" alt="a"/></div>
-                    <a class="spotlight-bottom">
-                      <img src="img/spotlight/mag.jpg" class="pull-right" alt="a"/>
-                      <h5>Starting from Scratch</h5>
-                      <p>Read the current issue of Sarah Lawrence Magazine</p>
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a class="spotlight-top">
-                      <img src="img/spotlight/mag.jpg" class="pull-right" alt="a"/>
-                      <h5>Starting from Scratch</h5>
-                      <p>Read the current issue of Sarah Lawrence Magazine</p>
-                    </a>
-                    <div class="spotlight-bottom"><img src="img/spotlight/urban.jpg" alt="a"/></div>
-                  </div>
-                  <div class="item">
-                    <div class="spotlight-top"><img src="home/4.jpg" alt="a"/></div>
-                    <div class="spotlight-bottom"><h5>SLC has #1 faculty</h5></div>
-                  </div>
-                  <div class="item">
-                    <div class="spotlight-top"><h5>Our film students win awards!</h5></div>
-                    <div class="spotlight-bottom"><img src="home/5.jpg" alt="a"/></div>
+            <div class="col-md-6">
+              <section class="slc-spotlight">
+                <h4>SLC <strong>Spotlight.</strong></h4>
+                <div class="info-panel">
+                  <div class="cycle-slideshow" data-cycle-slides="> .item" data-cycle-prev=".slc-spotlight .cycle-prev" data-cycle-next=".slc-spotlight .cycle-next" data-fx="scrollHorz" data-timeout="8000">
+                    <div class="cycle-pager"></div>
+                    <div class="cycle-control cycle-prev"><i class="fa fa-chevron-left"></i></div>
+                    <div class="cycle-control cycle-next"><i class="fa fa-chevron-right"></i></div>
+                    <div class="item">
+                      <div class="spotlight-top"><img src="img/spotlight/urban.jpg" alt="a"/></div>
+                      <a class="spotlight-bottom">
+                        <img src="img/spotlight/mag.jpg" class="pull-right" alt="a"/>
+                        <h5>Starting from Scratch</h5>
+                        <p>Read the current issue of Sarah Lawrence Magazine</p>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="spotlight-top">
+                        <img src="img/spotlight/mag.jpg" class="pull-right" alt="a"/>
+                        <h5>Starting from Scratch</h5>
+                        <p>Read the current issue of Sarah Lawrence Magazine</p>
+                      </a>
+                      <div class="spotlight-bottom"><img src="img/spotlight/urban.jpg" alt="a"/></div>
+                    </div>
+                    <div class="item">
+                      <div class="spotlight-top"><img src="home/4.jpg" alt="a"/></div>
+                      <div class="spotlight-bottom"><h5>SLC has #1 faculty</h5></div>
+                    </div>
+                    <div class="item">
+                      <div class="spotlight-top"><h5>Our film students win awards!</h5></div>
+                      <div class="spotlight-bottom"><img src="home/5.jpg" alt="a"/></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
+          </div>  
+          <div class="row">
+            <div class="col-md-6">
+              <a class="what-is-mosaic" data-toggle="modal" href="#what-is-mosaic">
+                <div><div></div><div></div><div></div></div>
+                What is the mosaic?
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a class="about-images" data-toggle="modal" href="#about-images">
+                <div></div>
+                About the images
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -389,6 +405,16 @@
     </footer>
 
   </div><!-- .wrap -->
+  
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="responsiveIframe widescreen"><iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube-nocookie.com/embed/Mftg1Fe2_VA?list=PLJ3M6ig5bcKVw8hfGDzisbBp_JyDzQ59S" width="560"></iframe></div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
   
   <div class="modal fade" id="asd">
     <div class="modal-dialog">
@@ -414,6 +440,40 @@
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
+
+  <div class="modal fade" id="what-is-mosaic">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">What is the Mosaic?</h4>
+        </div>
+        <div class="modal-body">
+          <p>Gourd epazote pea sprouts kombu tatsoi pea chard fava bean. Parsnip summer purslane caulie dandelion broccoli soybean gumbo cabbage sea lettuce beet greens chickpea leek. Courgette chickweed asparagus kombu plantain turnip taro kohlrabi rock melon bitterleaf tigernut soybean corn caulie garbanzo shallot. </p>
+          <p>Aubergine potato onion black-eyed pea komatsuna daikon catsear salad beetroot gumbo parsnip rutabaga. Bamboo shoot caulie earthnut pea bell pepper garbanzo amaranth daikon broccoli rabe gram parsnip komatsuna prairie turnip soko. Lettuce bitterleaf azuki bean shallot radicchio garlic aubergine sierra leone bologi daikon cabbage. Kohlrabi peanut lotus root grape sweet pepper courgette. Shallot yarrow onion coriander gram parsnip cress. </p>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" id="about-images">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">About the Images</h4>
+        </div>
+        <div class="modal-body">
+          <p>Prairie turnip parsley melon winter purslane beetroot cabbage garbanzo silver beet potato prairie turnip endive gram catsear. Sweet pepper wakame turnip amaranth pumpkin sweet pepper zucchini kale quandong endive asparagus gourd cabbage avocado brussels sprout tatsoi cucumber. Summer purslane catsear brussels sprout shallot dulse maize bok choy artichoke squash avocado watercress. Cucumber winter purslane courgette groundnut broccoli artichoke bush tomato brussels sprout garbanzo kakadu plum fennel pea sprouts asparagus. Plantain kohlrabi chickpea tomato beetroot brussels sprout sea lettuce salad kombu spring onion jícama coriander quandong. </p>
+          <p>Bok choy gourd celery broccoli rabe coriander green bean arugula collard greens maize cucumber. Chard arugula chickpea summer purslane beet greens asparagus watercress. Chickweed dandelion asparagus aubergine eggplant garlic. </p>
+          <p>Aubergine potato onion black-eyed pea komatsuna daikon catsear salad beetroot gumbo parsnip rutabaga. Bamboo shoot caulie earthnut pea bell pepper garbanzo amaranth daikon broccoli rabe gram parsnip komatsuna prairie turnip soko. Lettuce bitterleaf azuki bean shallot radicchio garlic aubergine sierra leone bologi daikon cabbage. Kohlrabi peanut lotus root grape sweet pepper courgette. Shallot yarrow onion coriander gram parsnip cress. </p>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+
 
   <div class="menu menu-left">
     <div class="menu-nav"><h4 class="pull-right">Explore.</h4><a class="link-home" href="/"><i class="fa fa-home"></i> www.slc.edu</a></div>

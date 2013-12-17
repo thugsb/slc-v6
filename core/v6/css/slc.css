@@ -12,6 +12,11 @@ a:hover, a:focus {color:#555;}
 
 span.highlight {background-color:#ffa;}
 
+.responsiveIframe{display:block;position:relative;padding-bottom:75%;padding-top:30px;height:0;overflow:hidden;margin:1em 0}
+.responsiveIframe.widescreen{padding-bottom:56.25%}
+.responsiveIframe iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+
+
 /* OVERFLOW SCROLL */
 .overflow-scroll {position:absolute; text-align:center; color:#999; z-index:10;}
 .overflow-scroll.scroll-le {top:0; bottom:0; left:0; width:40px;   background:-webkit-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0) ); background:-moz-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0) ); background:linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) ); }
@@ -22,6 +27,7 @@ span.highlight {background-color:#ffa;}
 .overflow-scroll.scroll-up {top:0; left:0; right:0; height:40px;   background:-webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0) );  background:-moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0) );  background:linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0) );  }
 .overflow-scroll.scroll-dn {bottom:0; left:0; right:0; height:40px;background:-webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1) );  background:-moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1) );  background:linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1) );  }*/
 
+.nano .content:focus {outline:0;}
 
 /* HEADER */
 header {position:fixed; top:0; min-width:320px; width:100%; max-width:1280px; z-index:1000;}
@@ -118,7 +124,7 @@ header #iAm nav a p {margin:0; font-size:0.8em; font-style:italic; color:#b4b4b4
 .slc-news .info-panel, .slc-spotlight .info-panel {box-shadow:5px 5px 5px rgba(0,0,0,.2);}
 
 .slc-sites {position:relative;}
-.slc-sites .info-panel {min-height:240px;}
+.slc-sites .info-panel {min-height:320px;}
 .slc-sites .info-panel ul.overview {font-size:1.2em;}
 .slc-sites ul ul {display:none; padding:0 20px;}
 .slc-sites ul ul a {padding:0;}
@@ -146,6 +152,12 @@ header #iAm nav a p {margin:0; font-size:0.8em; font-style:italic; color:#b4b4b4
 .slc-spotlight .cycle-slideshow .cycle-next {right:0;}
 .slc-spotlight .cycle-slideshow .cycle-control .fa {position:absolute; top:45%; left:5px; font-size:2.2em; color:#999;}
 .no-js .slc-spotlight .cycle-slideshow .cycle-control {display:none;}
+
+.what-is-mosaic, .about-images {display:block; height:60px; margin:20px 0; padding:15px; font-size:1.5em; box-shadow:5px 5px 5px rgba(0,0,0,.2); color:#fff; background:#0077b0;}
+.what-is-mosaic:hover, .about-images:hover {color:#eee;}
+.what-is-mosaic > div {display:inline-block; vertical-align:bottom; width:40px; height:30px; margin-right:1.5em;}
+.what-is-mosaic div div {float:left; height:15px; width:15px; margin:0 5px 5px 0; background:#fff;}
+.about-images div {display:inline-block; vertical-align:bottom; width:40px; height:30px; margin-right:1.5em; border:2px solid #fff;}
 
 /* FOOTER */
 footer {position:relative; width:100%; padding:10px 20px; color:#fff; background:#363636; z-index:900;}
@@ -249,7 +261,7 @@ footer a, footer a:hover {color:#fff;}
   .slc-sites .info-panel {position:absolute; top:0; bottom:60px; width:100%; overflow:auto; color:#fff; background:#363636;}
   .slc-sites .info-panel > ul {padding-bottom:10px;}
   .slc-sites form {bottom:0;}
-  .slc-sites a {height:auto; font-size:1em; line-height:1.4; color:#ebebeb;}
+  .slc-sites .overview a {height:auto; padding:1em 0; font-size:1em; line-height:1.4; color:#ebebeb;}
   .slc-sites ul ul {background:#222;}
   .slc-sites .highlight {background:#662;}
 
