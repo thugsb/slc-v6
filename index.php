@@ -28,6 +28,7 @@
   <a class="skip-to-content" href="#content">Skip to Content</a>
 
   <header class="nav">
+    <?php if ($_GET['alert']) {include_once('alert.php');}?>
     <div class="persistent-nav pull-left">
       <a href="/sites" class="xs-menu visible-xs pull-right">Sites <i class="fa fa-align-justify"></i></a>
       <a href="/" class="logo">SLC.</a>
@@ -409,8 +410,12 @@
   <div class="modal fade" id="videoModal">
     <div class="modal-dialog">
       <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Film-making and new media</h4>
+        </div>
         <div class="modal-body">
-          <div class="responsiveIframe widescreen"><iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube-nocookie.com/embed/Mftg1Fe2_VA?list=PLJ3M6ig5bcKVw8hfGDzisbBp_JyDzQ59S" width="560"></iframe></div>
+          <div class="responsiveIframe widescreen"></div>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

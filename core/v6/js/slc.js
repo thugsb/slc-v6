@@ -3,11 +3,8 @@ jQuery(function($) {
   http://accessibility.siteimprove.com/MGMIPMBAAIAKGDOAIBKP/9057/9019405502#
   And SEO
   
-  mobile init not working
-  
-  weather alert bar (shrinks after scroll, shrinks to tappable (!) on mobile)
-  
   nokia windows phone isn't scrolling nicely
+  https://github.com/filamentgroup/Overthrow/
   */
   
   window.$showcase = $('.showcase .tiles');
@@ -133,6 +130,7 @@ jQuery(function($) {
       if ($('body').is('.center') ) {
         $('.menu-left').css({'z-index':20});
         $('.menu-right').css({'z-index':10});
+        if ($('header .message').length > 0) {collapseMessage()}
         $('body').addClass('off-right').removeClass('center');
       } else if ($('body').is('.off-left') ) {
         $('body').addClass('center').removeClass('off-left');
@@ -146,6 +144,7 @@ jQuery(function($) {
       if ($('body').is('.center') ) {
         $('.menu-left').css({'z-index':20});
         $('.menu-right').css({'z-index':10});
+        if ($('header .message').length > 0) {collapseMessage()}
         $('body').addClass('off-right').removeClass('center');
       } else if ($('body').is('.off-right') ) {
         $('body').addClass('center').removeClass('off-right');
@@ -248,9 +247,31 @@ jQuery(function($) {
     }
   });
   
+  function collapseMessage() {
+    $('header .message').addClass('seen').slideUp(function() {
+      $('.wrap').css({"padding-top": 40});
+    });
+    $('header .message .fa-exclamation-circle').popover({content: $('header .message .message-content').html(), html: true, placement: 'bottom'})
+  }
+  if ($('header .message').length > 0) {
+    $('header .message.seen .fa-exclamation-circle').popover({content: $('header .message .message-content').html(), html: true, placement: 'bottom'})
+    $('.wrap').css({"padding-top": $('header').height()})
+    $(window).scroll(function(e) {
+      if ($(window).scrollTop() > 100) {collapseMessage()}
+    });
+  }
+  
+  
+  $('#videoModal').on('show.bs.modal', function() {
+    $(this).find('.responsiveIframe').html('<iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube-nocookie.com/embed/Mftg1Fe2_VA?list=PLJ3M6ig5bcKVw8hfGDzisbBp_JyDzQ59S" width="560"></iframe>')
+  }).on('hide.bs.modal', function() {
+    $(this).find('.responsiveIframe').html('')
+  });
+  
+  
   // Home Intro
-  if ($('body').hasClass('initialize') ) {
-    $('header').delay(1000).fadeIn(1000, function() {
+  function intro() {console.log('starting');
+    $('header').fadeIn(1000, function() {
       $('.initialize .wrap > section, .menu').fadeIn(1000);
       $('footer').fadeIn(1000, function() {
         $(window).setBreakpoints({breakpoints: [1, 768, 992]});
@@ -263,6 +284,13 @@ jQuery(function($) {
       });
     });
   }
+  if ($('body').hasClass('initialize') ) {
+    introTimeout = setTimeout(intro, 4000);
+  }
+  $('.intro, .intro-home').click(function() {
+    clearTimeout(introTimeout);
+    intro();
+  });
 
 
 });

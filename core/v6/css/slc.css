@@ -1,6 +1,6 @@
 html{height:100%;}
 body {position:relative; min-height:100%; min-width:320px; max-width:1280px; margin:0 auto; font-family: "futura-pt-1","futura-pt-2",sans-serif;}
-.wrap {position:absolute; top:0; bottom:0; width:100%; padding-top:40px; background:#363636;}
+.wrap {position:absolute; top:0; bottom:0; width:100%; padding-top:40px; transition:padding .35s; background:#363636;}
 h1,h2,h3,h4,h5,h6 {font-family: "futura-pt-1","futura-pt-2",sans-serif;}
 
 .skip-to-content {position:absolute; top:-50em; left:10px; padding:5px 10px; background:#000; z-index:10000;}
@@ -16,6 +16,7 @@ span.highlight {background-color:#ffa;}
 .responsiveIframe.widescreen{padding-bottom:56.25%}
 .responsiveIframe iframe{position:absolute;top:0;left:0;width:100%;height:100%}
 
+.btn {border-radius:0;}
 
 /* OVERFLOW SCROLL */
 .overflow-scroll {position:absolute; text-align:center; color:#999; z-index:10;}
@@ -39,7 +40,7 @@ header .persistent-nav .i-am {display:inline-block; padding:0 20px;}
 header .persistent-nav .i-am:focus, header .persistent-nav .i-am:active {outline:0;}
 header .persistent-nav .xs-menu .fa {margin-left:10px;}
 header > nav {border-bottom:2px solid #464646; background:#363636;}
-header > nav a {padding:0 1.5%; font-weight:100; letter-spacing:.5px;}
+header > nav a {padding:0 1.3%; font-weight:100; letter-spacing:.5px;}
 
 header #iAm {position:absolute; top:40px; left:0; width:480px; max-width:100%; font-size:1.2em; box-shadow:10px 10px 10px 5px rgba(0,0,0,.5); background:#454545;}
 header #iAm .ready-to {text-align:center; white-space:nowrap; color:#fff; background:#252525;}
@@ -59,7 +60,15 @@ header #iAm nav a p {margin:0; font-size:0.8em; font-style:italic; color:#b4b4b4
   header #iAm nav a {padding:10px;}
 }
 
-
+header .message {position:relative; padding:1em 2em; background:#e6e6e6; z-index:101;}
+header .message .fa-exclamation-circle {position:absolute; right:100%; transition:right 1s; margin-right:-80px; font-size:3.2em; color:#f00;}
+header .message .message-content {margin-left:80px; font-size:1.2em; line-height:2.5; color:#525252;}
+header .message .btn {float:right; margin-left:1em; padding: 10px 16px; font-size: 18px; line-height: 1.33; color:#444;}
+header .message .popover .btn {float:none; display:block; width:100%;}
+header .message .message-content p:last-child {margin:0;}
+header .message.seen {display:block !important; overflow:visible !important; height:0; padding:0 !important;}
+header .message.seen .fa-exclamation-circle {bottom:-30px; right:90px; font-size:1.5em; cursor:pointer;}
+header .message.seen .message-content {display:none;}
 
 /* SHOWCASE */
 .showcase {position:relative; width:100%; height:400px; background-color:#0077b0;}
@@ -221,7 +230,7 @@ footer a, footer a:hover {color:#fff;}
 
 
 @media (max-width: 767px) {
-  .wrap {left:0; transition:left .5s ease-out; background:#374347; z-index:25; -webkit-transition:left .5s ease-out; -moz-transition:left .5s ease-out;}
+  .wrap {left:0; transition:left .5s ease-out, padding .35s; background:#374347; z-index:25; -webkit-transition:left .5s ease-out, padding .35s; -moz-transition:left .5s ease-out, padding .35s;}
   .menu {display:block; position:fixed; top:0; bottom:0; overflow:hidden; padding-top:40px; background:#fff;}
   .menu-left {left:0; right:10%; background:#006c52;}
   .menu-right {right:0; left:10%;}
@@ -237,6 +246,11 @@ footer a, footer a:hover {color:#fff;}
   header .persistent-nav {width:100%;}
   header .persistent-nav .visible-xs {padding:0 20px;}
   
+  header .message .fa-exclamation-circle {margin-right:-45px; font-size:1.5em;}
+  header .message .message-content {margin-left:30px; font-size:1em; line-height:1.4;}
+  header .message .btn {padding:5px 10px; font-size:12px; line-height:1.5;}
+  header .message.seen .fa-exclamation-circle {right:145px;}
+
   .showcase, .showcase .showcase-wrap {height:320px;}
   .showcase-content {height:300px;}
   .showcase .tiles {height:280px;}
