@@ -104,13 +104,13 @@ header .message.seen .message-content {display:none;}
 .navigate .bar {position:relative; height:40px; background:#01364f; z-index:202;}
 .navigate .bar .portal-links a {position:relative; float:left; width:30%; height:45px; margin:-5px 1.5% 0; text-align:center; font-size:1.2em; letter-spacing:1px; line-height:45px; font-weight:bold; color:#fff; background:#115078; z-index:11;}
 .navigate .bar .portal-links a:hover {background:#216098;}
-.navigate .bar .social-links {text-align:center;}
-.navigate .bar .social-links a {float:left; height:40px; padding:0 3.9%; line-height:40px; font-size:1.6em; color:#fff;}
-.navigate .bar .social-links a:hover {background:#115078;}
-.navigate .bar .explore-links {padding-right:0;}
-.navigate .bar .explore-links a {float:right; width:50%; height:40px; text-align:center; font-size:1.2em; letter-spacing:1px; line-height:40px; color:#fff; background:#5d5d5d;}
-.navigate .bar .explore-links a:hover {background:#7d7d7d;}
-.navigate .bar .explore-links a img {position:relative; top:-2px;}
+.social-links {text-align:center; background:#01364f;}
+.social-links a {float:left; height:40px; padding:0 3.9%; line-height:40px; font-size:1.6em; color:#fff;}
+.social-links a:hover {background:#115078;}
+.explore-links {padding-right:0; background:#5d5d5d;}
+.explore-links a {float:right; width:50%; height:40px; text-align:center; font-size:1.2em; letter-spacing:1px; line-height:40px; color:#fff; background:#5d5d5d;}
+.explore-links a:hover {background:#7d7d7d;}
+.explore-links a img {position:relative; top:-2px;}
 @media(max-width:991px) {
   .navigate .bar .explore-links .explore-link-text {display:none;}
 }
@@ -254,7 +254,7 @@ footer a, footer a:hover {color:#fff;}
 @media (max-width: 767px) {
   .wrap {left:0; transition:left .5s ease-out, padding .35s; background:#374347; z-index:25; -webkit-transition:left .5s ease-out, padding .35s; -moz-transition:left .5s ease-out, padding .35s;}
   .menu {display:block; position:fixed; top:0; bottom:0; overflow:hidden; padding-top:40px; background:#fff;}
-  .menu-left {left:0; right:10%; background:#006c52;}
+  .menu-left {left:0; right:10%; background:#f1f1f1;}
   .menu-right {right:0; left:10%;}
   .off-left .menu-left .menu-nav a {display:none;}
   
@@ -287,8 +287,13 @@ footer a, footer a:hover {color:#fff;}
   .menu-nav h4 {margin:0 50px 0 20px; line-height:40px;}
   .menu-nav h4 span {font-weight:normal;}
   
-  .menu-left-content {position:absolute; top:40px; left:0; bottom:0; right:0; overflow:hidden; padding:20px 0 20px 20px;}
-  .menu-left-content a {display:block; margin:0 20px 20px 0;}
+  .menu-left-wrap {position:absolute; top:40px; left:0; bottom:0; right:0; overflow:hidden; padding:20px;}
+  .menu-left-wrap .slc-news .nano {min-height:150px; height:150px;}
+  .menu-left-wrap .slc-news .news-links {height:auto;}
+  .menu-left-wrap .slc-news .news-links a {float:left; width:50%;}
+  .menu-left-wrap .social-links, .menu-left-wrap .explore-links {margin:20px 0; padding:10px 0; box-shadow:5px 5px 5px rgba(0,0,0,.2);}
+  .menu-left-wrap .social-links a {float:none;}
+  
   .menu-right-content {position:absolute; top:40px; left:0; bottom:0; right:0; overflow:hidden; background:#363636;}
   
   .slc-sites {height:100%;}

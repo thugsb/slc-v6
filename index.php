@@ -103,17 +103,21 @@
           <a href="/visit/">Visit</a>
           <a href="/apply/">Apply</a>
         </nav>
-        <nav class="social-links col-md-4 col-sm-4 hidden-xs">
-          <a target="_blank" href="http://www.facebook.com/sarahlawrencecollege"><i class="fa fa-facebook"></i></a>
-          <a target="_blank" href="http://www.twitter.com/SarahLawrence"><i class="fa fa-twitter"></i></a>
-          <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
-          <a target="_blank" href="#"><i class="fa fa-vimeo-square"></i></a>
-          <a target="_blank" href="http://www.youtube.com/sarahlawrencecollege"><i class="fa fa-youtube"></i></a>
-          <a href="tel:+1-914-337-0700"><i class="fa fa-phone"></i></a>
+        <nav class="social-links-wrap col-md-4 col-sm-4 hidden-xs">
+          <div class="social-links clearfix">
+            <a target="_blank" href="http://www.facebook.com/sarahlawrencecollege"><i class="fa fa-facebook"></i></a>
+            <a target="_blank" href="http://www.twitter.com/SarahLawrence"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+            <a target="_blank" href="#"><i class="fa fa-vimeo-square"></i></a>
+            <a target="_blank" href="http://www.youtube.com/sarahlawrencecollege"><i class="fa fa-youtube"></i></a>
+            <a href="tel:+1-914-337-0700"><i class="fa fa-phone"></i></a>
+          </div>
         </nav>
-        <nav class="explore-links col-md-4 col-sm-3 hidden-xs clearfix">
-          <a href="/explore/map/"><i class="fa fa-map-marker"></i> <span class="explore-link-text">Campus Map</span></a>
-          <a href="/explore/360/"><img src="img/360-icon.png" alt="View the 3D Virtual Tour"/> <span class="explore-link-text">Virtual Tour</span></a>
+        <nav class="explore-links-wrap col-md-4 col-sm-3 hidden-xs clearfix">
+          <div class="explore-links clearfix">
+            <a href="/explore/map/"><i class="fa fa-map-marker"></i> <span class="explore-link-text">Campus Map</span></a>
+            <a href="/explore/360/"><img src="img/360-icon.png" alt="View the 3D Virtual Tour"/> <span class="explore-link-text">Virtual Tour</span></a>
+          </div>
         </nav>
       </div>  
     </section>
@@ -321,7 +325,7 @@
           </section>
         </div>
         <div class="col-sm-6 col-md-8">
-          <div class="col-md-6">
+          <div class="col-md-6 slc-news-wrap">
             <section class="slc-news">
               <h4>SLC <strong>News and Events.</strong></h4>
               <div class="info-panel-wrap">
@@ -339,7 +343,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="news-links">
+              <div class="news-links clearfix">
                 <a href="/studentlife/calendar/">Academic Calendar</a>
                 <a href="/news-events/events/">Campus Events</a>
                 <a href="/news-events/news/">News of the College</a>
@@ -348,7 +352,7 @@
             </section>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 slc-spotlight-wrap">
             <section class="slc-spotlight">
               <h4>SLC <strong>Spotlight.</strong></h4>
               <div class="info-panel">
@@ -387,7 +391,8 @@
                 <span class="mini-mosaic"><div></div><div></div><div></div></span>
                 <span class="mini-mosaic"><span></span></span>
                 <span class="mini-mosaic"><div></div><div></div><div></div></span>
-                Learn more
+                <em class="hidden-xs">Learn more</em>
+                <i class="fa fa-question-circle visible-xs"></i>
               </a>
             </section>
           </div>
@@ -465,14 +470,9 @@
 
   <div class="menu menu-left">
     <div class="menu-nav"><h4 class="pull-right">Explore.</h4><a class="link-home" href="/"><i class="fa fa-home"></i> www.slc.edu</a></div>
-    <div class="menu-left-content clearfix scroll-vert">
+    <div class="menu-left-wrap clearfix scroll-vert">
       <div class="nano">
-        <div class="content">
-          <a href="/explore/map/"><img src="img/menu-icon-map.png" alt="Map Icon"/></a>
-          <a href="/explore/360/"><img src="img/menu-icon-360.png" alt="Virtual Tour Icon"/></a>
-          <a href="/catalogue/"><img src="img/menu-icon-catalogues.png" alt="Catalogue Icon"/></a>
-          <a href="/contact/"><img src="img/menu-icon-phone.png" alt="Phone Icon"/></a>
-          <a href="/media/"><img src="img/menu-icon-media.png" alt="Media Icon"/></a>
+        <div class="content menu-left-content">
         </div>
       </div>
     </div>

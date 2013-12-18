@@ -38,6 +38,10 @@ jQuery(function($) {
     $(window).off('swipeleft');
     // $('header .slc-sites').appendTo('.slc-sites-wrap');
     $('.menu-right .slc-sites').appendTo('.slc-sites-wrap');
+    $('.menu-left .slc-news').appendTo('.slc-news-wrap');
+    $('.menu-left .slc-spotlight').appendTo('.slc-spotlight-wrap');
+    $('.menu-left .social-links').appendTo('.social-links-wrap');
+    $('.menu-left .explore-links').appendTo('.explore-links-wrap');
   }
   
   if (!$('body').hasClass('initialize') ) {
@@ -174,6 +178,11 @@ jQuery(function($) {
     
     
     $('.slc-sites').appendTo('.menu-right-content');
+    $('.slc-news').appendTo('.menu-left-content');
+    $('.slc-spotlight').appendTo('.menu-left-content');
+    $('.social-links').appendTo('.menu-left-content');
+    $('.explore-links').appendTo('.menu-left-content');
+    $('.menu-left-wrap .nano').nanoScroller();
   });
   
   // End enterBreakpoint1
