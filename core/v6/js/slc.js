@@ -5,7 +5,16 @@ jQuery(function($) {
   
   nokia windows phone isn't scrolling nicely
   https://github.com/filamentgroup/Overthrow/
+  
+  http://v6.slc.edu/?alert=1&init=1 is badly placed
+  
+  
   */
+  
+  var query = window.location.search.substring(1), queryPairs = query.split('&');
+  window.queryJSON = {}
+  $.each(queryPairs, function() { queryJSON[this.split('=')[0]] = this.split('=')[1]; });
+  
   
   window.$showcase = $('.showcase .tiles');
   
@@ -79,7 +88,7 @@ jQuery(function($) {
     
     // Adjust panel heights
     $newsScroll.height($newsScroll.find('.overview').outerHeight()).nanoScroller();
-    $('.slc-sites .info-panel').height(10 - 60 + 160 + $('.slc-news .info-panel').height() + $('.slc-spotlight').height());
+    $('.slc-sites .info-panel').height(10 - 60 + 80 + $('.slc-news .info-panel').height() + $('.slc-spotlight').height());
     $sitesScroll.nanoScroller();
 
     $('.showcase .scroll-le').on('click', function() {
@@ -270,12 +279,15 @@ jQuery(function($) {
   
   
   // Home Intro
+  function themeBG() {
+    if (queryJSON.showcase === '1') {return '#ff8d27'} else if (queryJSON.showcase === '2') {return '#5e7791'} else if (queryJSON.showcase === '3') {return '#c5d13e'} else {return '#0077b0'}
+  }
   function intro() {console.log('starting');
     $('header').fadeIn(1000, function() {
       $('.initialize .wrap > section, .menu').fadeIn(1000);
       $('footer').fadeIn(1000, function() {
         $(window).setBreakpoints({breakpoints: [1, 768, 992]});
-        $('.showcase').animate({backgroundColor:'#0077b0'}, function() {
+        $('.showcase').animate({backgroundColor:themeBG()}, function() {
           $('.intro-home').fadeOut(function() {
             $('.intro').fadeOut();
             $('.initialize .showcase-wrap').fadeIn(1000);
