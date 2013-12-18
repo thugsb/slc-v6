@@ -98,7 +98,7 @@
           <a href="/visit/">Visit</a>
           <a href="/apply/">Apply</a>
         </nav>
-        <nav class="social-links col-md-4 col-sm-4 hidden-xs">
+        <nav class="social-links-wrap col-md-4 col-sm-4 hidden-xs">
           <a target="_blank" href="http://www.facebook.com/sarahlawrencecollege"><i class="fa fa-facebook"></i></a>
           <a target="_blank" href="http://www.twitter.com/SarahLawrence"><i class="fa fa-twitter"></i></a>
           <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
@@ -106,7 +106,7 @@
           <a target="_blank" href="http://www.youtube.com/sarahlawrencecollege"><i class="fa fa-youtube"></i></a>
           <a href="tel:+1-914-337-0700"><i class="fa fa-phone"></i></a>
         </nav>
-        <nav class="explore-links col-md-4 col-sm-3 hidden-xs clearfix">
+        <nav class="explore-links-wrap col-md-4 col-sm-3 hidden-xs clearfix">
           <a href="/explore/map/"><i class="fa fa-map-marker"></i> <span class="explore-link-text">Campus Map</span></a>
           <a href="/explore/360/"><img src="img/360-icon.png" alt=" "/> <span class="explore-link-text">Virtual Tour</span></a>
         </nav>
