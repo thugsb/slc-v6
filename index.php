@@ -361,28 +361,28 @@
                   <div class="cycle-control cycle-prev"><i class="fa fa-chevron-left"></i></div>
                   <div class="cycle-control cycle-next"><i class="fa fa-chevron-right"></i></div>
                   <div class="item">
-                    <div class="spotlight-top"><img src="img/spotlight/urban.jpg" alt="a"/></div>
+                    <div class="spotlight-top"><img class="img-responsive" src="img/spotlight/urban.jpg" alt="a"/></div>
                     <a class="spotlight-bottom">
-                      <img src="img/spotlight/mag.jpg" class="pull-right" alt="a"/>
+                      <img src="img/spotlight/mag.jpg" class="pull-right img-responsive" alt="a"/>
                       <h5>Starting from Scratch</h5>
                       <p>Read the current issue of Sarah Lawrence Magazine</p>
                     </a>
                   </div>
                   <div class="item">
                     <a class="spotlight-top">
-                      <img src="img/spotlight/mag.jpg" class="pull-right" alt="a"/>
+                      <img src="img/spotlight/mag.jpg" class="pull-right img-responsive" alt="a"/>
                       <h5>Starting from Scratch</h5>
                       <p>Read the current issue of Sarah Lawrence Magazine</p>
                     </a>
-                    <div class="spotlight-bottom"><img src="img/spotlight/urban.jpg" alt="a"/></div>
+                    <div class="spotlight-bottom"><img class="img-responsive" src="img/spotlight/urban.jpg" alt="a"/></div>
                   </div>
                   <div class="item">
-                    <div class="spotlight-top"><img src="home/4.jpg" alt="a"/></div>
+                    <div class="spotlight-top"><img class="img-responsive" src="home/4.jpg" alt="a"/></div>
                     <div class="spotlight-bottom"><h5>SLC has #1 faculty</h5></div>
                   </div>
                   <div class="item">
                     <div class="spotlight-top"><h5>Our film students win awards!</h5></div>
-                    <div class="spotlight-bottom"><img src="home/5.jpg" alt="a"/></div>
+                    <div class="spotlight-bottom"><img class="img-responsive" src="home/5.jpg" alt="a"/></div>
                   </div>
                 </div>
               </div>

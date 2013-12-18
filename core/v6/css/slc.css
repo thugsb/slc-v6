@@ -288,12 +288,19 @@ footer a, footer a:hover {color:#fff;}
   .menu-nav h4 span {font-weight:normal;}
   
   .menu-left-wrap {position:absolute; top:40px; left:0; bottom:0; right:0; overflow:hidden; padding:20px;}
-  .menu-left-wrap .slc-news .nano {min-height:150px; height:150px;}
+  .menu-left-wrap .slc-news .nano {min-height:150px; height:150px !important;}
   .menu-left-wrap .slc-news .news-links {height:auto;}
   .menu-left-wrap .slc-news .news-links a {float:left; width:50%;}
   .menu-left-wrap .social-links, .menu-left-wrap .explore-links {margin:20px 0; padding:10px 0; box-shadow:5px 5px 5px rgba(0,0,0,.2);}
   .menu-left-wrap .social-links a {float:none;}
   
+  .menu-left-wrap .cycle-slideshow {min-height:200px; height:200px;}
+  .menu-left-wrap .slc-spotlight .info-panel {min-height:200px;}
+  .menu-left-wrap .slc-spotlight .cycle-slideshow .item {display:none;}
+  .menu-left-wrap .slc-spotlight .cycle-slideshow .cycle-slide {height:150px; width:100%; overflow:hidden; padding:1em; text-align:center;}
+  .menu-left-wrap .slc-spotlight .cycle-slideshow .cycle-slide .spotlight-bottom {display:none;}
+  .menu-left-wrap .slc-spotlight .cycle-slideshow .cycle-pager {top:auto; bottom:0;}
+  .menu-left-wrap .slc-spotlight .cycle-slideshow .cycle-control .fa {top:70%;}
   .menu-right-content {position:absolute; top:40px; left:0; bottom:0; right:0; overflow:hidden; background:#363636;}
   
   .slc-sites {height:100%;}
